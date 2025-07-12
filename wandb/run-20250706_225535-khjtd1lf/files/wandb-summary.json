@@ -1,1 +1,3 @@
-{"batch": 74, "running_accuracy": 0.10921501706484642, "samples_seen": 1172, "_timestamp": 1751822817.0250182, "_runtime": 81.66591119766235, "_step": 1172, "final_accuracy": 0.10921501706484642, "_wandb": {"runtime": 81}}
+version https://git-lfs.github.com/spec/v1
+oid sha256:143292ee1f76b9a90140615060e40c98a014ba9ef23799bc4ab4d615d19bfc7d
+size 222

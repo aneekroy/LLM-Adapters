@@ -1,1 +1,3 @@
-{"step": 1319, "running_accuracy": 0.034874905231235785, "prediction": 170.0, "label": 30.0, "flag_correct": false, "_timestamp": 1751826979.8381088, "_runtime": 10140.98340177536, "_step": 1319, "final_accuracy": 0.034874905231235785, "_wandb": {"runtime": 10140}}
+version https://git-lfs.github.com/spec/v1
+oid sha256:5f3d5095ff0938cae3059e26f7b4f173e37016bce49ec562baa16bfe84c785fe
+size 265

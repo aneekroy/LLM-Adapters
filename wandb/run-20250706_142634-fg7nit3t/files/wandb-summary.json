@@ -1,1 +1,3 @@
-{"train/loss":1.0552,"train/epoch":0.059570962324535,"_runtime":6135.333267135,"train/learning_rate":2.9893617920541e-05,"train/grad_norm":2.2918684482574463,"_timestamp":1.7517983299461417e+09,"_step":93,"_wandb":{"runtime":6136},"train/global_step":940}
+version https://git-lfs.github.com/spec/v1
+oid sha256:004fdc6d538ad68edd9945e29723b8a20b0e9a88efdbeb955ed7549c5bbbde9c
+size 255
