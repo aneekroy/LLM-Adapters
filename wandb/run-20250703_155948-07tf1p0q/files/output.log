@@ -1,0 +1,9 @@
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 54/54 [00:08<00:00,  6.08it/s]
+{'loss': 4.2512, 'grad_norm': 3.209390878677368, 'learning_rate': 2.6999999999999996e-05, 'epoch': 0.57}
+{'loss': 4.0231, 'grad_norm': 4.039641857147217, 'learning_rate': 5.6999999999999996e-05, 'epoch': 1.11}
+{'loss': 3.3506, 'grad_norm': 4.547977924346924, 'learning_rate': 8.699999999999999e-05, 'epoch': 1.69}
+{'loss': 2.1974, 'grad_norm': 6.184016704559326, 'learning_rate': 0.000117, 'epoch': 2.23}
+{'loss': 1.0774, 'grad_norm': 6.7908220291137695, 'learning_rate': 0.000147, 'epoch': 2.8}
+{'train_runtime': 11.6805, 'train_samples_per_second': 70.63, 'train_steps_per_second': 4.623, 'train_loss': 2.81404122599849, 'epoch': 3.0}
+
+ If there's a warning about missing keys above, please disregard :)

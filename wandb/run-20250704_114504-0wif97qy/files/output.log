@@ -1,0 +1,337 @@
+  0%|▎                                                                                                                                                   | 93/41615 [00:17<2:07:48,  5.41it/s]Traceback (most recent call last):
+{'loss': 3.5255, 'grad_norm': 1.4440827369689941, 'learning_rate': 2.7e-06, 'epoch': 0.0}
+{'loss': 3.4958, 'grad_norm': 1.6960644721984863, 'learning_rate': 5.7000000000000005e-06, 'epoch': 0.0}
+{'loss': 3.4381, 'grad_norm': 1.432313323020935, 'learning_rate': 8.7e-06, 'epoch': 0.0}
+{'loss': 3.5065, 'grad_norm': 1.540959358215332, 'learning_rate': 1.1700000000000001e-05, 'epoch': 0.0}
+{'loss': 3.4132, 'grad_norm': 1.5549355745315552, 'learning_rate': 1.47e-05, 'epoch': 0.01}
+{'loss': 3.3137, 'grad_norm': 1.7175923585891724, 'learning_rate': 1.77e-05, 'epoch': 0.01}
+{'loss': 3.2383, 'grad_norm': 1.7479835748672485, 'learning_rate': 2.07e-05, 'epoch': 0.01}
+{'loss': 3.0476, 'grad_norm': 2.089418411254883, 'learning_rate': 2.37e-05, 'epoch': 0.01}
+{'loss': 2.8571, 'grad_norm': 2.4691412448883057, 'learning_rate': 2.6700000000000002e-05, 'epoch': 0.01}
+  File "/home/aneek/LLM-Adapters/finetune.py", line 438, in <module>
+    fire.Fire(train)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/finetune.py", line 367, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in train
+    return inner_training_loop(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3749, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3836, in compute_loss
+    outputs = model(**inputs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1637, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1464, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/utils/operations.py", line 818, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/utils/operations.py", line 806, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+    return self.base_model(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 552, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 419, in forward
+    causal_mask = create_causal_mask(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/masking_utils.py", line 727, in create_causal_mask
+    causal_mask = mask_interface(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/masking_utils.py", line 351, in sdpa_mask_recent_torch
+    causal_mask = _vmap_for_bhqkv(mask_function)(batch_arange, head_arange, cache_position, kv_arange)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/apis.py", line 202, in wrapped
+    return vmap_impl(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 334, in vmap_impl
+    return _flat_vmap(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 484, in _flat_vmap
+    batched_outputs = func(*batched_inputs, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/apis.py", line 202, in wrapped
+    return vmap_impl(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 334, in vmap_impl
+    return _flat_vmap(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 484, in _flat_vmap
+    batched_outputs = func(*batched_inputs, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/apis.py", line 202, in wrapped
+    return vmap_impl(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 334, in vmap_impl
+    return _flat_vmap(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 484, in _flat_vmap
+    batched_outputs = func(*batched_inputs, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/apis.py", line 202, in wrapped
+    return vmap_impl(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 334, in vmap_impl
+    return _flat_vmap(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 484, in _flat_vmap
+    batched_outputs = func(*batched_inputs, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/masking_utils.py", line 49, in and_mask
+    result = result & mask(batch_idx, head_idx, q_idx, kv_idx)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/masking_utils.py", line 119, in inner_mask
+    return padding_mask[batch_idx, kv_idx]
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_dynamo/_trace_wrapped_higher_order_op.py", line 141, in __torch_function__
+    return mod_index(args[0], index_args)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/function.py", line 585, in apply
+    return custom_function_call(cls, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+    return super().__call__(autograd_function, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 471, in __call__
+    return wrapper()
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 467, in wrapper
+    return self.dispatch(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 330, in dispatch
+    return dispatch_functorch(self, args, kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 294, in dispatch_functorch
+    return interpreter.process(op, args, kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 130, in process
+    return kernel(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+    return custom_function_call_vmap_generate_rule(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+    outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+    return super().__call__(autograd_function, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 471, in __call__
+    return wrapper()
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 467, in wrapper
+    return self.dispatch(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 330, in dispatch
+    return dispatch_functorch(self, args, kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 294, in dispatch_functorch
+    return interpreter.process(op, args, kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 130, in process
+    return kernel(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+    return custom_function_call_vmap_generate_rule(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+    outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+    return super().__call__(autograd_function, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 471, in __call__
+    return wrapper()
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 467, in wrapper
+    return self.dispatch(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 330, in dispatch
+    return dispatch_functorch(self, args, kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 294, in dispatch_functorch
+    return interpreter.process(op, args, kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 130, in process
+    return kernel(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+    return custom_function_call_vmap_generate_rule(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+    outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+    return super().__call__(autograd_function, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 471, in __call__
+    return wrapper()
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 467, in wrapper
+    return self.dispatch(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 330, in dispatch
+    return dispatch_functorch(self, args, kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 294, in dispatch_functorch
+    return interpreter.process(op, args, kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 130, in process
+    return kernel(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+    return custom_function_call_vmap_generate_rule(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+    outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 50, in __call__
+    return autograd_function.apply(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/function.py", line 568, in apply
+    is_setup_ctx_defined = _is_setup_context_defined(cls.setup_context)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/function.py", line 592, in _is_setup_context_defined
+    def _is_setup_context_defined(fn):
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/aneek/LLM-Adapters/finetune.py", line 438, in <module>
+[rank0]:     fire.Fire(train)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+[rank0]:     component_trace = _Fire(component, args, parsed_flag_args, context, name)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+[rank0]:     component, remaining_args = _CallAndUpdateTrace(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+[rank0]:     component = fn(*varargs, **kwargs)
+[rank0]:   File "/home/aneek/LLM-Adapters/finetune.py", line 367, in train
+[rank0]:     trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3749, in training_step
+[rank0]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3836, in compute_loss
+[rank0]:     outputs = model(**inputs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1637, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1464, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/utils/operations.py", line 818, in forward
+[rank0]:     return model_forward(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/utils/operations.py", line 806, in __call__
+[rank0]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+[rank0]:     return self.base_model(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+[rank0]:     return self.model.forward(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/utils/generic.py", line 943, in wrapper
+[rank0]:     output = func(self, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 552, in forward
+[rank0]:     outputs: BaseModelOutputWithPast = self.model(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/utils/generic.py", line 943, in wrapper
+[rank0]:     output = func(self, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 419, in forward
+[rank0]:     causal_mask = create_causal_mask(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/masking_utils.py", line 727, in create_causal_mask
+[rank0]:     causal_mask = mask_interface(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/masking_utils.py", line 351, in sdpa_mask_recent_torch
+[rank0]:     causal_mask = _vmap_for_bhqkv(mask_function)(batch_arange, head_arange, cache_position, kv_arange)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/apis.py", line 202, in wrapped
+[rank0]:     return vmap_impl(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 334, in vmap_impl
+[rank0]:     return _flat_vmap(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 484, in _flat_vmap
+[rank0]:     batched_outputs = func(*batched_inputs, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/apis.py", line 202, in wrapped
+[rank0]:     return vmap_impl(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 334, in vmap_impl
+[rank0]:     return _flat_vmap(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 484, in _flat_vmap
+[rank0]:     batched_outputs = func(*batched_inputs, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/apis.py", line 202, in wrapped
+[rank0]:     return vmap_impl(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 334, in vmap_impl
+[rank0]:     return _flat_vmap(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 484, in _flat_vmap
+[rank0]:     batched_outputs = func(*batched_inputs, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/apis.py", line 202, in wrapped
+[rank0]:     return vmap_impl(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 334, in vmap_impl
+[rank0]:     return _flat_vmap(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/vmap.py", line 484, in _flat_vmap
+[rank0]:     batched_outputs = func(*batched_inputs, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/masking_utils.py", line 49, in and_mask
+[rank0]:     result = result & mask(batch_idx, head_idx, q_idx, kv_idx)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/masking_utils.py", line 119, in inner_mask
+[rank0]:     return padding_mask[batch_idx, kv_idx]
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_dynamo/_trace_wrapped_higher_order_op.py", line 141, in __torch_function__
+[rank0]:     return mod_index(args[0], index_args)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/function.py", line 585, in apply
+[rank0]:     return custom_function_call(cls, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+[rank0]:     return super().__call__(autograd_function, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 471, in __call__
+[rank0]:     return wrapper()
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 467, in wrapper
+[rank0]:     return self.dispatch(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 330, in dispatch
+[rank0]:     return dispatch_functorch(self, args, kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 294, in dispatch_functorch
+[rank0]:     return interpreter.process(op, args, kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 130, in process
+[rank0]:     return kernel(self, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+[rank0]:     return custom_function_call_vmap_generate_rule(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+[rank0]:     outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+[rank0]:     return super().__call__(autograd_function, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 471, in __call__
+[rank0]:     return wrapper()
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 467, in wrapper
+[rank0]:     return self.dispatch(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 330, in dispatch
+[rank0]:     return dispatch_functorch(self, args, kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 294, in dispatch_functorch
+[rank0]:     return interpreter.process(op, args, kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 130, in process
+[rank0]:     return kernel(self, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+[rank0]:     return custom_function_call_vmap_generate_rule(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+[rank0]:     outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+[rank0]:     return super().__call__(autograd_function, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 471, in __call__
+[rank0]:     return wrapper()
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 467, in wrapper
+[rank0]:     return self.dispatch(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 330, in dispatch
+[rank0]:     return dispatch_functorch(self, args, kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 294, in dispatch_functorch
+[rank0]:     return interpreter.process(op, args, kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 130, in process
+[rank0]:     return kernel(self, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+[rank0]:     return custom_function_call_vmap_generate_rule(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+[rank0]:     outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 49, in __call__
+[rank0]:     return super().__call__(autograd_function, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 471, in __call__
+[rank0]:     return wrapper()
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 467, in wrapper
+[rank0]:     return self.dispatch(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_ops.py", line 330, in dispatch
+[rank0]:     return dispatch_functorch(self, args, kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 294, in dispatch_functorch
+[rank0]:     return interpreter.process(op, args, kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/pyfunctorch.py", line 130, in process
+[rank0]:     return kernel(self, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 300, in custom_function_call_vmap
+[rank0]:     return custom_function_call_vmap_generate_rule(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 384, in custom_function_call_vmap_generate_rule
+[rank0]:     outputs = custom_function_call(vmapped_function, *unwrapped_operands)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_functorch/autograd_function.py", line 50, in __call__
+[rank0]:     return autograd_function.apply(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/function.py", line 568, in apply
+[rank0]:     is_setup_ctx_defined = _is_setup_context_defined(cls.setup_context)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/function.py", line 592, in _is_setup_context_defined
+[rank0]:     def _is_setup_context_defined(fn):
+[rank0]: KeyboardInterrupt

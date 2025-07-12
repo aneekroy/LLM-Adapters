@@ -1,0 +1,1 @@
+{"step": 1319, "running_accuracy": 0.034874905231235785, "prediction": 170.0, "label": 30.0, "flag_correct": false, "_timestamp": 1751826979.8381088, "_runtime": 10140.98340177536, "_step": 1319, "final_accuracy": 0.034874905231235785, "_wandb": {"runtime": 10140}}

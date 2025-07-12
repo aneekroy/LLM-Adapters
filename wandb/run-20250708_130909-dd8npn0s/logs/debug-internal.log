@@ -1,0 +1,11 @@
+{"time":"2025-07-08T13:09:09.692350136+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250708_130909-dd8npn0s/logs/debug-core.log"}
+{"time":"2025-07-08T13:09:10.227689009+05:30","level":"INFO","msg":"created new stream","id":"dd8npn0s"}
+{"time":"2025-07-08T13:09:10.227789772+05:30","level":"INFO","msg":"stream: started","id":"dd8npn0s"}
+{"time":"2025-07-08T13:09:10.227832658+05:30","level":"INFO","msg":"handler: started","stream_id":"dd8npn0s"}
+{"time":"2025-07-08T13:09:10.227834045+05:30","level":"INFO","msg":"sender: started","stream_id":"dd8npn0s"}
+{"time":"2025-07-08T13:09:10.227886415+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"dd8npn0s"}
+{"time":"2025-07-08T13:09:10.86433319+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-08T14:31:41.797768547+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/dd8npn0s/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection refused"}
+{"time":"2025-07-08T14:52:59.670871821+05:30","level":"INFO","msg":"stream: closing","id":"dd8npn0s"}
+{"time":"2025-07-08T14:52:59.670914066+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-08T14:52:59.670980906+05:30","level":"INFO","msg":"Stopped system monitor"}

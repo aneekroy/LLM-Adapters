@@ -1,0 +1,725 @@
+
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:01<00:00,  1.13it/s]
+/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py:569: UserWarning: Found missing adapter keys while loading the checkpoint: ['base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight'].
+  warnings.warn(warn_message)
+  0%|                                                                                                                                                                               | 0/508 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  0%|▎                                                                                                                                                                    | 1/508 [00:40<5:45:45, 40.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Oceanside Bike Rental Shop charges 17 dollars plus 7 dollars an hour for renting a bike. Tom paid 80 dollars to rent a bike. How many hours did he pay to have the bike checked out?
+                 Tom paid 80 dollars to rent a bike, which is 17 dollars plus 7 dollars an hour for renting a bike. Therefore, the number of hours Tom paid to have the bike checked out is 80 dollars divided by 17 dollars plus 7 dollars an hour for renting a bike, which is 80 dollars divided by 17 dollars plus 7 dollars an hour for renting a bike, which is 80 dollars divided by 17 dollars plus 7 dollars an hour for renting a bike, which is 80 dollars divided by 17 dollars plus 7 dollars an hour for renting a bike, which is 80 dollars divided by 17 dollars plus 7 dollars an hour for renting a bike, which is 80 dollars divided by 17 dollars plus 7 dollars an hour for renting a bike, which is 80 dollars divided by 17 dollars plus 7 dollars an hour for renting a bike, which is 80 dollars divided by 17 dollars plus 7 dollars an hour for renting a bike, which is 80
+prediction: 80.0
+label: 9.0
+---------------
+test:1/508 | accuracy 0  0.0
+---------------
+The restaurant served a total of 0.2 of a loaf of wheat bread and 0.4 of a loaf of white bread. This means that the restaurant served 0.2 + 0.4 = 0.6 loaves of bread. Therefore, the restaurant served a total of 0.6 loaves of bread in all.
+<|end_of_text|>
+prediction: 0.6
+label: 0.6
+---------------
+test:2/508 | accuracy 1  0.5
+  0%|▋                                                                                                                                                                    | 2/508 [00:49<3:07:03, 22.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  1%|▉                                                                                                                                                                    | 3/508 [01:29<4:12:29, 30.00s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does
+prediction: 93.0
+label: 5.0
+---------------
+test:3/508 | accuracy 1  0.3333333333333333
+  1%|█▎                                                                                                                                                                   | 4/508 [02:10<4:50:06, 34.54s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Tony planted a 4 foot tree. The tree grows at a rate of 5 feet every year. How many years will it take to be 29 feet?
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet tall.
+                 The tree will take 6 years to be 29 feet
+prediction: 29.0
+label: 5.0
+---------------
+test:4/508 | accuracy 1  0.25
+  1%|█▌                                                                                                                                                                   | 5/508 [02:14<3:17:04, 23.51s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The total number of blue balloons that Joan and Melanie have in total is 81. This is because 40 blue balloons + 41 blue balloons = 81 blue balloons.
+<|end_of_text|>
+prediction: 81.0
+label: 81.0
+---------------
+test:5/508 | accuracy 2  0.4
+  1%|█▉                                                                                                                                                                   | 6/508 [02:58<4:15:33, 30.54s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Christian’s mother prepared 6 pitchers of lemonade. Every pitcher of lemonade can serve 5 glasses. If she was able to serve 30 glasses of lemonade, how many pitchers of lemonade did she prepare?
+                 She prepared 6 pitchers of lemonade because 30 glasses of lemonade divided by 5 glasses per pitcher is equal to 6 pitchers of lemonade.
+                 30 glasses of lemonade divided by 5 glasses per pitcher is equal to 6 pitchers of lemonade.
+                 30 glasses of lemonade divided by 5 glasses per pitcher is equal to 6 pitchers of lemonade.
+                 30 glasses of lemonade divided by 5 glasses per pitcher is equal to 6 pitchers of lemonade.
+                 30 glasses of lemonade divided by 5 glasses per pitcher is equal to 6 pitchers of lemonade.
+                 30 glasses of lemonade divided by 5 glasses per pitcher is equal to 6 pitchers of lemonade.
+                 30 glasses of lemonade divided by 5 glasses per pitcher is equal to 6 pitchers of lemonade.
+                 30 glasses of lemonade divided by 5 glasses per pitcher is equal to 6 pitchers of lemonade.
+prediction: 6.0
+label: 6.0
+---------------
+test:6/508 | accuracy 3  0.5
+  1%|██▎                                                                                                                                                                  | 7/508 [03:47<5:02:54, 36.28s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Alyssa's dog had puppies. She gave 7 to her friends.  She now has 5 puppies left. How many puppies did she have to start with?
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+                 She had 12 puppies to start with.
+prediction: 12.0
+label: 12.0
+---------------
+test:7/508 | accuracy 4  0.5714285714285714
+---------------
+The Sumata family took a 5 day vacation by car. Each day they drove 250 miles. How many total miles did they drive?
+                 The Sumata family took a 5 day vacation by car. Each day they drove 250 miles. How many total miles did they drive?
+                 The Sumata family took a 5 day vacation by car. Each day they drove 250 miles. How many total miles did they drive?
+                 The Sumata family took a 5 day vacation by car. Each day they drove 250 miles. How many total miles did they drive?
+                 The Sumata family took a 5 day vacation by car. Each day they drove 250 miles. How many total miles did they drive?
+                 The Sumata family took a 5 day vacation by car. Each day they drove 250 miles. How many total miles did they drive?
+                 The Sumata family took a 5 day vacation by car. Each day they drove 250 miles. How many total miles did they drive?
+                 The Sumata family took a 5 day vacation by car. Each day they drove 250 miles. How many total miles did they drive?
+                 The Sumata family took a 5 day vacation by car. Each day they
+prediction: 5.0
+label: 1250.0
+---------------
+test:8/508 | accuracy 4  0.5
+  2%|██▌                                                                                                                                                                  | 8/508 [04:38<5:42:21, 41.08s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|██▉                                                                                                                                                                  | 9/508 [05:31<6:12:05, 44.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many potatoes did they grow in total?
+                 Nancy grew 6 potatoes. Sandy grew 7 potatoes. How many
+prediction: 7.0
+label: 13.0
+---------------
+test:9/508 | accuracy 4  0.4444444444444444
+---------------
+There were 6 roses in the vase. Mary cut some more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut?
+                 Mary cut 10 more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut?
+                 Mary cut 10 more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut?
+                 Mary cut 10 more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut?
+                 Mary cut 10 more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut?
+                 Mary cut 10 more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut?
+                 Mary cut 10 more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut?
+                 Mary cut 10 more roses from her flower garden. There are now 16 roses in the vase. How many roses did she cut?
+                 Mary cut 10 more roses from her flower garden. There are now 16
+prediction: 16.0
+label: 10.0
+---------------
+test:10/508 | accuracy 4  0.4
+  2%|███▏                                                                                                                                                                | 10/508 [06:26<6:37:56, 47.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they have in all?
+                 Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they have in all?
+                 Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they have in all?
+                 Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they have in all?
+                 Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they have in all?
+                 Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they have in all?
+                 Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they have in all?
+                 Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they have in all?
+                 Sara, Keith, Benny, and Alyssa each have 96 baseball cards.  How many dozen baseball cards do they
+prediction: 96.0
+label: 32.0
+---------------
+test:11/508 | accuracy 4  0.36363636363636365
+  2%|███▌                                                                                                                                                                | 11/508 [07:22<6:57:17, 50.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Tim has 22 books.
+                 Mike has 20 books.
+                 Together they have 42 books.
+prediction: 42.0
+label: 42.0
+---------------
+test:12/508 | accuracy 5  0.4166666666666667
+  2%|███▊                                                                                                                                                                | 12/508 [08:18<7:12:22, 52.30s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.  How many eggs did Dan buy?
+                 Dan bought 9 dozen eggs from the grocery store to bake some cakes.
+prediction: 9.0
+label: 108.0
+---------------
+test:13/508 | accuracy 5  0.38461538461538464
+  3%|████▏                                                                                                                                                               | 13/508 [09:16<7:24:56, 53.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The amount of fruit left is 1.2 pounds. Gordon bought 3.42 pounds of fruit for a class party. The class ate 2.2 pounds of the fruit. How much fruit is left? The amount of fruit left is 1.2 pounds. Gordon bought 3.42 pounds of fruit for a class party. The class ate 2.2 pounds of the fruit. How much fruit is left? The amount of fruit left is 1.2 pounds. Gordon bought 3.42 pounds of fruit for a class party. The class ate 2.2 pounds of the fruit. How much fruit is left? The amount of fruit left is 1.2 pounds. Gordon bought 3.42 pounds of fruit for a class party. The class ate 2.2 pounds of the fruit. How much fruit is left? The amount of fruit left is 1.2 pounds. Gordon bought 3.42 pounds of fruit for a class party. The class ate 2.2 pounds of the fruit. How much fruit is left? The amount of fruit left is 1.2 pounds. Gordon bought 3.42 pounds of fruit for a class party. The class ate 2.2 pounds of the
+prediction: 2.2
+label: 1.22
+---------------
+test:14/508 | accuracy 5  0.35714285714285715
+  3%|████▌                                                                                                                                                               | 14/508 [10:28<8:08:04, 59.28s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  3%|████▊                                                                                                                                                               | 15/508 [10:37<6:03:45, 44.27s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Joan picked 43 apples from the orchard, and gave 27 apples  to  Melanie. How many apples does Joan have now?
+                 43 - 27 = 16
+<|end_of_text|>
+prediction: 16.0
+label: 16.0
+---------------
+test:15/508 | accuracy 6  0.4
+---------------
+There are 6 students sitting at each table in the lunchroom. There are 34 tables, so there are 6 x 34 = 204 students sitting in the lunchroom.<|end_of_text|>
+prediction: 204.0
+label: 204.0
+---------------
+test:16/508 | accuracy 7  0.4375
+  3%|█████▏                                                                                                                                                              | 16/508 [10:46<4:34:54, 33.52s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  3%|█████▍                                                                                                                                                              | 17/508 [11:05<3:59:43, 29.29s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+She counted her crayons and found out that she has 80 crayons which she will place in crayon boxes. Every box can contain 8 crayons. How many boxes does she need?
+                 The number of boxes she needs to place her crayons in is 10. This is because 80 divided by 8 is 10 with a remainder of 0. Therefore, she needs 10 boxes to place her crayons in.<|end_of_text|>
+prediction: 10.0
+label: 10.0
+---------------
+test:17/508 | accuracy 8  0.47058823529411764
+---------------
+Mike had 34 peaches left at his roadside fruit stand. He went to the orchard and picked more peaches to stock up the stand. There are now 86 peaches at the stand, how many did he pick?
+                 Mike picked 86 - 34 = 52 peaches.
+<|end_of_text|>
+prediction: 52.0
+label: 52.0
+---------------
+test:18/508 | accuracy 9  0.5
+  4%|█████▊                                                                                                                                                              | 18/508 [11:19<3:22:17, 24.77s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  4%|██████▏                                                                                                                                                             | 19/508 [11:27<2:39:49, 19.61s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Tori was 4.4 feet tall. Then she grew 2.86 feet taller. Tori is now 7.3 feet tall.
+<|end_of_text|>
+prediction: 7.3
+label: 7.26
+---------------
+test:19/508 | accuracy 9  0.47368421052631576
+  4%|██████▍                                                                                                                                                             | 20/508 [12:55<5:25:53, 40.07s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Last week Tom had 74 dollars. He washed cars over the weekend and now has 86 dollars. How much money did he make washing cars?
+                 Tom made 12 dollars washing cars over the weekend.
+prediction: 12.0
+label: 12.0
+---------------
+test:20/508 | accuracy 10  0.5
+  4%|██████▊                                                                                                                                                             | 21/508 [14:25<7:27:54, 55.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Allen, Shiela’s brother, likes to play with blocks. Shiela repainted Allen’s old blocks in different colors. If Allen has 49 identical blocks and there are 7 blocks for every color of paint used, how many colors did Shiela use?
+                 The number of colors used by Shiela can be calculated by dividing the total number of blocks by the number of blocks for every color of paint used.
+                 49 ÷ 7 = 7
+                 Therefore, Shiela used 7 colors of paint to repaint Allen’s old blocks.
+                 Note that this calculation assumes that the number of blocks for every color of paint used is a whole number. If the number of blocks for every color of paint used is not a whole number, then the calculation may need to be adjusted to account for the fractional number of blocks for each color of paint used. For example, if the number of blocks for every color of paint used is 6.5, then the calculation would need to be adjusted to account for the fractional number of blocks for each color of paint used. In this case, the calculation would need to be adjusted to account for the fractional number of blocks for each color of paint used. In this case, the calculation would need to be adjusted to
+prediction: 6.5
+label: 7.0
+---------------
+test:21/508 | accuracy 10  0.47619047619047616
+---------------
+The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three consecutive even numbers is 162. What is the smallest of the three numbers?
+                 The sum of three
+prediction: 162.0
+label: 52.0
+---------------
+test:22/508 | accuracy 10  0.45454545454545453
+  4%|███████                                                                                                                                                             | 22/508 [15:46<8:28:28, 62.77s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  5%|███████▍                                                                                                                                                            | 23/508 [17:13<9:27:04, 70.15s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The Montoya family spends 0.6 of their budget on groceries and another 0.2 going out to eat. Altogether, what fraction of their budget does the Montoya family spend on food?
+                 The Montoya family spends 0.6 of their budget on groceries and another 0.2 going out to eat. Altogether, what fraction of their budget does the Montoya family spend on food?
+                 The Montoya family spends 0.6 of their budget on groceries and another 0.2 going out to eat. Altogether, what fraction of their budget does the Montoya family spend on food?
+                 The Montoya family spends 0.6 of their budget on groceries and another 0.2 going out to eat. Altogether, what fraction of their budget does the Montoya family spend on food?
+                 The Montoya family spends 0.6 of their budget on groceries and another 0.2 going out to eat. Altogether, what fraction of their budget does the Montoya family spend on food?
+                 The Montoya family spends 0.6 of their budget on groceries and another 0.2 going out to eat. Altogether, what fraction of their budget does the Montoya family spend on food
+prediction: 0.2
+label: 0.8
+---------------
+test:23/508 | accuracy 10  0.43478260869565216
+---------------
+Victor used 0.625 of a scoop of brown sugar as well as 0.25 of a scoop of white sugar. Therefore, he used 0.625 + 0.25 = 0.875 of a scoop of brown sugar. He used 0.875 - 0.625 = 0.25 of a scoop of brown sugar more than he used of white sugar. Therefore, he used 0.25 of a scoop of brown sugar more than he used of white sugar.
+<|end_of_text|>
+prediction: 0.25
+label: 0.375
+---------------
+test:24/508 | accuracy 10  0.4166666666666667
+  5%|███████▋                                                                                                                                                            | 24/508 [17:40<7:42:10, 57.30s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sara grew 4 onions, Sally grew 5 onions, and Fred grew  9 onions. How many onions did they grow in all?
+                 The total number of onions grown by Sara, Sally, and Fred is 18.
+prediction: 18.0
+label: 18.0
+---------------
+test:25/508 | accuracy 11  0.44
+  5%|████████                                                                                                                                                            | 25/508 [19:02<8:41:07, 64.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Joan found 6 seashells and Jessica found 8 seashells on the beach. How many seashells did they find together?
+                 The total number of seashells that Joan and Jessica found together is 6 + 8 = 14 seashells.
+                 ### Explanation:
+                 To find the total number of seashells that Joan and Jessica found together, we need to add the number of seashells that Joan found (6) to the number of seashells that Jessica found (8). This gives us a total of 6 + 8 = 14 seashells. Therefore, the total number of seashells that Joan and Jessica found together is 14 seashells.
+<|end_of_text|>
+prediction: 14.0
+label: 14.0
+---------------
+test:26/508 | accuracy 12  0.46153846153846156
+  5%|████████▍                                                                                                                                                           | 26/508 [19:43<7:41:44, 57.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Jason went to 11 football games this month. He went to 17 games last month, and plans to go to 16 games next month. How many games will he attend in all?
+                 Jason went to 11 football games this month. He went to 17 games last month, and plans to go to 16 games next month. How many games will he attend in all?
+                 Jason went to 11 football games this month. He went to 17 games last month, and plans to go to 16 games next month. How many games will he attend in all?
+                 Jason went to 11 football games this month. He went to 17 games last month, and plans to go to 16 games next month. How many games will he attend in all?
+                 Jason went to 11 football games this month. He went to 17 games last month, and plans to go to 16 games next month. How many games will he attend in all?
+                 Jason went to 11 football games this month. He went to 17 games last month, and plans to go to 16 games next month. How many games will he attend in all?
+                 Jason went to 11 football games this month. He went to 17 games
+prediction: 17.0
+label: 44.0
+---------------
+test:27/508 | accuracy 12  0.4444444444444444
+  5%|████████▋                                                                                                                                                           | 27/508 [21:06<8:42:34, 65.19s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew  20 cantelopes. How many cantelopes did they grow in total?
+                 Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew  20 cantelopes. How many cantelopes did they grow in total?
+                 Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew  20 cantelopes. How many cantelopes did they grow in total?
+                 Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew  20 cantelopes. How many cantelopes did they grow in total?
+                 Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew  20 cantelopes. How many cantelopes did they grow in total?
+                 Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew  20 cantelopes. How many cantelopes did they grow in total?
+                 Keith grew 29 cantelopes, Fred grew 16 cantelopes, and Jason grew  20 cantelopes. How many
+prediction: 20.0
+label: 65.0
+---------------
+test:28/508 | accuracy 12  0.42857142857142855
+  6%|█████████                                                                                                                                                           | 28/508 [22:35<9:37:36, 72.20s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+In Haley’s class, 5 are boys who love to play marbles. If Haley has 35 marbles, how many will each of the boys receive?
+                 There are 5 boys in Haley’s class who love to play marbles. If Haley has 35 marbles, how many will each of the boys receive?
+                 There are 5 boys in Haley’s class who love to play marbles. If Haley has 35 marbles, how many will each of the boys receive?
+                 There are 5 boys in Haley’s class who love to play marbles. If Haley has 35 marbles, how many will each of the boys receive?
+                 There are 5 boys in Haley’s class who love to play marbles. If Haley has 35 marbles, how many will each of the boys receive?
+                 There are 5 boys in Haley’s class who love to play marbles. If Haley has 35 marbles, how many will each of the boys receive?
+                 There are 5 boys in Haley’s class who love to play marbles. If Haley has 35 marbles, how many will each of the boys receive?
+                 There are 5 boys in Haley’s class who love
+prediction: 5.0
+label: 7.0
+---------------
+test:29/508 | accuracy 12  0.41379310344827586
+  6%|█████████▎                                                                                                                                                         | 29/508 [24:10<10:32:29, 79.23s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  6%|█████████▋                                                                                                                                                          | 30/508 [24:30<8:07:42, 61.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Harry Hound had a terrible earache yesterday. When I peered into his ears yesterday, I found 36 frisky fleas having a party in his right ear and 85 baby fleas sleeping peacefully in his left ear. I cleaned out Harry Hound's ears. How many fleas perished? 121 fleas perished.
+<|end_of_text|>
+prediction: 121.0
+label: 121.0
+---------------
+test:30/508 | accuracy 13  0.43333333333333335
+  6%|██████████                                                                                                                                                          | 31/508 [25:54<9:01:34, 68.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Suzie found two worms in the yard and measured them with a ruler. One worm was 0.8 of an inch long. The other worm was 0.1 of an inch long. How much longer was the longer worm? The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was 0.7 of an inch longer than the shorter worm. The longer worm was
+prediction: 0.7
+label: 0.7
+---------------
+test:31/508 | accuracy 14  0.45161290322580644
+---------------
+Jack has a section filled with short story booklets. If each booklet has 9 pages and there are 49 booklets in the short story section, how many pages will Jack need to go through if he plans to read them all?
+                 Jack has a section filled with short story booklets. If each booklet has 9 pages and there are 49 booklets in the short story section, how many pages will Jack need to go through if he plans to read them all?
+                 Jack has a section filled with short story booklets. If each booklet has 9 pages and there are 49 booklets in the short story section, how many pages will Jack need to go through if he plans to read them all?
+                 Jack has a section filled with short story booklets. If each booklet has 9 pages and there are 49 booklets in the short story section, how many pages will Jack need to go through if he plans to read them all?
+                 Jack has a section filled with short story booklets. If each booklet has 9 pages and there are 49 booklets in the short story section, how many pages will Jack need to go through if he plans to read them all?
+                 Jack has a section filled with short story booklets.
+prediction: 49.0
+label: 441.0
+---------------
+test:32/508 | accuracy 14  0.4375
+  6%|██████████▎                                                                                                                                                         | 32/508 [27:21<9:46:42, 73.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Tom has 9 yellow balloons.
+                 Sara has 8 yellow balloons.
+                 They have 17 yellow balloons in total.
+<|end_of_text|>
+prediction: 17.0
+label: 17.0
+---------------
+test:33/508 | accuracy 15  0.45454545454545453
+  6%|██████████▋                                                                                                                                                         | 33/508 [27:29<7:07:38, 54.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Joan purchased a basketball game for $5.20, and a racing game for $4.23. How much did Joan spend on video games?
+                 The total amount of money Joan spent on video games is $9.43. This is calculated by adding the cost of the basketball game ($5.20) and the cost of the racing game ($4.23). Therefore, the total amount of money Joan spent on video games is $9.43.<|end_of_text|>
+prediction: 9.43
+label: 9.43
+---------------
+test:34/508 | accuracy 16  0.47058823529411764
+  7%|██████████▉                                                                                                                                                         | 34/508 [27:55<6:01:32, 45.77s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There were a total of 323 football games in the season. The season is played for 17 months. How many football games were played each month, if each month has the same number of games?
+                 There were a total of 323 football games in the season. The season is played for 17 months. How many football games were played each month, if each month has the same number of games?
+                 There were a total of 323 football games in the season. The season is played for 17 months. How many football games were played each month, if each month has the same number of games?
+                 There were a total of 323 football games in the season. The season is played for 17 months. How many football games were played each month, if each month has the same number of games?
+                 There were a total of 323 football games in the season. The season is played for 17 months. How many football games were played each month, if each month has the same number of games?
+                 There were a total of 323 football games in the season. The season is played for 17 months. How many football games were played each month, if each month has the same number of games?
+prediction: 17.0
+label: 19.0
+---------------
+test:35/508 | accuracy 16  0.45714285714285713
+  7%|███████████▎                                                                                                                                                        | 35/508 [29:27<7:48:17, 59.40s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Hayley has 72 stickers. If she plans to give all of her friends an equal number of stickers, then each of her friends will receive 8 stickers. This is because 72 divided by 9 is 8 with a remainder of 0.<|end_of_text|>
+prediction: 0.0
+label: 8.0
+---------------
+test:36/508 | accuracy 16  0.4444444444444444
+  7%|███████████▌                                                                                                                                                        | 36/508 [29:41<6:01:14, 45.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  7%|███████████▉                                                                                                                                                        | 37/508 [31:16<7:56:59, 60.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Tim's cat had kittens. He gave 3 to Jessica and 6 to Sara. He now has 9 kittens left. How many kittens did he have to start with?
+                 Tim's cat had kittens. He gave 3 to Jessica and 6 to Sara. He now has 9 kittens left. How many kittens did he have to start with?
+                 Tim's cat had kittens. He gave 3 to Jessica and 6 to Sara. He now has 9 kittens left. How many kittens did he have to start with?
+                 Tim's cat had kittens. He gave 3 to Jessica and 6 to Sara. He now has 9 kittens left. How many kittens did he have to start with?
+                 Tim's cat had kittens. He gave 3 to Jessica and 6 to Sara. He now has 9 kittens left. How many kittens did he have to start with?
+                 Tim's cat had kittens. He gave 3 to Jessica and 6 to Sara. He now has 9 kittens left. How many kittens did he have to start with?
+                 Tim's cat had kittens. He gave 3 to Jessica and 6 to Sara. He now has 9 kittens left. How many kittens did he have to start
+prediction: 9.0
+label: 18.0
+---------------
+test:37/508 | accuracy 16  0.43243243243243246
+---------------
+Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?
+                 Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?
+                 Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?
+                 Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?
+                 Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?
+                 Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?
+                 Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?
+                 Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley run than walk?
+                 Stanley ran 0.4 of a mile and walked 0.2 of a mile. How much farther did Stanley
+prediction: 0.2
+label: 0.2
+---------------
+test:38/508 | accuracy 17  0.4473684210526316
+  7%|████████████▎                                                                                                                                                       | 38/508 [32:39<8:47:57, 67.40s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  8%|████████████▌                                                                                                                                                       | 39/508 [34:04<9:27:59, 72.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons?
+                 There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons?
+                 There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons?
+                 There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons?
+                 There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons?
+                 There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons?
+                 There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons?
+                 There were a total of 13 hockey games a month. The season is played for  14 months. How many hockey games are in the seasons?
+prediction: 14.0
+label: 182.0
+---------------
+test:39/508 | accuracy 17  0.4358974358974359
+  8%|████████████▉                                                                                                                                                       | 40/508 [35:23<9:40:17, 74.40s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Bryan took a look at his books as well. If Bryan has 56 books in each of his 9 bookshelves, how many books does he have in total?
+                 Bryan has 9 bookshelves with 56 books in each of them. Therefore, he has a total of 9 x 56 = 504 books in total.
+                 Bryan took a look at his books as well. If Bryan has 56 books in each of his 9 bookshelves, how many books does he have in total?
+                 Bryan has 9 bookshelves with 56 books in each of them. Therefore, he has a total of 9 x 56 = 504 books in total.
+                 Bryan took a look at his books as well. If Bryan has 56 books in each of his 9 bookshelves, how many books does he have in total?
+                 Bryan has 9 bookshelves with 56 books in each of them. Therefore, he has a total of 9 x 56 = 504 books in total.
+                 Bryan took a look at his books as well. If Bryan has 56 books in each of his 9 bookshelves, how many books does he have in total?
+                 Bryan has 9
+prediction: 9.0
+label: 504.0
+---------------
+test:40/508 | accuracy 17  0.425
+  8%|█████████████▏                                                                                                                                                      | 41/508 [36:43<9:52:25, 76.11s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Kylie was collecting coins. She got 15 coins from her piggy bank and 13 coins from her brother. Her father gave Kylie 8 coins. Kylie gave 21 of the coins to her friend Laura. How many coins did Kylie have left?
+                 Kylie had 15 coins from her piggy bank and 13 coins from her brother. Her father gave Kylie 8 coins. Kylie gave 21 of the coins to her friend Laura. How many coins did Kylie have left?
+                 Kylie was collecting coins. She got 15 coins from her piggy bank and 13 coins from her brother. Her father gave Kylie 8 coins. Kylie gave 21 of the coins to her friend Laura. How many coins did Kylie have left?
+                 Kylie was collecting coins. She got 15 coins from her piggy bank and 13 coins from her brother. Her father gave Kylie 8 coins. Kylie gave 21 of the coins to her friend Laura. How many coins did Kylie have left?
+                 Kylie was collecting coins. She got 15 coins from her piggy bank and 13 coins from her brother. Her father gave Kylie 8 coins. Kylie gave 21 of the coins to her friend Laura. How many coins did Kylie have left?
+                 Kylie
+prediction: 21.0
+label: 15.0
+---------------
+test:41/508 | accuracy 17  0.4146341463414634
+  8%|█████████████▌                                                                                                                                                      | 42/508 [36:55<7:21:26, 56.84s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The new lamp is 2.3333333333333335 feet tall and the old lamp is 1 foot tall. Therefore, the new lamp is 1.3333333333333335 feet taller than the old lamp.
+<|end_of_text|>
+prediction: 1.3333333333333335
+label: 1.3333333333333333
+---------------
+test:42/508 | accuracy 18  0.42857142857142855
+---------------
+Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many hours did he work in total?
+                 Mike worked 3 hours, each day, for 5 days. How many
+prediction: 5.0
+label: 15.0
+---------------
+test:43/508 | accuracy 18  0.4186046511627907
+  8%|█████████████▉                                                                                                                                                      | 43/508 [38:14<8:11:57, 63.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Nina did a running drill to get in shape for soccer season. First, Nina ran 0.08333333333333333 of a mile. Then she ran 0.08333333333333333 of a mile and 0.6666666666666666 of a mile more. How many miles did Nina run in total?
+                 Nina ran 0.08333333333333333 of a mile. Then she ran 0.08333333333333333 of a mile and 0.6666666666666666 of a mile more. How many miles did Nina run in total?
+                 Nina ran 0.08333333333333333 of a mile. Then she ran 0.08333333333333333 of a mile and 0.6666666666666666 of a mile more. How many miles did Nina run in total?
+                 Nina ran 0.08333333333333333 of a mile. Then she ran 0.08333333333333333 of a mile and 0.6666666666666666 of a mile more. How many miles did Nina run in total?
+                 Nina ran 0.08333333333333333 of a mile. Then she ran 0.
+prediction: 0.0
+label: 0.8333333333333334
+---------------
+test:44/508 | accuracy 18  0.4090909090909091
+  9%|██████████████▏                                                                                                                                                     | 44/508 [39:39<9:01:59, 70.08s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 11 x 31 = 341 calories in 11 candy bars.
+<|end_of_text|>
+prediction: 11.0
+label: 341.0
+---------------
+test:45/508 | accuracy 18  0.4
+  9%|██████████████▌                                                                                                                                                     | 45/508 [39:44<6:28:42, 50.37s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 111, in main
+    outputs = evaluate(instruction)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 69, in evaluate
+    generation_output = model.generate(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2651, in generate
+    result = self._beam_search(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 4101, in _beam_search
+    model_kwargs = self._update_model_kwargs_for_generation(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1011, in _update_model_kwargs_for_generation
+    new_positions = torch.arange(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 111, in main
+    outputs = evaluate(instruction)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 69, in evaluate
+    generation_output = model.generate(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2651, in generate
+    result = self._beam_search(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 4101, in _beam_search
+    model_kwargs = self._update_model_kwargs_for_generation(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1011, in _update_model_kwargs_for_generation
+    new_positions = torch.arange(
+KeyboardInterrupt

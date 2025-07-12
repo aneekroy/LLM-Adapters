@@ -1,0 +1,57 @@
+  0%|                                                                                                                  | 56/236700 [00:18<21:37:12,  3.04it/s]Traceback (most recent call last):
+{'loss': 3.7385, 'grad_norm': 1.8866496086120605, 'learning_rate': 2.7e-06, 'epoch': 0.0}
+{'loss': 3.6563, 'grad_norm': 1.8091062307357788, 'learning_rate': 5.7000000000000005e-06, 'epoch': 0.0}
+{'loss': 3.7272, 'grad_norm': 1.7478481531143188, 'learning_rate': 8.7e-06, 'epoch': 0.0}
+{'loss': 3.694, 'grad_norm': 1.7293627262115479, 'learning_rate': 1.1700000000000001e-05, 'epoch': 0.0}
+{'loss': 3.569, 'grad_norm': 1.7340834140777588, 'learning_rate': 1.47e-05, 'epoch': 0.0}
+  File "/home/aneek/LLM-Adapters/finetune.py", line 438, in <module>
+    fire.Fire(train)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/finetune.py", line 367, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in train
+    return inner_training_loop(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3797, in training_step
+    self.accelerator.backward(loss, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/accelerator.py", line 2549, in backward
+    self.scaler.scale(loss).backward(**kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_tensor.py", line 648, in backward
+    torch.autograd.backward(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/__init__.py", line 353, in backward
+    _engine_run_backward(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/graph.py", line 824, in _engine_run_backward
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/aneek/LLM-Adapters/finetune.py", line 438, in <module>
+[rank0]:     fire.Fire(train)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+[rank0]:     component_trace = _Fire(component, args, parsed_flag_args, context, name)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+[rank0]:     component, remaining_args = _CallAndUpdateTrace(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+[rank0]:     component = fn(*varargs, **kwargs)
+[rank0]:   File "/home/aneek/LLM-Adapters/finetune.py", line 367, in train
+[rank0]:     trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3797, in training_step
+[rank0]:     self.accelerator.backward(loss, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/accelerator.py", line 2549, in backward
+[rank0]:     self.scaler.scale(loss).backward(**kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/_tensor.py", line 648, in backward
+[rank0]:     torch.autograd.backward(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/__init__.py", line 353, in backward
+[rank0]:     _engine_run_backward(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/autograd/graph.py", line 824, in _engine_run_backward
+[rank0]:     return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+[rank0]: KeyboardInterrupt

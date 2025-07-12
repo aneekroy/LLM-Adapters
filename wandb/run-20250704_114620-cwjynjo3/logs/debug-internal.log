@@ -1,0 +1,7 @@
+{"time":"2025-07-04T11:46:20.955559818+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250704_114620-cwjynjo3/logs/debug-core.log"}
+{"time":"2025-07-04T11:46:21.552393657+05:30","level":"INFO","msg":"created new stream","id":"cwjynjo3"}
+{"time":"2025-07-04T11:46:21.55275009+05:30","level":"INFO","msg":"stream: started","id":"cwjynjo3"}
+{"time":"2025-07-04T11:46:21.552762808+05:30","level":"INFO","msg":"handler: started","stream_id":"cwjynjo3"}
+{"time":"2025-07-04T11:46:21.552776019+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"cwjynjo3"}
+{"time":"2025-07-04T11:46:21.552804604+05:30","level":"INFO","msg":"sender: started","stream_id":"cwjynjo3"}
+{"time":"2025-07-04T11:46:22.0776955+05:30","level":"INFO","msg":"Starting system monitor"}

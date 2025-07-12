@@ -1,0 +1,199 @@
+                                                                                                                                                              
+{'loss': 3.7359, 'grad_norm': 1.8716723918914795, 'learning_rate': 2.7e-06, 'epoch': 0.0}
+{'loss': 3.6955, 'grad_norm': 1.8039101362228394, 'learning_rate': 5.7000000000000005e-06, 'epoch': 0.0}
+{'loss': 3.6251, 'grad_norm': 1.6799602508544922, 'learning_rate': 8.7e-06, 'epoch': 0.0}
+{'loss': 3.6245, 'grad_norm': 1.625941276550293, 'learning_rate': 1.1700000000000001e-05, 'epoch': 0.0}
+{'loss': 3.6342, 'grad_norm': 1.6887731552124023, 'learning_rate': 1.47e-05, 'epoch': 0.0}
+{'loss': 3.4964, 'grad_norm': 1.8435735702514648, 'learning_rate': 1.77e-05, 'epoch': 0.0}
+{'loss': 3.4043, 'grad_norm': 2.0262866020202637, 'learning_rate': 2.07e-05, 'epoch': 0.0}
+{'loss': 3.2321, 'grad_norm': 2.508321523666382, 'learning_rate': 2.37e-05, 'epoch': 0.01}
+{'loss': 2.9897, 'grad_norm': 2.841569662094116, 'learning_rate': 2.6700000000000002e-05, 'epoch': 0.01}
+{'loss': 2.7315, 'grad_norm': 2.8545939922332764, 'learning_rate': 2.97e-05, 'epoch': 0.01}
+{'loss': 2.4371, 'grad_norm': 3.5808322429656982, 'learning_rate': 2.9996573604060912e-05, 'epoch': 0.01}
+{'loss': 2.0541, 'grad_norm': 3.468874454498291, 'learning_rate': 2.999276649746193e-05, 'epoch': 0.01}
+{'loss': 1.7393, 'grad_norm': 3.0811610221862793, 'learning_rate': 2.9988959390862945e-05, 'epoch': 0.01}
+{'loss': 1.4736, 'grad_norm': 2.723360061645508, 'learning_rate': 2.998515228426396e-05, 'epoch': 0.01}
+{'loss': 1.338, 'grad_norm': 2.2816576957702637, 'learning_rate': 2.9981345177664975e-05, 'epoch': 0.01}
+{'loss': 1.2242, 'grad_norm': 2.158130407333374, 'learning_rate': 2.997753807106599e-05, 'epoch': 0.01}
+{'loss': 1.2218, 'grad_norm': 2.1763134002685547, 'learning_rate': 2.9973730964467004e-05, 'epoch': 0.01}
+{'loss': 1.1994, 'grad_norm': 1.6861469745635986, 'learning_rate': 2.9969923857868022e-05, 'epoch': 0.01}
+{'loss': 1.1957, 'grad_norm': 1.5193068981170654, 'learning_rate': 2.9966116751269037e-05, 'epoch': 0.01}
+{'loss': 1.138, 'grad_norm': 2.0050013065338135, 'learning_rate': 2.996230964467005e-05, 'epoch': 0.01}
+{'loss': 1.157, 'grad_norm': 1.991979718208313, 'learning_rate': 2.9958502538071066e-05, 'epoch': 0.01}
+{'loss': 1.1, 'grad_norm': 2.2533860206604004, 'learning_rate': 2.995469543147208e-05, 'epoch': 0.01}
+{'loss': 1.1029, 'grad_norm': 2.1952950954437256, 'learning_rate': 2.9950888324873096e-05, 'epoch': 0.01}
+{'loss': 1.1355, 'grad_norm': 2.0723049640655518, 'learning_rate': 2.9947081218274114e-05, 'epoch': 0.02}
+{'loss': 1.1226, 'grad_norm': 1.644604206085205, 'learning_rate': 2.994327411167513e-05, 'epoch': 0.02}
+{'loss': 1.1511, 'grad_norm': 2.1057162284851074, 'learning_rate': 2.9939467005076143e-05, 'epoch': 0.02}
+{'loss': 1.1452, 'grad_norm': 1.6918398141860962, 'learning_rate': 2.9935659898477158e-05, 'epoch': 0.02}
+{'loss': 1.1272, 'grad_norm': 3.0477161407470703, 'learning_rate': 2.9931852791878172e-05, 'epoch': 0.02}
+{'loss': 1.1202, 'grad_norm': 1.6038283109664917, 'learning_rate': 2.9928045685279187e-05, 'epoch': 0.02}
+{'loss': 1.1114, 'grad_norm': 1.9614232778549194, 'learning_rate': 2.9924238578680205e-05, 'epoch': 0.02}
+{'loss': 1.1405, 'grad_norm': 1.8415887355804443, 'learning_rate': 2.992043147208122e-05, 'epoch': 0.02}
+{'loss': 1.0663, 'grad_norm': 4.085590362548828, 'learning_rate': 2.9916624365482235e-05, 'epoch': 0.02}
+{'loss': 1.1279, 'grad_norm': 1.8838937282562256, 'learning_rate': 2.991281725888325e-05, 'epoch': 0.02}
+{'loss': 1.1363, 'grad_norm': 1.8747904300689697, 'learning_rate': 2.9909010152284264e-05, 'epoch': 0.02}
+{'loss': 1.1032, 'grad_norm': 1.7170835733413696, 'learning_rate': 2.990520304568528e-05, 'epoch': 0.02}
+{'loss': 1.0674, 'grad_norm': 2.0971922874450684, 'learning_rate': 2.9901395939086297e-05, 'epoch': 0.02}
+{'loss': 1.0816, 'grad_norm': 1.7587101459503174, 'learning_rate': 2.989758883248731e-05, 'epoch': 0.02}
+{'loss': 1.0869, 'grad_norm': 1.866346001625061, 'learning_rate': 2.9893781725888326e-05, 'epoch': 0.02}
+{'loss': 1.1209, 'grad_norm': 2.201115846633911, 'learning_rate': 2.988997461928934e-05, 'epoch': 0.02}
+{'loss': 1.1056, 'grad_norm': 1.7980656623840332, 'learning_rate': 2.9886167512690356e-05, 'epoch': 0.03}
+{'loss': 1.1043, 'grad_norm': 2.091851234436035, 'learning_rate': 2.988236040609137e-05, 'epoch': 0.03}
+{'loss': 1.0928, 'grad_norm': 2.2401936054229736, 'learning_rate': 2.987855329949239e-05, 'epoch': 0.03}
+{'loss': 1.0787, 'grad_norm': 2.0991458892822266, 'learning_rate': 2.9874746192893403e-05, 'epoch': 0.03}
+{'loss': 1.0756, 'grad_norm': 1.9520753622055054, 'learning_rate': 2.9870939086294415e-05, 'epoch': 0.03}
+{'loss': 1.0995, 'grad_norm': 2.255176544189453, 'learning_rate': 2.9867131979695433e-05, 'epoch': 0.03}
+{'loss': 1.0146, 'grad_norm': 2.4108200073242188, 'learning_rate': 2.9863324873096447e-05, 'epoch': 0.03}
+{'loss': 1.0356, 'grad_norm': 2.237520694732666, 'learning_rate': 2.9859517766497462e-05, 'epoch': 0.03}
+{'loss': 1.0664, 'grad_norm': 2.7120864391326904, 'learning_rate': 2.985571065989848e-05, 'epoch': 0.03}
+{'loss': 1.0864, 'grad_norm': 2.4474265575408936, 'learning_rate': 2.9851903553299495e-05, 'epoch': 0.03}
+{'loss': 1.1094, 'grad_norm': 2.1797666549682617, 'learning_rate': 2.9848096446700506e-05, 'epoch': 0.03}
+{'loss': 1.0566, 'grad_norm': 2.111051559448242, 'learning_rate': 2.9844289340101524e-05, 'epoch': 0.03}
+{'loss': 1.0105, 'grad_norm': 2.4303910732269287, 'learning_rate': 2.984048223350254e-05, 'epoch': 0.03}
+{'loss': 1.1099, 'grad_norm': 2.440422773361206, 'learning_rate': 2.9836675126903554e-05, 'epoch': 0.03}
+{'loss': 1.0518, 'grad_norm': 1.9382970333099365, 'learning_rate': 2.983286802030457e-05, 'epoch': 0.03}
+{'loss': 1.0434, 'grad_norm': 2.265740156173706, 'learning_rate': 2.9829060913705586e-05, 'epoch': 0.03}
+  File "/home/aneek/LLM-Adapters/finetune.py", line 438, in <module>
+    fire.Fire(train)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/finetune.py", line 367, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in train
+    return inner_training_loop(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3749, in training_step
+    loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3836, in compute_loss
+    outputs = model(**inputs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1637, in forward
+    else self._run_ddp_forward(*inputs, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1464, in _run_ddp_forward
+    return self.module(*inputs, **kwargs)  # type: ignore[index]
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/utils/operations.py", line 818, in forward
+    return model_forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/utils/operations.py", line 806, in __call__
+    return convert_to_fp32(self.model_forward(*args, **kwargs))
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+    return self.base_model(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 552, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/utils/generic.py", line 943, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 440, in forward
+    layer_outputs = decoder_layer(
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/modeling_layers.py", line 83, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 306, in forward
+    hidden_states = self.mlp(hidden_states)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 151, in forward
+    down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/aneek/LLM-Adapters/finetune.py", line 438, in <module>
+[rank0]:     fire.Fire(train)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+[rank0]:     component_trace = _Fire(component, args, parsed_flag_args, context, name)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+[rank0]:     component, remaining_args = _CallAndUpdateTrace(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+[rank0]:     component = fn(*varargs, **kwargs)
+[rank0]:   File "/home/aneek/LLM-Adapters/finetune.py", line 367, in train
+[rank0]:     trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 2548, in _inner_training_loop
+[rank0]:     tr_loss_step = self.training_step(model, inputs, num_items_in_batch)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3749, in training_step
+[rank0]:     loss = self.compute_loss(model, inputs, num_items_in_batch=num_items_in_batch)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/trainer.py", line 3836, in compute_loss
+[rank0]:     outputs = model(**inputs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1637, in forward
+[rank0]:     else self._run_ddp_forward(*inputs, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/parallel/distributed.py", line 1464, in _run_ddp_forward
+[rank0]:     return self.module(*inputs, **kwargs)  # type: ignore[index]
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/utils/operations.py", line 818, in forward
+[rank0]:     return model_forward(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/accelerate/utils/operations.py", line 806, in __call__
+[rank0]:     return convert_to_fp32(self.model_forward(*args, **kwargs))
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+[rank0]:     return func(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/peft/peft_model.py", line 1757, in forward
+[rank0]:     return self.base_model(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 193, in forward
+[rank0]:     return self.model.forward(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/utils/generic.py", line 943, in wrapper
+[rank0]:     output = func(self, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 552, in forward
+[rank0]:     outputs: BaseModelOutputWithPast = self.model(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/utils/generic.py", line 943, in wrapper
+[rank0]:     output = func(self, *args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 440, in forward
+[rank0]:     layer_outputs = decoder_layer(
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/modeling_layers.py", line 83, in __call__
+[rank0]:     return super().__call__(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 306, in forward
+[rank0]:     hidden_states = self.mlp(hidden_states)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+[rank0]:     return self._call_impl(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+[rank0]:     return forward_call(*args, **kwargs)
+[rank0]:   File "/home/aneek/miniconda3/envs/prune-net/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 151, in forward
+[rank0]:     down_proj = self.down_proj(self.act_fn(self.gate_proj(x)) * self.up_proj(x))
+[rank0]: KeyboardInterrupt

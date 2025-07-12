@@ -8,6 +8,8 @@ import argparse
 import fire
 
 import torch
+import datetime
+import wandb
 
 sys.path.append(os.path.join(os.getcwd(), "peft/src/"))
 from peft import PeftModel
@@ -33,6 +35,15 @@ def main(
         share_gradio: bool = False,
 ):
     args = parse_args()
+
+    # ── Weights & Biases setup ────────────────────────────────────────────────
+    run_name = f"{args.model}-{args.adapter}-{args.dataset}-{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    wandb.init(
+        project="llm_adapter_eval",
+        name=run_name,
+        config=vars(args),
+        reinit=True
+    )
 
     def evaluate(
             instruction,
@@ -124,12 +135,23 @@ def main(
         print('label:', label)
         print('---------------')
         print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / (idx + 1)}')
+        wandb.log({
+            "step": idx + 1,
+            "running_accuracy": correct / (idx + 1),
+            "prediction": predict,
+            "label": label,
+            "flag_correct": flag
+        }, step=idx + 1)
         with open(save_file, 'w+') as f:
             json.dump(output_data, f, indent=4)
         pbar.update(1)
     pbar.close()
+    final_acc = correct / total
+    wandb.log({"final_accuracy": final_acc})
     print('\n')
     print('test finished')
+
+    wandb.finish()
 
 
 def create_dir(dir_path):
@@ -180,7 +202,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', choices=['AddSub', 'MultiArith', 'SingleEq', 'gsm8k', 'AQuA', 'SVAMP'],
                         required=True)
-    parser.add_argument('--model', choices=['LLaMA-7B', 'BLOOM-7B', 'GPT-j-6B'], required=True)
+    parser.add_argument('--model', choices=['LLaMA-7B', 'BLOOM-7B', 'GPT-j-6B','Llama-3.2-1B','Llama-3.2-3B'], required=True)
     parser.add_argument('--adapter', choices=['LoRA', 'AdapterP', 'AdapterH', 'Parallel', 'Prefix'],
                         required=True)
     parser.add_argument('--base_model', required=True)

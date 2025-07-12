@@ -1,0 +1,415 @@
+
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:01<00:00,  1.09it/s]
+/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py:569: UserWarning: Found missing adapter keys while loading the checkpoint: ['base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight'].
+  warnings.warn(warn_message)
+  0%|                                                                                                                                                                               | 0/254 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  0%|▋                                                                                                                                                                    | 1/254 [00:54<3:50:31, 54.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Roberts has a property worth of $1023.65. But in a record his property worth is written as greatest positive even integer less than or equal to his property worth and it is divisible by 100. Find the difference between actual property and recorded property worth? Answer Choices: (A) 23.65 (B) 1000 (C) 35.62 (D) 2.65 (E) 1023.65
+prediction: B
+label: A
+---------------
+test:1/254 | accuracy 0  0.0
+  1%|█▎                                                                                                                                                                   | 2/254 [01:52<3:56:43, 56.36s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A rectangular piece of 150 sq m has a length which is 1m more than the 4 times the breadth. What is the perimeter of the piece? Answer Choices: (A) 60 m (B) 61 m (C) 62 m (D) 63 m (E) 64 m
+                 The length of the rectangular piece is 1m more than the 4 times the breadth. The perimeter of the rectangular piece is the sum of the length and the breadth of the rectangular piece. The length of the rectangular piece is 1m more than the 4 times the breadth. The perimeter of the rectangular piece is the sum of the length and the breadth of the rectangular piece. The length of the rectangular piece is 1m more than the 4 times the breadth. The perimeter of the rectangular piece is the sum of the length and the breadth of the rectangular piece. The length of the rectangular piece is 1m more than the 4 times the breadth. The perimeter of the rectangular piece is the sum of the length and the breadth of the rectangular piece. The length of the rectangular piece is 1m more than the 4 times the breadth. The perimeter of the rectangular piece is the sum of the length and
+prediction: A
+label: C
+---------------
+test:2/254 | accuracy 0  0.0
+---------------
+In a row of children Neha is 12th from left end and Radha is 6th from right end. When Radha is shifted to left by 2 places and Neha is shifted to right by 2 places there 6 children between Radha and Neha. How many children are there in the row? Answer Choices: (A) 23 (B) 27 (C) 26 (D) 28 (E) 29
+prediction: A
+label: D
+---------------
+test:3/254 | accuracy 0  0.0
+  1%|█▉                                                                                                                                                                   | 3/254 [02:52<4:02:42, 58.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A shopkeeper in order to promote his new shop put a discount of 20% on all the items for one day. Now he must sell the items at original price the other day. By what percentage must he increase the price to original? Answer Choices: (A) 21% (B) 20% (C) 25% (D) 33% (E) 18%
+                 The original price of the item is 100. The shopkeeper put a discount of 20% on all the items for one day. Now he must sell the items at original price the other day. By what percentage must he increase the price to original? Answer Choices: (A) 21% (B) 20% (C) 25% (D) 33% (E) 18%
+                 The original price of the item is 100. The shopkeeper put a discount of 20% on all the items for one day. Now he must sell the items at original price the other day. By what percentage must he increase the price to original? Answer Choices: (A) 21% (B) 20% (C) 25% (D) 33% (E) 18%
+                 The
+prediction: A
+label: C
+---------------
+test:4/254 | accuracy 0  0.0
+  2%|██▌                                                                                                                                                                  | 4/254 [03:53<4:06:48, 59.23s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|███▏                                                                                                                                                                 | 5/254 [04:50<4:02:40, 58.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The length of the ribbon was originally 30 cm. It was reduced in the ratio 5 : 3. What is its length now? Answer Choices: (A) 18 (B) 30 (C) 6 (D) 15 (E) 12
+                 The length of the ribbon was originally 30 cm. It was reduced in the ratio 5 : 3. What is its length now? Answer Choices: (A) 18 (B) 30 (C) 6 (D) 15 (E) 12
+                 The length of the ribbon was originally 30 cm. It was reduced in the ratio 5 : 3. What is its length now? Answer Choices: (A) 18 (B) 30 (C) 6 (D) 15 (E) 12
+                 The length of the ribbon was originally 30 cm. It was reduced in the ratio 5 : 3. What is its length now? Answer Choices: (A) 18 (B) 30 (C) 6 (D) 15 (E) 12
+                 The length of the ribbon was originally 30 cm. It was reduced in the ratio 5 :
+prediction: A
+label: A
+---------------
+test:5/254 | accuracy 1  0.2
+  2%|███▉                                                                                                                                                                 | 6/254 [05:58<4:15:21, 61.78s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+On a normal day Bill usually averages about 15 mph when riding his bicycle. On a windy day, his speed is reduced by 4 mph. How far can Bill travel on a windy day in 21 minutes? Round to the nearest hundredth. Answer Choices: (A) 2 miles (B) 2.25 miles (C) 3.25 miles (D) 3.85 miles (E) 2.85 miles
+prediction: B
+label: D
+---------------
+test:6/254 | accuracy 1  0.16666666666666666
+  3%|████▌                                                                                                                                                                | 7/254 [07:11<4:29:02, 65.35s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A rectangular solid, 3 x 4 x 15, is inscribed in a sphere, so that all eight of its vertices are on the sphere. What is the diameter of the sphere? Answer Choices: (A)  13.3542 (B)  15.8113 (C)  18.3451 (D)  19.5667 (E)  20.8888
+                 The diameter of the sphere is 20.8888. The diameter of the sphere is the distance between any two points on the surface of the sphere. The diameter of the sphere is the distance between any two points on the surface of the sphere. The diameter of the sphere is the distance between any two points on the surface of the sphere. The diameter of the sphere is the distance between any two points on the surface of the sphere. The diameter of the sphere is the distance between any two points on the surface of the sphere. The diameter of the sphere is the distance between any two points on the surface of the sphere. The diameter of the sphere is the distance between any two points on the surface of the sphere. The diameter of the sphere is the distance between any two points on the surface of the sphere. The diameter
+prediction: A
+label: B
+---------------
+test:7/254 | accuracy 1  0.14285714285714285
+---------------
+The length of the shadow that the taller ant casts is 42 inches. This is because the taller ant is 6 inches tall and casts a shadow that is 10 inches long. Therefore, the length of the shadow that the taller ant casts is 6 inches + 10 inches = 42 inches.<|end_of_text|>
+prediction:
+label: D
+---------------
+test:8/254 | accuracy 1  0.125
+  3%|█████▏                                                                                                                                                               | 8/254 [07:29<3:26:22, 50.34s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  4%|█████▊                                                                                                                                                               | 9/254 [08:42<3:54:49, 57.51s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The number of ways to arrange 6 books on a shelf is 720. This is because there are 6! ways to arrange 6 books on a shelf. However, there are 6! ways to arrange 6 books on a shelf and 6! ways to arrange 6 books on a shelf. Therefore, the number of ways to arrange 6 books on a shelf is 720.
+prediction:
+label: B
+---------------
+test:9/254 | accuracy 1  0.1111111111111111
+---------------
+M = abc is a three digit number and N = cba, if M > N and M - N + 396c = 990. Then how many values of M are more than 300. Answer Choices: (A) 20 (B) 30 (C) 40 (D) 200 (E) None
+                 M = abc is a three digit number and N = cba, if M > N and M - N + 396c = 990. Then how many values of M are more than 300. Answer Choices: (A) 20 (B) 30 (C) 40 (D) 200 (E) None
+                 M = abc is a three digit number and N = cba, if M > N and M - N + 396c = 990. Then how many values of M are more than 300. Answer Choices: (A) 20 (B) 30 (C) 40 (D) 200 (E) None
+                 M = abc is a three digit number and N = cba, if M > N and M - N + 396c = 990. Then how many values of M are more than 300. Answer
+prediction: A
+label: A
+---------------
+test:10/254 | accuracy 2  0.2
+  4%|██████▍                                                                                                                                                             | 10/254 [10:18<4:41:22, 69.19s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  4%|███████                                                                                                                                                             | 11/254 [11:49<5:07:07, 75.83s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+I have a money pouch containing Rs. 700. There are equal number of 25 paise coins, 50 paise coins and one rupee coins.
+How many of each are there? Answer Choices: (A) 453 (B) 651 (C) 400 (D) 487 (E) 286
+prediction: A
+label: C
+---------------
+test:11/254 | accuracy 2  0.18181818181818182
+---------------
+The number of tempos that can lift 29,400 toys in one round is 6. This is because 5 dozen toys are packed in a box and 98 boxes are kept in a tempo. Therefore, 6 tempos can lift 29,400 toys in one round. This is because 5 dozen toys are packed in a box and 98 boxes are kept in a tempo. Therefore, 6 tempos can lift 29,400 toys in one round. This is because 5 dozen toys are packed in a box and 98 boxes are kept in a tempo. Therefore, 6 tempos can lift 29,400 toys in one round. This is because 5 dozen toys are packed in a box and 98 boxes are kept in a tempo. Therefore, 6 tempos can lift 29,400 toys in one round. This is because 5 dozen toys are packed in a box and 98 boxes are kept in a tempo. Therefore, 6 tempos can lift 29,400 toys in one round. This is because 5 dozen toys are packed in a box and 98 boxes are kept in a tempo. Therefore, 6 tempos can lift 29,400 toys in one round. This is
+prediction:
+label: B
+---------------
+test:12/254 | accuracy 2  0.16666666666666666
+  5%|███████▋                                                                                                                                                            | 12/254 [13:16<5:20:40, 79.51s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  5%|████████▍                                                                                                                                                           | 13/254 [14:57<5:45:24, 85.99s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A pen company produces very fine quality of writing pens. Company knows that on average 10% of the produced pens are always defective so are rejected before packing. Company promises to deliver 7200 pens to its wholesaler at Rs. 10 each. It estimates the overall profit on all the manufactured pens to be 25%. What is the manufactured cost of each pen? Answer Choices: (A) Rs. 6 (B) Rs. 7.2 (C) Rs. 5.6 (D) Rs. 8 (E) None of these
+prediction: A
+label: B
+---------------
+test:13/254 | accuracy 2  0.15384615384615385
+---------------
+A number is as much greater than 36 as is less than 86. Find the Number. Answer Choices: (A) 60 (B) 56 (C) 51 (D) 61 (E) 41
+                 The number 60 is greater than 36 and less than 86.
+                 The number 56 is greater than 36 and less than 86.
+                 The number 51 is greater than 36 and less than 86.
+                 The number 61 is greater than 36 and less than 86.
+                 The number 41 is greater than 36 and less than 86.
+                 The number 60 is greater than 36 and less than 86.
+                 The number 56 is greater than 36 and less than 86.
+                 The number 51 is greater than 36 and less than 86.
+                 The number 61 is greater than 36 and less than 86.
+                 The number 41 is greater than 36 and less than 86.
+                 The number 60 is greater than 36 and less than 86.
+                 The number 56 is greater than 36 and less than 86.
+                 The number 51 is greater than 36 and less than 86
+prediction: A
+label: D
+---------------
+test:14/254 | accuracy 2  0.14285714285714285
+  6%|█████████                                                                                                                                                           | 14/254 [16:22<5:42:46, 85.69s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  6%|█████████▋                                                                                                                                                          | 15/254 [17:51<5:44:40, 86.53s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Mr.Sam takes 17 hours to go by train to a certain city and return by car. He loses 4 hours if he goes both ways by train. How long would he have taken if he had traveled by car in both ways? Answer Choices: (A) 22 hrs (B) 18 hrs (C) 16 hrs (D) 20 hrs (E) 13 hrs
+prediction: A
+label: E
+---------------
+test:15/254 | accuracy 2  0.13333333333333333
+  6%|██████████▎                                                                                                                                                         | 16/254 [19:27<5:55:11, 89.54s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+In a sale, a discount of 20% was available on all the articles. If Vinit purchased an article for Rs.4578 in the sale. What was the actual selling price of the article? Answer Choices: (A) s.5050 (B) s.5723 (C) s.5040 (D) s.4950 (E) s.4870
+prediction: A
+label: B
+---------------
+test:16/254 | accuracy 2  0.125
+---------------
+There are 10 oranges in a basket. Find the no. of ways in which 2 oranges are chosen from the basket? Answer Choices: (A) 45 (B) 90 (C) 120 (D) 150 (E) 180
+                 There are 10 oranges in a basket. Find the no. of ways in which 2 oranges are chosen from the basket? Answer Choices: (A) 45 (B) 90 (C) 120 (D) 150 (E) 180
+                 There are 10 oranges in a basket. Find the no. of ways in which 2 oranges are chosen from the basket? Answer Choices: (A) 45 (B) 90 (C) 120 (D) 150 (E) 180
+                 There are 10 oranges in a basket. Find the no. of ways in which 2 oranges are chosen from the basket? Answer Choices: (A) 45 (B) 90 (C) 120 (D) 150 (E) 180
+                 There are 10 oranges in a basket. Find the no. of ways in which 2 oranges are chosen from the basket? Answer Choices: (A)
+prediction: A
+label: A
+---------------
+test:17/254 | accuracy 3  0.17647058823529413
+  7%|██████████▉                                                                                                                                                         | 17/254 [21:08<6:07:01, 92.92s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+M men agree to purchase a gift for Rs. D. If 3 men drop out how much more will each have to contribute towards the purchase of the gift? Answer Choices: (A) D/ (M-3)  (B) MD/3 (C) M/ (D-3)  (D) 3D/ (M2-3M)  (E) None of these
+prediction: D
+label: D
+---------------
+test:18/254 | accuracy 4  0.2222222222222222
+  7%|███████████▌                                                                                                                                                        | 18/254 [22:36<5:59:36, 91.42s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Jack buys 18 sharpeners (white and brown) for rs. 100. If he pays 1 rupee more for each white than brown sharpeners. How many of white and how many brown sharpeners did he buy? Answer Choices: (A) 10,8 (B) 9,8 (C) 7,8 (D) 5,6 (E) 11,12
+prediction: A
+label: A
+---------------
+test:19/254 | accuracy 5  0.2631578947368421
+  7%|████████████▎                                                                                                                                                       | 19/254 [24:08<5:59:01, 91.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+900 + 5 × 12 =? Answer Choices: (A) 820 (B) 202 (C) 420 (D) 209 (E) 960
+                 900 + 5 × 12 =? Answer Choices: (A) 820 (B) 202 (C) 420 (D) 209 (E) 960
+                 900 + 5 × 12 =? Answer Choices: (A) 820 (B) 202 (C) 420 (D) 209 (E) 960
+                 900 + 5 × 12 =? Answer Choices: (A) 820 (B) 202 (C) 420 (D) 209 (E) 960
+                 900 + 5 × 12 =? Answer Choices: (A) 820 (B) 202 (C) 420 (D) 209 (E) 960
+                 900 + 5 × 12 =? Answer Choices: (A) 820 (B) 202 (C) 420 (D) 209 (E) 960
+                 900 + 5 × 12 =? Answer Choices: (A)
+prediction: A
+label: E
+---------------
+test:20/254 | accuracy 5  0.25
+  8%|████████████▉                                                                                                                                                       | 20/254 [25:32<5:48:33, 89.38s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  8%|█████████████▌                                                                                                                                                      | 21/254 [27:04<5:49:42, 90.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The population of a city is 5265526. If there are 4169516 adults in the city, how many children are there in the city? Answer Choices: (A) 1095961 (B) 1065961 (C) 1085961 (D) 1097961 (E) 1096061
+                 The population of a city is 5265526. If there are 4169516 adults in the city, how many children are there in the city? Answer Choices: (A) 1095961 (B) 1065961 (C) 1085961 (D) 1097961 (E) 1096061
+                 The population of a city is 5265526. If there are 4169516 adults in the city, how many children are there in the city? Answer Choices: (A) 1095961 (B) 1065961 (C) 1085961 (D) 1097961 (E) 1096061
+                 The population of a city is 5265526. If there are 4169516 adults in the city, how many children are there in the city? Answer Choices: (A) 109
+prediction: A
+label: E
+---------------
+test:21/254 | accuracy 5  0.23809523809523808
+  9%|██████████████▏                                                                                                                                                     | 22/254 [28:48<6:04:41, 94.32s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+John likes to have lightly flavored tea every evening. In a 50% strong milk tea, he replaces 15% of it with milk twice. Then, he replaces 10 percent of the resultant solution with more milk.
+What is the final concentration of tea John drinks? Answer Choices: (A) 15.38% (B) 42% (C) 39.86% (D) 22.35% (E) 32.51%
+The final concentration of tea John drinks is 15.38%.
+To calculate the final concentration of tea John drinks, we first need to calculate the concentration of tea in the original 50% strong milk tea. The concentration of tea in the original 50% strong milk tea is 50% - 15% = 35%.
+Next, we need to calculate the concentration of tea in the resultant solution after replacing 15% of it with milk twice. The concentration of tea in the resultant solution after replacing 15% of it with milk twice is 35% - 15% = 20%.
+Finally, we need to calculate the concentration of tea in the final solution after replacing 10 percent of the resultant solution with more milk. The concentration of tea in the final solution
+prediction: A
+label: E
+---------------
+test:22/254 | accuracy 5  0.22727272727272727
+---------------
+A merchant receives an invoice for a motor boat for $20 000 with terms 4/30, n/100. What is the highest simple interest rate at which he can afford to borrow money in order to take advantage of the discount? Answer Choices: (A) 247.67 (B) 237.67 (C) 227.67 (D) 215.67 (E) None of these
+prediction: A
+label: A
+---------------
+test:23/254 | accuracy 6  0.2608695652173913
+  9%|██████████████▊                                                                                                                                                     | 23/254 [30:19<5:58:54, 93.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A shopkeeper employed a servant at a monthly salary of 1500. In addition to it, he agreed to pay him a commission of 15% on the monthly sale. How much sale in Rupees should the servant do if he wants his monthly income as 6000? Answer Choices: (A) 30000 (B) 415000 (C) 31500 (D) 50000 (E) None of these
+prediction: A
+label: A
+---------------
+test:24/254 | accuracy 7  0.2916666666666667
+  9%|███████████████▍                                                                                                                                                    | 24/254 [31:51<5:56:36, 93.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+An exam is given in a certain class. The average (arithmetic mean) of the highest score and the lowest score is equal to x. If the average score for the entire class is equal to y and there are z students in the class, where z > 5, then in terms of x, y, and z, what is the average score for the class excluding the highest and lowest scorers? Answer Choices: (A)  (zy – 2x) /z (B)  (zy – 2) /z (C)  (zx – y) / (z – 2)  (D)  (zy – 2x) / (z -2)  (E)  (zy – x) / (z + 2)
+prediction: A
+label: D
+---------------
+test:25/254 | accuracy 7  0.28
+ 10%|████████████████▏                                                                                                                                                   | 25/254 [33:27<5:57:28, 93.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+ 10%|████████████████▊                                                                                                                                                   | 26/254 [34:55<5:49:26, 91.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The maximum distance you can travel with $8.50 on a cab which charges $3.50 for the first quarter-mile and 10 cents for each additional quarter mile is 12.75 miles.
+                 To calculate the maximum distance you can travel with $8.50 on a cab which charges $3.50 for the first quarter-mile and 10 cents for each additional quarter mile, we need to find the number of quarter miles that we can travel with $8.50. We can do this by dividing $8.50 by the cost of each quarter mile, which is $3.50 + 0.10 = $3.60. The number of quarter miles that we can travel with $8.50 is therefore 8.50 / 3.60 = 2.36. This means that we can travel 2.36 quarter miles with $8.50. The maximum distance that we can travel with $8.50 on a cab which charges $3.50 for the first quarter-mile and 10 cents for each additional quarter mile is therefore 2.36 x 0.25 = 0.59 miles. This means that we can travel 0.59 miles with $8.50 on a cab which
+prediction:
+label: B
+---------------
+test:26/254 | accuracy 7  0.2692307692307692
+---------------
+ABCDE is a regular pentagon with F at its center. How many different quadrilaterals can be formed by joining 4 of the points A,B,C,D,E and F? Answer Choices: (A) 12 (B) 10 (C) 5 (D) 15 (E) 20
+                 The number of different quadrilaterals that can be formed by joining 4 of the points A, B, C, D, E, and F of a regular pentagon ABCDE with F at its center is 10. This is because there are 10 different ways to choose 4 of the 5 points A, B, C, D, E, and F to form a quadrilateral. For example, one way to form a quadrilateral is to choose points A, B, C, and D. Another way to form a quadrilateral is to choose points A, B, C, and E. There are 10 different ways to choose 4 of the 5 points to form a quadrilateral, so the total number of different quadrilaterals that can be formed by joining 4 of the points A, B, C, D, E, and F of a regular pentagon ABCDE with F at its
+prediction: A
+label: D
+---------------
+test:27/254 | accuracy 7  0.25925925925925924
+ 11%|█████████████████▍                                                                                                                                                  | 27/254 [36:19<5:39:41, 89.79s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A man spend 810 in buying trouser at Rs 70 each and shirt at 30 each. What will be the ratio of trouser and shirt when the maximum number of trouser is purchased? Answer Choices: (A) 9 Trousers (B) 8 Trousers (C) 10 Trousers (D) 7 Trousers (E) 11 Trousers
+prediction: A
+label: A
+---------------
+test:28/254 | accuracy 8  0.2857142857142857
+ 11%|██████████████████                                                                                                                                                  | 28/254 [37:51<5:40:19, 90.35s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Last year, 34 percent of Ace Book Company's sales revenue came from the sale of novels. Of the remaining revenue, 1/3 was from the sale of biographies. The company's revenue from the sale of novels was approximately, how many times its revenue from the sale of biographies? Answer Choices: (A) 1.3 (B) 1.5 (C) 2.1 (D) 2.5 (E) 3.1
+prediction: A
+label: B
+---------------
+test:29/254 | accuracy 8  0.27586206896551724
+ 11%|██████████████████▋                                                                                                                                                 | 29/254 [39:33<5:52:16, 93.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+An aeroplane flies along the four sides of a square at the speeds of 200, 400, 600 and 800km/hr. Find the average speed of the plane around the field? Answer Choices: (A) 384 (B) 562 (C) 458 (D) 156 (E) 452
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field is 384 km/hr.
+                 The average speed of the plane around the field
+prediction: A
+label: A
+---------------
+test:30/254 | accuracy 9  0.3
+ 12%|███████████████████▎                                                                                                                                                | 30/254 [41:22<6:06:53, 98.28s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 111, in main
+    outputs = evaluate(instruction)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 69, in evaluate
+    generation_output = model.generate(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2651, in generate
+    result = self._beam_search(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 4101, in _beam_search
+    model_kwargs = self._update_model_kwargs_for_generation(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1011, in _update_model_kwargs_for_generation
+    new_positions = torch.arange(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 111, in main
+    outputs = evaluate(instruction)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 69, in evaluate
+    generation_output = model.generate(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2651, in generate
+    result = self._beam_search(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 4101, in _beam_search
+    model_kwargs = self._update_model_kwargs_for_generation(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1011, in _update_model_kwargs_for_generation
+    new_positions = torch.arange(
+KeyboardInterrupt

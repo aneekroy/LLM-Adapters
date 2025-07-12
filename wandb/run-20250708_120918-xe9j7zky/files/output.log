@@ -1,0 +1,767 @@
+
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:01<00:00,  1.12it/s]
+/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py:569: UserWarning: Found missing adapter keys while loading the checkpoint: ['base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight'].
+  warnings.warn(warn_message)
+  0%|                                                                                                                                                                               | 0/395 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  0%|▍                                                                                                                                                                    | 1/395 [00:29<3:16:52, 29.98s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 4 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?
+                 There are 4 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?
+                 There are 4 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?
+                 There are 4 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?
+                 There are 4 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?
+                 There are 4 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?
+                 There are 4 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?
+                 There are 4 crayons in the drawer. Mary took 3 crayons out of the drawer. How many crayons are there now?
+                 There are 4 crayons in the
+prediction: 4.0
+label: 4.0
+---------------
+test:1/395 | accuracy 1  1.0
+  1%|▊                                                                                                                                                                    | 2/395 [00:59<3:16:30, 30.00s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A bucket contains 3 gallons of water. If Derek adds 6.8 gallons more, how many gallons will there be in all?
+                 There will be 9.8 gallons of water in the bucket after Derek adds 6.8 gallons of water to the bucket.
+                 This is because 3 + 6.8 = 9.8 gallons of water will be in the bucket after Derek adds 6.8 gallons of water to the bucket.
+                 This is because 3 + 6.8 = 9.8 gallons of water will be in the bucket after Derek adds 6.8 gallons of water to the bucket.
+                 This is because 3 + 6.8 = 9.8 gallons of water will be in the bucket after Derek adds 6.8 gallons of water to the bucket.
+                 This is because 3 + 6.8 = 9.8 gallons of water will be in the bucket after Derek adds 6.8 gallons of water to the bucket.
+                 This is because 3 + 6.8 = 9.8 gallons of water will be in the bucket after Derek adds 6.8 gallons of water to the bucket.
+                 This is
+prediction: 6.8
+label: 9.8
+---------------
+test:2/395 | accuracy 1  0.5
+  1%|█▎                                                                                                                                                                   | 3/395 [01:30<3:18:43, 30.42s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sara's high school played 12 basketball games this year. The team won most of their games. They were defeated during 4 games. How many games did they win?
+                 Sara's high school played 12 basketball games this year. The team won most of their games. They were defeated during 4 games. How many games did they win?
+                 Sara's high school played 12 basketball games this year. The team won most of their games. They were defeated during 4 games. How many games did they win?
+                 Sara's high school played 12 basketball games this year. The team won most of their games. They were defeated during 4 games. How many games did they win?
+                 Sara's high school played 12 basketball games this year. The team won most of their games. They were defeated during 4 games. How many games did they win?
+                 Sara's high school played 12 basketball games this year. The team won most of their games. They were defeated during 4 games. How many games did they win?
+                 Sara's high school played 12 basketball games this year. The team won most of their games. They were defeated during 4 games
+prediction: 4.0
+label: 8.0
+---------------
+test:3/395 | accuracy 1  0.3333333333333333
+  1%|█▋                                                                                                                                                                   | 4/395 [02:02<3:21:13, 30.88s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Mike had 34 peaches at his roadside fruit dish. He went to the orchard and picked peaches to stock up. There are now 86 peaches. how many did he pick?
+                 Mike had 34 peaches at his roadside fruit dish. He went to the orchard and picked peaches to stock up. There are now 86 peaches. how many did he pick?
+                 Mike had 34 peaches at his roadside fruit dish. He went to the orchard and picked peaches to stock up. There are now 86 peaches. how many did he pick?
+                 Mike had 34 peaches at his roadside fruit dish. He went to the orchard and picked peaches to stock up. There are now 86 peaches. how many did he pick?
+                 Mike had 34 peaches at his roadside fruit dish. He went to the orchard and picked peaches to stock up. There are now 86 peaches. how many did he pick?
+                 Mike had 34 peaches at his roadside fruit dish. He went to the orchard and picked peaches to stock up. There are now 86 peaches. how many did he pick?
+                 Mike had 34
+prediction: 34.0
+label: 52.0
+---------------
+test:4/395 | accuracy 1  0.25
+---------------
+Bonnie's science class recorded the rainfall each day. They recorded 0.16666666666666666 centimeter of rain on Monday, 0.4166666666666667 centimeter of rain on Tuesday, and 0.08333333333333333 centimeter of rain on Wednesday. How many centimeters of rain did the class record in all?
+                 Bonnie's science class recorded the rainfall each day. They recorded 0.16666666666666666 centimeter of rain on Monday, 0.4166666666666667 centimeter of rain on Tuesday, and 0.08333333333333333 centimeter of rain on Wednesday. How many centimeters of rain did the class record in all?
+                 Bonnie's science class recorded the rainfall each day. They recorded 0.16666666666666666 centimeter of rain on Monday, 0.4166666666666667 centimeter of rain on Tuesday, and 0.08333333333333333 centimeter of rain on Wednesday. How many centimeters of rain did the class record in all?
+                 Bonnie's science class recorded the rainfall each day. They recorded 0.16666666666666666 centimeter of
+prediction: 0.16666666666666666
+label: 0.6666666666666666
+---------------
+test:5/395 | accuracy 1  0.2
+  1%|██                                                                                                                                                                   | 5/395 [02:39<3:34:28, 33.00s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his pennies. How many pennies does he have now?
+                 Sam had 98 pennies in his bank. He spent 93 of his
+prediction: 93.0
+label: 5.0
+---------------
+test:6/395 | accuracy 1  0.16666666666666666
+  2%|██▌                                                                                                                                                                  | 6/395 [03:09<3:27:27, 32.00s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are a total of 104 blue balloons.
+prediction: 104.0
+label: 104.0
+---------------
+test:7/395 | accuracy 2  0.2857142857142857
+  2%|██▉                                                                                                                                                                  | 7/395 [03:41<3:27:05, 32.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  2%|███▎                                                                                                                                                                 | 8/395 [04:16<3:32:29, 32.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Jason has 18 books and he has read 9 of them. Mary has 42 books. How many books do they have together?
+                 Jason has 18 books and he has read 9 of them. Mary has 42 books. How many books do they have together?
+                 Jason has 18 books and he has read 9 of them. Mary has 42 books. How many books do they have together?
+                 Jason has 18 books and he has read 9 of them. Mary has 42 books. How many books do they have together?
+                 Jason has 18 books and he has read 9 of them. Mary has 42 books. How many books do they have together?
+                 Jason has 18 books and he has read 9 of them. Mary has 42 books. How many books do they have together?
+                 Jason has 18 books and he has read 9 of them. Mary has 42 books. How many books do they have together?
+                 Jason has 18 books and he has read 9 of them. Mary has 42 books. How many books do they have together?
+                 Jason has 18 books and he has read 9 of them. Mary has
+prediction: 9.0
+label: 60.0
+---------------
+test:8/395 | accuracy 2  0.25
+---------------
+Jason grew 32 watermelons and 22 cantelopes. Dan grew 31 watermelons. How many watermelons did they grow in total?
+                 Jason grew 32 watermelons and 22 cantelopes. Dan grew 31 watermelons. How many watermelons did they grow in total?
+                 Jason grew 32 watermelons and 22 cantelopes. Dan grew 31 watermelons. How many watermelons did they grow in total?
+                 Jason grew 32 watermelons and 22 cantelopes. Dan grew 31 watermelons. How many watermelons did they grow in total?
+                 Jason grew 32 watermelons and 22 cantelopes. Dan grew 31 watermelons. How many watermelons did they grow in total?
+                 Jason grew 32 watermelons and 22 cantelopes. Dan grew 31 watermelons. How many watermelons did they grow in total?
+                 Jason grew 32 watermelons and 22 cantelopes. Dan grew 31 watermelons. How many watermelons did they grow in total?
+                 Jason grew 32 watermelons and 22 cant
+prediction: 22.0
+label: 63.0
+---------------
+test:9/395 | accuracy 2  0.2222222222222222
+  2%|███▊                                                                                                                                                                 | 9/395 [04:51<3:36:45, 33.69s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  3%|████▏                                                                                                                                                               | 10/395 [05:26<3:39:24, 34.19s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sally picked 7 lemons and Mary picked 9 lemons from the lemon tree. How many lemons were picked in total?
+                 The total number of lemons picked is 7 + 9 = 16 lemons.
+prediction: 16.0
+label: 16.0
+---------------
+test:10/395 | accuracy 3  0.3
+  3%|████▌                                                                                                                                                               | 11/395 [06:01<3:40:28, 34.45s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Mike bought some toys. He bought marbles for $ 9.05, a football for $ 4.95, and spent $ 6.52 on a baseball. In total, how much did Mike spend on toys?
+                 Mike bought some toys. He bought marbles for $ 9.05, a football for $ 4.95, and spent $ 6.52 on a baseball. In total, how much did Mike spend on toys?
+                 Mike bought some toys. He bought marbles for $ 9.05, a football for $ 4.95, and spent $ 6.52 on a baseball. In total, how much did Mike spend on toys?
+                 Mike bought some toys. He bought marbles for $ 9.05, a football for $ 4.95, and spent $ 6.52 on a baseball. In total, how much did Mike spend on toys?
+                 Mike bought some toys. He bought marbles for $ 9.05, a football for $ 4.95, and spent $ 6.52 on a baseball. In total, how much did Mike spend on toys?
+                 Mike bought some toys. He bought marbles for $
+prediction: 6.52
+label: 20.52
+---------------
+test:11/395 | accuracy 3  0.2727272727272727
+  3%|████▉                                                                                                                                                               | 12/395 [06:40<3:47:41, 35.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 41 crayons and 26 pencils in the drawer. Sam placed 12 crayons in the drawer. How many crayons are now there in total?
+                 There are 41 crayons and 26 pencils in the drawer. Sam placed 12 crayons in the drawer. How many crayons are now there in total?
+                 There are 41 crayons and 26 pencils in the drawer. Sam placed 12 crayons in the drawer. How many crayons are now there in total?
+                 There are 41 crayons and 26 pencils in the drawer. Sam placed 12 crayons in the drawer. How many crayons are now there in total?
+                 There are 41 crayons and 26 pencils in the drawer. Sam placed 12 crayons in the drawer. How many crayons are now there in total?
+                 There are 41 crayons and 26 pencils in the drawer. Sam placed 12 crayons in the drawer. How many crayons are now there in total?
+                 There are 41 crayons and 26 pencils in the drawer. Sam placed 12 crayons in the drawer. How many crayons are now there in total?
+                 There are 41
+prediction: 41.0
+label: 53.0
+---------------
+test:12/395 | accuracy 3  0.25
+---------------
+There are 2 maple trees and 5 popular trees currently in the park. Park workers will plant 9 maple trees today. How many maple trees will the park have when the workers are finished?
+                 There are 2 maple trees and 5 popular trees currently in the park. Park workers will plant 9 maple trees today. How many maple trees will the park have when the workers are finished?
+                 There are 2 maple trees and 5 popular trees currently in the park. Park workers will plant 9 maple trees today. How many maple trees will the park have when the workers are finished?
+                 There are 2 maple trees and 5 popular trees currently in the park. Park workers will plant 9 maple trees today. How many maple trees will the park have when the workers are finished?
+                 There are 2 maple trees and 5 popular trees currently in the park. Park workers will plant 9 maple trees today. How many maple trees will the park have when the workers are finished?
+                 There are 2 maple trees and 5 popular trees currently in the park. Park workers will plant 9 maple trees today. How many maple trees will the park have when the workers are finished?
+                 There are 2
+prediction: 2.0
+label: 11.0
+---------------
+test:13/395 | accuracy 3  0.23076923076923078
+  3%|█████▍                                                                                                                                                              | 13/395 [07:19<3:54:14, 36.79s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  4%|█████▊                                                                                                                                                              | 14/395 [08:04<4:08:03, 39.06s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Brandy made trail mix for a backpacking trip. She used 0.16666666666666666 pound of peanuts, 0.16666666666666666 pound of chocolate chips, and 0.08333333333333333 pound of raisins. How many pounds of trail mix did Brandy make?
+                 Brandy made trail mix for a backpacking trip. She used 0.16666666666666666 pound of peanuts, 0.16666666666666666 pound of chocolate chips, and 0.08333333333333333 pound of raisins. How many pounds of trail mix did Brandy make?
+                 Brandy made trail mix for a backpacking trip. She used 0.16666666666666666 pound of peanuts, 0.16666666666666666 pound of chocolate chips, and 0.08333333333333333 pound of raisins. How many pounds of trail mix did Brandy make?
+                 Brandy made trail mix for a backpacking trip. She used 0.16666666666666666 pound of peanuts, 0.16666666666666666 pound of chocolate chips, and 0.08333333333333333 pound of
+prediction: 0.08333333333333333
+label: 0.4166666666666667
+---------------
+test:14/395 | accuracy 3  0.21428571428571427
+  4%|██████▏                                                                                                                                                             | 15/395 [08:49<4:19:15, 40.93s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Joan bought toy cars for $ 14.88, a skateboard for $ 4.88, and got toy trucks for $ 5.86. She spent $ 14.55 on pants. In total, how much did Joan spend on toys?
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of money Joan spent on toys is $ 29.19.
+                 The total amount of
+prediction: 29.19
+label: 25.62
+---------------
+test:15/395 | accuracy 3  0.2
+  4%|██████▋                                                                                                                                                             | 16/395 [09:35<4:27:56, 42.42s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Tom found 5 seashells on the beach. he gave Jessica 2 of the seashells. How many seashells does he now have?
+                 Tom now has 3 seashells.
+                 Tom found 5 seashells on the beach. he gave Jessica 2 of the seashells. How many seashells does he now have?
+                 Tom now has 3 seashells.
+                 Tom found 5 seashells on the beach. he gave Jessica 2 of the seashells. How many seashells does he now have?
+                 Tom now has 3 seashells.
+                 Tom found 5 seashells on the beach. he gave Jessica 2 of the seashells. How many seashells does he now have?
+                 Tom now has 3 seashells.
+                 Tom found 5 seashells on the beach. he gave Jessica 2 of the seashells. How many seashells does he now have?
+                 Tom now has 3 seashells.
+                 Tom found 5 seashells on the beach. he gave Jessica 2 of the seashells. How many seashells does he now have
+prediction: 2.0
+label: 3.0
+---------------
+test:16/395 | accuracy 3  0.1875
+  4%|███████                                                                                                                                                             | 17/395 [10:27<4:44:54, 45.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Jonah added 0.3 cup of yellow raisins and 0.4 cup of black raisins to a batch of trail mix. How many cups of raisins did Jonah add in all?
+                 Jonah added 0.3 cup of yellow raisins and 0.4 cup of black raisins to a batch of trail mix. How many cups of raisins did Jonah add in all?
+                 Jonah added 0.3 cup of yellow raisins and 0.4 cup of black raisins to a batch of trail mix. How many cups of raisins did Jonah add in all?
+                 Jonah added 0.3 cup of yellow raisins and 0.4 cup of black raisins to a batch of trail mix. How many cups of raisins did Jonah add in all?
+                 Jonah added 0.3 cup of yellow raisins and 0.4 cup of black raisins to a batch of trail mix. How many cups of raisins did Jonah add in all?
+                 Jonah added 0.3 cup of yellow raisins and 0.4 cup of black raisins to a batch of trail mix. How many cups of raisins did Jonah add in all?
+                 Jonah added 0
+prediction: 0.0
+label: 0.7
+---------------
+test:17/395 | accuracy 3  0.17647058823529413
+  5%|███████▍                                                                                                                                                            | 18/395 [11:20<4:59:29, 47.66s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Melanie had 10 quarters and 17 pennies in her bank. Her dad gave her 27 pennies and her mother gave her 19 pennies. How many pennies does Melanie have now?
+                 Melanie had 10 quarters and 17 pennies in her bank. Her dad gave her 27 pennies and her mother gave her 19 pennies. How many pennies does Melanie have now?
+                 Melanie had 10 quarters and 17 pennies in her bank. Her dad gave her 27 pennies and her mother gave her 19 pennies. How many pennies does Melanie have now?
+                 Melanie had 10 quarters and 17 pennies in her bank. Her dad gave her 27 pennies and her mother gave her 19 pennies. How many pennies does Melanie have now?
+                 Melanie had 10 quarters and 17 pennies in her bank. Her dad gave her 27 pennies and her mother gave her 19 pennies. How many pennies does Melanie have now?
+                 Melanie had 10 quarters and 17 pennies in her bank. Her dad gave her 27 pennies and her mother gave her 19 pennies. How many pennies does Melanie have now?
+prediction: 19.0
+label: 63.0
+---------------
+test:18/395 | accuracy 3  0.16666666666666666
+  5%|███████▉                                                                                                                                                            | 19/395 [12:13<5:08:53, 49.29s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Last week Tim had 12 dollars and Keith had 36 dollars. Tim washed cars over the weekend and now has 75 dollars. How much money did Tim make washing cars?
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+                 Tim made 63 dollars washing cars.
+prediction: 63.0
+label: 63.0
+---------------
+test:19/395 | accuracy 4  0.21052631578947367
+---------------
+Jason has 43 blue and 16 red marbles. Tom has 24 blue marbles. How many blue marbles do they have in all?
+                 Jason has 43 blue and 16 red marbles. Tom has 24 blue marbles. How many blue marbles do they have in all?
+                 Jason has 43 blue and 16 red marbles. Tom has 24 blue marbles. How many blue marbles do they have in all?
+                 Jason has 43 blue and 16 red marbles. Tom has 24 blue marbles. How many blue marbles do they have in all?
+                 Jason has 43 blue and 16 red marbles. Tom has 24 blue marbles. How many blue marbles do they have in all?
+                 Jason has 43 blue and 16 red marbles. Tom has 24 blue marbles. How many blue marbles do they have in all?
+                 Jason has 43 blue and 16 red marbles. Tom has 24 blue marbles. How many blue marbles do they have in all?
+                 Jason has 43 blue and 16 red marbles. Tom has 24 blue marbles. How many blue marbles
+prediction: 24.0
+label: 67.0
+---------------
+test:20/395 | accuracy 4  0.2
+  5%|████████▎                                                                                                                                                           | 20/395 [13:10<5:22:10, 51.55s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The white line was 7.666666666666667 inches long and the blue line was 3.3333333333333335 inches long. Therefore, the white line was 4.3333333333333335 inches longer than the blue line.
+<|end_of_text|>
+prediction: 4.333333333333334
+label: 4.333333333333333
+---------------
+test:21/395 | accuracy 5  0.23809523809523808
+  5%|████████▋                                                                                                                                                           | 21/395 [13:20<4:03:20, 39.04s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sara had 24 peaches and 37 pears at her fruit dish. She went to the orchard and picked peaches. There are now 61 peaches. how many did she pick?
+                 Sara had 24 peaches and 37 pears at her fruit dish. She went to the orchard and picked peaches. There are now 61 peaches. how many did she pick?
+                 Sara had 24 peaches and 37 pears at her fruit dish. She went to the orchard and picked peaches. There are now 61 peaches. how many did she pick?
+                 Sara had 24 peaches and 37 pears at her fruit dish. She went to the orchard and picked peaches. There are now 61 peaches. how many did she pick?
+                 Sara had 24 peaches and 37 pears at her fruit dish. She went to the orchard and picked peaches. There are now 61 peaches. how many did she pick?
+                 Sara had 24 peaches and 37 pears at her fruit dish. She went to the orchard and picked peaches. There are now 61 peaches. how many did she pick?
+prediction: 61.0
+label: 37.0
+---------------
+test:22/395 | accuracy 5  0.22727272727272727
+  6%|█████████▏                                                                                                                                                          | 22/395 [14:18<4:38:10, 44.75s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 7.75 gallons of water in Becky's fish tank. If Becky adds 7 gallons more, there will be 14.75 gallons of water in all.
+prediction: 14.75
+label: 14.75
+---------------
+test:23/395 | accuracy 6  0.2608695652173913
+  6%|█████████▌                                                                                                                                                          | 23/395 [15:16<5:02:09, 48.73s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  6%|█████████▉                                                                                                                                                          | 24/395 [16:27<5:43:38, 55.58s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The value of Kate's retirement fund decreased by $ 12. If her fund was worth $ 1472 before, how much is it worth now?
+                 The value of Kate's retirement fund decreased by $ 12. If her fund was worth $ 1472 before, how much is it worth now?
+                 The value of Kate's retirement fund decreased by $ 12. If her fund was worth $ 1472 before, how much is it worth now?
+                 The value of Kate's retirement fund decreased by $ 12. If her fund was worth $ 1472 before, how much is it worth now?
+                 The value of Kate's retirement fund decreased by $ 12. If her fund was worth $ 1472 before, how much is it worth now?
+                 The value of Kate's retirement fund decreased by $ 12. If her fund was worth $ 1472 before, how much is it worth now?
+                 The value of Kate's retirement fund decreased by $ 12. If her fund was worth $ 1472 before, how much is it worth now?
+                 The value of Kate's retirement fund decreased by $ 12. If her fund was
+prediction: 12.0
+label: 1460.0
+---------------
+test:24/395 | accuracy 6  0.25
+  6%|██████████▍                                                                                                                                                         | 25/395 [17:37<6:09:23, 59.90s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Christina just transferred $ 69 out of her bank account. As a result, the account now has $ 26935 in it. How much money was in the account before the transfer?
+                 Christina just transferred $ 69 out of her bank account. As a result, the account now has $ 26935 in it. How much money was in the account before the transfer?
+                 Christina just transferred $ 69 out of her bank account. As a result, the account now has $ 26935 in it. How much money was in the account before the transfer?
+                 Christina just transferred $ 69 out of her bank account. As a result, the account now has $ 26935 in it. How much money was in the account before the transfer?
+                 Christina just transferred $ 69 out of her bank account. As a result, the account now has $ 26935 in it. How much money was in the account before the transfer?
+                 Christina just transferred $ 69 out of her bank account. As a result, the account now has $ 26935 in it. How much money was in the account before the transfer?
+                 Christina just transferred $ 69 out of her bank account. As a result,
+prediction: 69.0
+label: 27004.0
+---------------
+test:25/395 | accuracy 6  0.24
+  7%|██████████▊                                                                                                                                                         | 26/395 [19:06<7:01:09, 68.48s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike have now?
+                 Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike have now?
+                 Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike have now?
+                 Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike have now?
+                 Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike have now?
+                 Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike have now?
+                 Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike have now?
+                 Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike have now?
+                 Mike has 87 baseball cards. Sam bought 13 of Mike's baseball cards. How many baseball cards does Mike
+prediction: 13.0
+label: 74.0
+---------------
+test:26/395 | accuracy 6  0.23076923076923078
+---------------
+Joan grew 8 watermelons and 4 turnips. Tom grew 9 watermelons. How many watermelons did they grow in total?
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermelons grown by Joan and Tom is 17.
+                 The total number of watermel
+prediction: 17.0
+label: 17.0
+---------------
+test:27/395 | accuracy 7  0.25925925925925924
+  7%|███████████▏                                                                                                                                                        | 27/395 [20:32<7:32:34, 73.79s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  7%|███████████▋                                                                                                                                                        | 28/395 [21:53<7:45:08, 76.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Joan has 10 books. Tom has 38 books. How many books do they have together?
+                 The total number of books that Joan and Tom have together is 48 books.
+                 This is because 10 + 38 = 48.
+                 Therefore, the total number of books that Joan and Tom have together is 48 books.
+                 This is because 10 + 38 = 48.
+                 Therefore, the total number of books that Joan and Tom have together is 48 books.
+                 This is because 10 + 38 = 48.
+                 Therefore, the total number of books that Joan and Tom have together is 48 books.
+                 This is because 10 + 38 = 48.
+                 Therefore, the total number of books that Joan and Tom have together is 48 books.
+                 This is because 10 + 38 = 48.
+                 Therefore, the total number of books that Joan and Tom have together is 48 books.
+                 This is because 10 + 38 = 48.
+                 Therefore, the total number of books that Joan and Tom have together is 48 books.
+                 This is because 10 + 38 = 48.
+prediction: 48.0
+label: 48.0
+---------------
+test:28/395 | accuracy 8  0.2857142857142857
+  7%|████████████                                                                                                                                                        | 29/395 [23:19<8:01:13, 78.89s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in all?
+                 Melanie grew 139 turnips. Benny grew 113 turnips. How many turnips did they grow in
+prediction: 113.0
+label: 252.0
+---------------
+test:29/395 | accuracy 8  0.27586206896551724
+  8%|████████████▍                                                                                                                                                       | 30/395 [24:44<8:10:56, 80.70s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Oscar's bus ride to school is 0.75 mile and Charlie's bus ride is 0.25 mile. How much longer is Oscar's bus ride than Charlie's?
+                 Oscar's bus ride to school is 0.75 mile and Charlie's bus ride is 0.25 mile. How much longer is Oscar's bus ride than Charlie's?
+                 Oscar's bus ride to school is 0.75 mile and Charlie's bus ride is 0.25 mile. How much longer is Oscar's bus ride than Charlie's?
+                 Oscar's bus ride to school is 0.75 mile and Charlie's bus ride is 0.25 mile. How much longer is Oscar's bus ride than Charlie's?
+                 Oscar's bus ride to school is 0.75 mile and Charlie's bus ride is 0.25 mile. How much longer is Oscar's bus ride than Charlie's?
+                 Oscar's bus ride to school is 0.75 mile and Charlie's bus ride is 0.25 mile. How much longer is Oscar's bus ride than Charlie's?
+                 Oscar's bus
+prediction: 0.25
+label: 0.5
+---------------
+test:30/395 | accuracy 8  0.26666666666666666
+  8%|████████████▊                                                                                                                                                       | 31/395 [26:04<8:08:19, 80.49s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 6 short bushes and 4 tall trees currently in the park. Park workers had to cut down 2 short bushes that were damaged. How many short bushes will the park have when the workers are finished?
+                 There are 6 short bushes and 4 tall trees currently in the park. Park workers had to cut down 2 short bushes that were damaged. How many short bushes will the park have when the workers are finished?
+                 There are 6 short bushes and 4 tall trees currently in the park. Park workers had to cut down 2 short bushes that were damaged. How many short bushes will the park have when the workers are finished?
+                 There are 6 short bushes and 4 tall trees currently in the park. Park workers had to cut down 2 short bushes that were damaged. How many short bushes will the park have when the workers are finished?
+                 There are 6 short bushes and 4 tall trees currently in the park. Park workers had to cut down 2 short bushes that were damaged. How many short bushes will the park have when the workers are finished?
+                 There are 6 short bushes and 4 tall trees currently in the park. Park workers had to cut down 2 short bushes
+prediction: 2.0
+label: 4.0
+---------------
+test:31/395 | accuracy 8  0.25806451612903225
+  8%|█████████████▎                                                                                                                                                      | 32/395 [27:26<8:10:14, 81.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there in total?
+                 There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there in total?
+                 There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there in total?
+                 There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there in total?
+                 There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there in total?
+                 There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there in total?
+                 There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there in total?
+                 There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there in total?
+                 There are 2 pencils in the drawer. Tim placed 3 pencils in the drawer. How many pencils are now there
+prediction: 3.0
+label: 5.0
+---------------
+test:32/395 | accuracy 8  0.25
+  8%|█████████████▋                                                                                                                                                      | 33/395 [28:56<8:24:23, 83.60s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Jessica spent $ 10.22 on a cat toy, and a cage cost her $ 11.73. What was the total cost of Jessica's purchases?
+                 Jessica spent $ 10.22 on a cat toy, and a cage cost her $ 11.73. What was the total cost of Jessica's purchases?
+                 Jessica spent $ 10.22 on a cat toy, and a cage cost her $ 11.73. What was the total cost of Jessica's purchases?
+                 Jessica spent $ 10.22 on a cat toy, and a cage cost her $ 11.73. What was the total cost of Jessica's purchases?
+                 Jessica spent $ 10.22 on a cat toy, and a cage cost her $ 11.73. What was the total cost of Jessica's purchases?
+                 Jessica spent $ 10.22 on a cat toy, and a cage cost her $ 11.73. What was the total cost of Jessica's purchases?
+                 Jessica spent $ 10.22 on a cat toy, and a cage cost her $ 11.73. What was the total cost of Jessica's purchases?
+                 Jessica spent $
+prediction: 11.73
+label: 21.95
+---------------
+test:33/395 | accuracy 8  0.24242424242424243
+  9%|██████████████                                                                                                                                                      | 34/395 [30:30<8:41:46, 86.72s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 31 short trees and 32 tall trees currently in the park. Park workers will plant short trees today. When the workers are finished there will be 95 short trees in the park. How many short trees did the workers plant today?
+                There are 31 short trees and 32 tall trees currently in the park. Park workers will plant short trees today. When the workers are finished there will be 95 short trees in the park. How many short trees did the workers plant today?
+                There are 31 short trees and 32 tall trees currently in the park. Park workers will plant short trees today. When the workers are finished there will be 95 short trees in the park. How many short trees did the workers plant today?
+                There are 31 short trees and 32 tall trees currently in the park. Park workers will plant short trees today. When the workers are finished there will be 95 short trees in the park. How many short trees did the workers plant today?
+                There are 31 short trees and 32 tall trees currently in the park. Park workers will plant short trees today. When the workers are finished there will be 95 short trees in the park. How many short trees did the workers plant
+prediction: 95.0
+label: 64.0
+---------------
+test:34/395 | accuracy 8  0.23529411764705882
+---------------
+Greg and Sharon own neighboring cornfields. Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre. How many more acres did Greg harvest than Sharon?
+                 Greg and Sharon own neighboring cornfields. Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre. How many more acres did Greg harvest than Sharon?
+                 Greg and Sharon own neighboring cornfields. Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre. How many more acres did Greg harvest than Sharon?
+                 Greg and Sharon own neighboring cornfields. Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre. How many more acres did Greg harvest than Sharon?
+                 Greg and Sharon own neighboring cornfields. Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre. How many more acres did Greg harvest than Sharon?
+                 Greg and Sharon own neighboring cornfields. Greg harvested 0.4 acre of corn on Monday and Sharon harvested 0.1 acre. How many more acres did Greg harvest than Sharon?
+                 Greg and Sharon own neighboring cornfields. Greg harvested 0.4 acre of
+prediction: 0.4
+label: 0.3
+---------------
+test:35/395 | accuracy 8  0.22857142857142856
+  9%|██████████████▌                                                                                                                                                     | 35/395 [31:53<8:34:02, 85.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  9%|██████████████▉                                                                                                                                                     | 36/395 [33:20<8:36:03, 86.25s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sandy went to the mall to buy clothes. She spent $ 13.99 on shorts, $ 12.14 on a shirt, and $ 7.43 on a jacket. How much money did Sandy spend on clothes?
+                 Sandy spent $ 13.99 on shorts, $ 12.14 on a shirt, and $ 7.43 on a jacket. Sandy spent $ 13.99 + $ 12.14 + $ 7.43 = $ 33.56 on clothes.
+                 Sandy spent $ 13.99 on shorts, $ 12.14 on a shirt, and $ 7.43 on a jacket. Sandy spent $ 13.99 + $ 12.14 + $ 7.43 = $ 33.56 on clothes.
+                 Sandy spent $ 13.99 on shorts, $ 12.14 on a shirt, and $ 7.43 on a jacket. Sandy spent $ 13.99 + $ 12.14 + $ 7.43 = $ 33.56 on clothes.
+                 Sandy spent $ 13.99 on shorts, $ 12.14 on a shirt, and $ 7.43 on a jacket. Sandy
+prediction: 7.43
+label: 33.56
+---------------
+test:36/395 | accuracy 8  0.2222222222222222
+---------------
+Abe's family moved from the Bahamas to Japan, so they had convert their money into Japanese yen. Their checking account now has 6359 yen and their savings account now has 3485 yen. How many yen do they have?
+                 Abe's family moved from the Bahamas to Japan, so they had convert their money into Japanese yen. Their checking account now has 6359 yen and their savings account now has 3485 yen. How many yen do they have?
+                 Abe's family moved from the Bahamas to Japan, so they had convert their money into Japanese yen. Their checking account now has 6359 yen and their savings account now has 3485 yen. How many yen do they have?
+                 Abe's family moved from the Bahamas to Japan, so they had convert their money into Japanese yen. Their checking account now has 6359 yen and their savings account now has 3485 yen. How many yen do they have?
+                 Abe's family moved from the Bahamas to Japan, so they had convert their money into Japanese yen. Their checking account now has 6359 yen and their savings account now has 3485 yen. How many yen do they have?
+                 Abe's family moved from
+prediction: 3485.0
+label: 9844.0
+---------------
+test:37/395 | accuracy 8  0.21621621621621623
+  9%|███████████████▎                                                                                                                                                    | 37/395 [34:45<8:31:34, 85.74s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There will be a total of 60 dogwood trees in the park when the workers are finished. The workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow. This means that there will be a total of 61 dogwood trees in the park when the workers are finished. The workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow. This means that there will be a total of 61 dogwood trees in the park when the workers are finished. The workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow. This means that there will be a total of 61 dogwood trees in the park when the workers are finished. The workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow. This means that there will be a total of 61 dogwood trees in the park when the workers are finished. The workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow. This means that there will be a total of 61 dogwood trees in the park when the workers are finished. The workers will plant 41 dogwood trees today and 20 dogwood trees tomorrow. This means that there will be a total of 61 dogwood
+prediction: 61.0
+label: 100.0
+---------------
+test:38/395 | accuracy 8  0.21052631578947367
+ 10%|███████████████▊                                                                                                                                                    | 38/395 [36:11<8:31:19, 85.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+ 10%|████████████████▏                                                                                                                                                   | 39/395 [37:41<8:36:06, 86.98s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Jason picked 46 pears, Keith picked 47 pears, and Mike picked 12 pears from the pear tree. How many pears were picked in total?
+                 The total number of pears picked is 46 + 47 + 12 = 105 pears.
+prediction: 105.0
+label: 105.0
+---------------
+test:39/395 | accuracy 9  0.23076923076923078
+ 10%|████████████████▌                                                                                                                                                   | 40/395 [39:02<8:24:35, 85.28s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46 rulers in the drawer. Tim took 25 rulers from the drawer. How many rulers are now in the drawer?
+                 There are 46
+prediction: 46.0
+label: 21.0
+---------------
+test:40/395 | accuracy 9  0.225
+ 10%|█████████████████                                                                                                                                                   | 41/395 [40:30<8:28:25, 86.17s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Hannah's Vegetarian Restaurant bought 0.3333333333333333 pound of green peppers and 0.3333333333333333 pound of red peppers. How many pounds of peppers did Hannah's Vegetarian Restaurant buy in all?
+                 Hannah's Vegetarian Restaurant bought 0.3333333333333333 pound of green peppers and 0.3333333333333333 pound of red peppers. How many pounds of peppers did Hannah's Vegetarian Restaurant buy in all?
+                 Hannah's Vegetarian Restaurant bought 0.3333333333333333 pound of green peppers and 0.3333333333333333 pound of red peppers. How many pounds of peppers did Hannah's Vegetarian Restaurant buy in all?
+                 Hannah's Vegetarian Restaurant bought 0.3333333333333333 pound of green peppers and 0.3333333333333333 pound of red peppers. How many pounds of peppers did Hannah's Vegetarian Restaurant buy in all?
+                 Hannah's Vegetarian Restaurant bought 0.3333333333333333 pound of green peppers and 0.3333333333333333 pound of red peppers. How many pounds of peppers did Hannah's
+prediction: 0.3333333333333333
+label: 0.6666666666666666
+---------------
+test:41/395 | accuracy 9  0.21951219512195122
+ 11%|█████████████████▍                                                                                                                                                  | 42/395 [41:45<8:07:05, 82.79s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The number of hamburgers that were over from lunch is 6 hamburgers.
+                 The restaurant made 9 hamburgers to serve during lunch. Only 3 were actually served. How many hamburgers were over from lunch?
+                 The number of hamburgers that were over from lunch is 6 hamburgers.
+                 The restaurant made 9 hamburgers to serve during lunch. Only 3 were actually served. How many hamburgers were over from lunch?
+                 The number of hamburgers that were over from lunch is 6 hamburgers.
+                 The restaurant made 9 hamburgers to serve during lunch. Only 3 were actually served. How many hamburgers were over from lunch?
+                 The number of hamburgers that were over from lunch is 6 hamburgers.
+                 The restaurant made 9 hamburgers to serve during lunch. Only 3 were actually served. How many hamburgers were over from lunch?
+                 The number of hamburgers that were over from lunch is 6 hamburgers.
+                 The restaurant made 9 hamburgers to serve during lunch. Only 3 were actually served. How many hamburgers were over from lunch?
+                 The number of hamburgers that were over from lunch is 6 hamburgers.
+prediction: 6.0
+label: 6.0
+---------------
+test:42/395 | accuracy 10  0.23809523809523808
+ 11%|█████████████████▊                                                                                                                                                  | 43/395 [43:04<7:59:25, 81.72s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A construction company is repaving a damaged road. So far, they have repaved a total of 4938 inches of the road. Today, they repaved 805 inches of the road. How many inches of the road had they repaved before today?
+prediction: 805.0
+label: 4133.0
+---------------
+test:43/395 | accuracy 10  0.23255813953488372
+ 11%|██████████████████▎                                                                                                                                                 | 44/395 [43:20<6:02:28, 61.96s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The number of houses built during the housing boom in Lawrence County was 574. This is because there were 1426 houses before the boom and 2000 houses after the boom. Therefore, the number of houses built during the boom is 2000 - 1426 = 574.
+<|end_of_text|>
+prediction: 574.0
+label: 574.0
+---------------
+test:44/395 | accuracy 11  0.25
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 111, in main
+    outputs = evaluate(instruction)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 69, in evaluate
+    generation_output = model.generate(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2651, in generate
+    result = self._beam_search(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 4101, in _beam_search
+    model_kwargs = self._update_model_kwargs_for_generation(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1011, in _update_model_kwargs_for_generation
+    new_positions = torch.arange(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 111, in main
+    outputs = evaluate(instruction)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 69, in evaluate
+    generation_output = model.generate(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2651, in generate
+    result = self._beam_search(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 4101, in _beam_search
+    model_kwargs = self._update_model_kwargs_for_generation(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 1011, in _update_model_kwargs_for_generation
+    new_positions = torch.arange(
+KeyboardInterrupt

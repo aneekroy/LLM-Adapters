@@ -1,0 +1,1 @@
+{"batch": 205, "running_accuracy": 0.18470948012232416, "samples_seen": 3270, "_timestamp": 1752037297.1507814, "_runtime": 1205.4852802753448, "_step": 3270, "final_accuracy": 0.18470948012232416, "_wandb": {"runtime": 1204}}

@@ -1,0 +1,15 @@
+{"time":"2025-07-06T14:08:43.43877074+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250706_140843-g6yfzixx/logs/debug-core.log"}
+{"time":"2025-07-06T14:08:45.23614595+05:30","level":"INFO","msg":"created new stream","id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:45.236232641+05:30","level":"INFO","msg":"stream: started","id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:45.236253097+05:30","level":"INFO","msg":"handler: started","stream_id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:45.236307325+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:45.236316366+05:30","level":"INFO","msg":"sender: started","stream_id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:45.910580872+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-06T14:08:54.818431127+05:30","level":"INFO","msg":"stream: closing","id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:54.818492998+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-06T14:08:54.818536073+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-06T14:08:57.047716+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-06T14:08:59.10046959+05:30","level":"INFO","msg":"handler: closed","stream_id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:59.10056844+05:30","level":"INFO","msg":"sender: closed","stream_id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:59.100529434+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"g6yfzixx"}
+{"time":"2025-07-06T14:08:59.10075943+05:30","level":"INFO","msg":"stream: closed","id":"g6yfzixx"}

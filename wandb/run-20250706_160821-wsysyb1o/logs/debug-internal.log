@@ -1,0 +1,20 @@
+{"time":"2025-07-06T16:08:21.356210976+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250706_160821-wsysyb1o/logs/debug-core.log"}
+{"time":"2025-07-06T16:08:21.883078375+05:30","level":"INFO","msg":"created new stream","id":"wsysyb1o"}
+{"time":"2025-07-06T16:08:21.883394185+05:30","level":"INFO","msg":"stream: started","id":"wsysyb1o"}
+{"time":"2025-07-06T16:08:21.883471954+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"wsysyb1o"}
+{"time":"2025-07-06T16:08:21.883491093+05:30","level":"INFO","msg":"handler: started","stream_id":"wsysyb1o"}
+{"time":"2025-07-06T16:08:21.883592344+05:30","level":"INFO","msg":"sender: started","stream_id":"wsysyb1o"}
+{"time":"2025-07-06T16:08:22.283298531+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-06T16:22:22.558109279+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T16:22:54.981982591+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T16:23:29.263932245+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T17:36:09.516393028+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/wsysyb1o/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection refused"}
+{"time":"2025-07-06T17:36:11.534759822+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/wsysyb1o/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection refused"}
+{"time":"2025-07-06T17:51:59.106831997+05:30","level":"INFO","msg":"stream: closing","id":"wsysyb1o"}
+{"time":"2025-07-06T17:51:59.106903964+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-06T17:51:59.10695679+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-06T17:52:00.936975947+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-06T17:52:01.447934305+05:30","level":"INFO","msg":"handler: closed","stream_id":"wsysyb1o"}
+{"time":"2025-07-06T17:52:01.44801204+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"wsysyb1o"}
+{"time":"2025-07-06T17:52:01.4480288+05:30","level":"INFO","msg":"sender: closed","stream_id":"wsysyb1o"}
+{"time":"2025-07-06T17:52:01.448097864+05:30","level":"INFO","msg":"stream: closed","id":"wsysyb1o"}

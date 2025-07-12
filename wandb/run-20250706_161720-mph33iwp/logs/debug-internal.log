@@ -1,0 +1,18 @@
+{"time":"2025-07-06T16:17:20.067752573+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250706_161720-mph33iwp/logs/debug-core.log"}
+{"time":"2025-07-06T16:17:20.557158741+05:30","level":"INFO","msg":"created new stream","id":"mph33iwp"}
+{"time":"2025-07-06T16:17:20.557238519+05:30","level":"INFO","msg":"stream: started","id":"mph33iwp"}
+{"time":"2025-07-06T16:17:20.557263979+05:30","level":"INFO","msg":"handler: started","stream_id":"mph33iwp"}
+{"time":"2025-07-06T16:17:20.557262228+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"mph33iwp"}
+{"time":"2025-07-06T16:17:20.557291779+05:30","level":"INFO","msg":"sender: started","stream_id":"mph33iwp"}
+{"time":"2025-07-06T16:17:21.028623224+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-06T16:22:21.236284611+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T16:22:53.294593025+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T16:23:27.72651858+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T16:36:03.272893753+05:30","level":"INFO","msg":"stream: closing","id":"mph33iwp"}
+{"time":"2025-07-06T16:36:03.272961563+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-06T16:36:03.273020061+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-06T16:36:06.904596417+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-06T16:36:08.433991743+05:30","level":"INFO","msg":"handler: closed","stream_id":"mph33iwp"}
+{"time":"2025-07-06T16:36:08.434060173+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"mph33iwp"}
+{"time":"2025-07-06T16:36:08.434076725+05:30","level":"INFO","msg":"sender: closed","stream_id":"mph33iwp"}
+{"time":"2025-07-06T16:36:08.434156969+05:30","level":"INFO","msg":"stream: closed","id":"mph33iwp"}

@@ -1,0 +1,22 @@
+{"time":"2025-07-07T11:19:07.862898852+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250707_111907-qm4kc255/logs/debug-core.log"}
+{"time":"2025-07-07T11:19:08.422065502+05:30","level":"INFO","msg":"created new stream","id":"qm4kc255"}
+{"time":"2025-07-07T11:19:08.422138747+05:30","level":"INFO","msg":"stream: started","id":"qm4kc255"}
+{"time":"2025-07-07T11:19:08.422157246+05:30","level":"INFO","msg":"handler: started","stream_id":"qm4kc255"}
+{"time":"2025-07-07T11:19:08.422211121+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"qm4kc255"}
+{"time":"2025-07-07T11:19:08.422193157+05:30","level":"INFO","msg":"sender: started","stream_id":"qm4kc255"}
+{"time":"2025-07-07T11:19:09.024740641+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-07T11:37:24.374971393+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-07T11:37:56.528052022+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-07T11:38:31.080978809+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-07T11:39:09.244817668+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-07T11:39:18.007853391+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/qm4kc255/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection timed out"}
+{"time":"2025-07-07T11:39:51.206896903+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/qm4kc255/file_stream\": Forbidden"}
+{"time":"2025-07-07T11:39:55.853965921+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-07T13:01:50.407253949+05:30","level":"INFO","msg":"stream: closing","id":"qm4kc255"}
+{"time":"2025-07-07T13:01:50.407321829+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-07T13:01:50.407358749+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-07T13:01:52.110075765+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-07T13:01:52.57401451+05:30","level":"INFO","msg":"handler: closed","stream_id":"qm4kc255"}
+{"time":"2025-07-07T13:01:52.574089375+05:30","level":"INFO","msg":"sender: closed","stream_id":"qm4kc255"}
+{"time":"2025-07-07T13:01:52.574078115+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"qm4kc255"}
+{"time":"2025-07-07T13:01:52.57424707+05:30","level":"INFO","msg":"stream: closed","id":"qm4kc255"}

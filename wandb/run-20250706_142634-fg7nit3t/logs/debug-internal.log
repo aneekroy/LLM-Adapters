@@ -1,0 +1,38 @@
+{"time":"2025-07-06T14:26:34.617693716+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250706_142634-fg7nit3t/logs/debug-core.log"}
+{"time":"2025-07-06T14:26:35.13301298+05:30","level":"INFO","msg":"created new stream","id":"fg7nit3t"}
+{"time":"2025-07-06T14:26:35.133060684+05:30","level":"INFO","msg":"stream: started","id":"fg7nit3t"}
+{"time":"2025-07-06T14:26:35.133077469+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"fg7nit3t"}
+{"time":"2025-07-06T14:26:35.13307848+05:30","level":"INFO","msg":"sender: started","stream_id":"fg7nit3t"}
+{"time":"2025-07-06T14:26:35.133116512+05:30","level":"INFO","msg":"handler: started","stream_id":"fg7nit3t"}
+{"time":"2025-07-06T14:26:35.538076703+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-06T14:48:20.826139108+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T14:48:52.990440903+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T14:49:27.988614751+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T14:50:07.81544499+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T14:50:17.591891622+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/fg7nit3t/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection timed out"}
+{"time":"2025-07-06T14:50:56.719296293+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T14:52:01.919089541+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T14:52:45.047921309+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/fg7nit3t/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection timed out"}
+{"time":"2025-07-06T14:58:20.83431218+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T14:58:53.296271364+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T14:59:28.250289899+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T15:00:08.251918385+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T15:00:19.703912279+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/fg7nit3t/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection timed out"}
+{"time":"2025-07-06T15:00:54.949087702+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T15:24:20.854462986+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T15:24:52.902929094+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T15:25:27.321729783+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T15:26:05.52479451+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T15:26:24.375881766+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/fg7nit3t/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection timed out"}
+{"time":"2025-07-06T15:26:51.981721751+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T15:27:15.576004887+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/fg7nit3t/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: no route to host"}
+{"time":"2025-07-06T15:27:51.029260851+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/fg7nit3t/file_stream\": Forbidden"}
+{"time":"2025-07-06T15:28:01.457168667+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T16:08:50.9307263+05:30","level":"INFO","msg":"stream: closing","id":"fg7nit3t"}
+{"time":"2025-07-06T16:08:50.93079322+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-06T16:08:50.930883825+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-06T16:08:52.526360723+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-06T16:08:52.971117054+05:30","level":"INFO","msg":"handler: closed","stream_id":"fg7nit3t"}
+{"time":"2025-07-06T16:08:52.971168227+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"fg7nit3t"}
+{"time":"2025-07-06T16:08:52.971180292+05:30","level":"INFO","msg":"sender: closed","stream_id":"fg7nit3t"}
+{"time":"2025-07-06T16:08:52.971281717+05:30","level":"INFO","msg":"stream: closed","id":"fg7nit3t"}

@@ -1,0 +1,16 @@
+{"time":"2025-07-04T10:33:41.790944172+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250704_103341-4u4qltxf/logs/debug-core.log"}
+{"time":"2025-07-04T10:33:42.308864193+05:30","level":"INFO","msg":"created new stream","id":"4u4qltxf"}
+{"time":"2025-07-04T10:33:42.308945696+05:30","level":"INFO","msg":"stream: started","id":"4u4qltxf"}
+{"time":"2025-07-04T10:33:42.308998856+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"4u4qltxf"}
+{"time":"2025-07-04T10:33:42.309024889+05:30","level":"INFO","msg":"handler: started","stream_id":"4u4qltxf"}
+{"time":"2025-07-04T10:33:42.309099749+05:30","level":"INFO","msg":"sender: started","stream_id":"4u4qltxf"}
+{"time":"2025-07-04T10:33:42.697969079+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-04T10:40:13.556008708+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/4u4qltxf/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection refused"}
+{"time":"2025-07-04T11:57:17.538075628+05:30","level":"INFO","msg":"stream: closing","id":"4u4qltxf"}
+{"time":"2025-07-04T11:57:17.53812616+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-04T11:57:17.538214592+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-04T11:57:19.839007416+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-04T11:57:20.359904271+05:30","level":"INFO","msg":"handler: closed","stream_id":"4u4qltxf"}
+{"time":"2025-07-04T11:57:20.359975155+05:30","level":"INFO","msg":"sender: closed","stream_id":"4u4qltxf"}
+{"time":"2025-07-04T11:57:20.359965031+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"4u4qltxf"}
+{"time":"2025-07-04T11:57:20.360154499+05:30","level":"INFO","msg":"stream: closed","id":"4u4qltxf"}

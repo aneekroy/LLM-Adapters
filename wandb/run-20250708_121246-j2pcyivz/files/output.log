@@ -1,0 +1,730 @@
+
+Loading checkpoint shards: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:01<00:00,  1.07it/s]
+/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py:569: UserWarning: Found missing adapter keys while loading the checkpoint: ['base_model.model.model.layers.0.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.0.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.0.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.0.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.1.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.1.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.1.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.1.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.2.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.2.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.2.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.2.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.3.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.3.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.3.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.3.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.4.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.4.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.4.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.4.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.5.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.5.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.5.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.5.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.6.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.6.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.6.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.6.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.7.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.7.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.7.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.7.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.8.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.8.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.8.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.8.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.9.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.9.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.9.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.9.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.10.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.10.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.10.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.10.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.11.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.11.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.11.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.11.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.12.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.12.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.12.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.12.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.13.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.13.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.13.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.13.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.14.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.14.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.14.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.14.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.15.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.15.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.15.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.15.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.16.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.16.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.16.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.16.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.17.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.17.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.17.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.17.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.18.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.18.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.18.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.18.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.19.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.19.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.19.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.19.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.20.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.20.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.20.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.20.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.21.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.21.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.21.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.21.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.22.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.22.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.22.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.22.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.23.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.23.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.23.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.23.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.24.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.24.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.24.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.24.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.25.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.25.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.25.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.25.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.26.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.26.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.26.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.26.self_attn.v_proj.lora_B.default.weight', 'base_model.model.model.layers.27.self_attn.q_proj.lora_A.default.weight', 'base_model.model.model.layers.27.self_attn.q_proj.lora_B.default.weight', 'base_model.model.model.layers.27.self_attn.v_proj.lora_A.default.weight', 'base_model.model.model.layers.27.self_attn.v_proj.lora_B.default.weight'].
+  warnings.warn(warn_message)
+  0%|                                                                                                                                                                               | 0/600 [00:00<?, ?it/s]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+The attention mask is not set and cannot be inferred from input because pad token is same as eos token. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+  0%|▎                                                                                                                                                                    | 1/600 [00:31<5:15:10, 31.57s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sam bought 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?
+                 There are 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?
+                 There are 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?
+                 There are 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?
+                 There are 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?
+                 There are 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?
+                 There are 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?
+                 There are 13 adventure books and 17 mystery books. If 15 of the books were used, how many new books did he buy?
+                 There are 13 adventure books and
+prediction: 13.0
+label: 15.0
+---------------
+test:1/600 | accuracy 0  0.0
+  0%|▌                                                                                                                                                                    | 2/600 [01:09<5:51:06, 35.23s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Bianca was planting vegetables in her garden. She started with 52 seeds and planted 40 of them in the big garden and in each of her small gardens put 2 seeds each. How many small gardens did Bianca have?
+                 Bianca planted 40 seeds in her big garden and 2 seeds in each of her small gardens. Therefore, the total number of seeds planted is 40 + (2 x 3) = 40 + 6 = 46 seeds.
+                 Bianca had 3 small gardens.
+                 Bianca planted 40 seeds in her big garden and 2 seeds in each of her small gardens. Therefore, the total number of seeds planted is 40 + (2 x 3) = 40 + 6 = 46 seeds.
+                 Bianca had 3 small gardens.
+                 Bianca planted 40 seeds in her big garden and 2 seeds in each of her small gardens. Therefore, the total number of seeds planted is 40 + (2 x 3) = 40 + 6 = 46 seeds.
+                 Bianca had 3 small gardens.
+                 Bianca planted 40 seeds in her big garden and 2 seeds in each of her small gardens.
+prediction: 2.0
+label: 6.0
+---------------
+test:2/600 | accuracy 0  0.0
+  0%|▊                                                                                                                                                                    | 3/600 [01:44<5:49:24, 35.12s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with?
+                 Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with?
+                 Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with?
+                 Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with?
+                 Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with?
+                 Paige had 27 files on her computer. She deleted 9 of them and put the rest into folders with 6 files in each one. How many folders did Paige end up with?
+                 Paige had 27 files on her computer. She deleted 9 of them and
+prediction: 9.0
+label: 3.0
+---------------
+test:3/600 | accuracy 0  0.0
+  1%|█                                                                                                                                                                    | 4/600 [02:18<5:43:35, 34.59s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Edward won 9 tickets. If he spent 4 tickets on a beanie and later won 4 more tickets, he would have a total of 9-4+4=9 tickets.
+prediction: 9.0
+label: 9.0
+---------------
+test:4/600 | accuracy 1  0.25
+  1%|█▍                                                                                                                                                                   | 5/600 [02:55<5:52:45, 35.57s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now?
+                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now?
+                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now?
+                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now?
+                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now?
+                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now?
+                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent 19 on a new game. How much money does he have now?
+                 Cody had 45 dollars. For his birthday he got 9 more dollars but spent
+prediction: 9.0
+label: 35.0
+---------------
+test:5/600 | accuracy 1  0.2
+  1%|█▋                                                                                                                                                                   | 6/600 [03:34<6:04:53, 36.86s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have?
+                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have?
+                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have?
+                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have?
+                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have?
+                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables had 3 people at each table, how many tables did he have?
+                 The waiter had 21 customers in his section. If 12 of them left and the rest of his tables
+prediction: 12.0
+label: 3.0
+---------------
+test:6/600 | accuracy 1  0.16666666666666666
+  1%|█▉                                                                                                                                                                   | 7/600 [04:14<6:12:24, 37.68s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There were 56 puppies in the pet store. In one day they sold 24 of them and put the rest into cages with 4 in each cage. This means that there were 56 - 24 = 32 puppies left in the pet store. To find out how many cages they used, we need to divide the number of puppies by the number of puppies in each cage. 32 ÷ 4 = 8 cages. Therefore, there were 8 cages in the pet store.
+prediction: 8.0
+label: 8.0
+---------------
+test:7/600 | accuracy 2  0.2857142857142857
+  1%|██▏                                                                                                                                                                  | 8/600 [04:56<6:25:29, 39.07s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece of furniture putting it together, how many minutes did it take her to finish?
+                 Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece of furniture putting it together, how many minutes did it take her to finish?
+                 Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece of furniture putting it together, how many minutes did it take her to finish?
+                 Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece of furniture putting it together, how many minutes did it take her to finish?
+                 Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece of furniture putting it together, how many minutes did it take her to finish?
+                 Maria bought 2 new chairs and 2 new tables for her house. If she spent 8 minutes on each piece of furniture putting it together, how many minutes did it take her to finish?
+                 Maria bought 2
+prediction: 2.0
+label: 32.0
+---------------
+test:8/600 | accuracy 2  0.25
+  2%|██▍                                                                                                                                                                  | 9/600 [05:41<6:42:44, 40.89s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Bianca had 34 songs on her mp3 player. If she deleted 14 old songs from it and then added 44 new songs, how many songs does she have on her mp3 player?
+                 Bianca had 34 songs on her mp3 player. If she deleted 14 old songs from it and then added 44 new songs, how many songs does she have on her mp3 player?
+                 Bianca had 34 songs on her mp3 player. If she deleted 14 old songs from it and then added 44 new songs, how many songs does she have on her mp3 player?
+                 Bianca had 34 songs on her mp3 player. If she deleted 14 old songs from it and then added 44 new songs, how many songs does she have on her mp3 player?
+                 Bianca had 34 songs on her mp3 player. If she deleted 14 old songs from it and then added 44 new songs, how many songs does she have on her mp3 player?
+                 Bianca had 34 songs on her mp3 player. If she deleted 14 old songs from it and then added 44 new songs, how many songs does she have on her mp3 player?
+prediction: 3.0
+label: 64.0
+---------------
+test:9/600 | accuracy 2  0.2222222222222222
+  2%|██▋                                                                                                                                                                 | 10/600 [05:52<5:11:23, 31.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+It will take 4 hours to install the rest of the windows. The builder has already installed 6 of the 10 windows. If it takes 5 hours to install each window, then it will take 4 hours to install the remaining 4 windows. Therefore, it will take a total of 10 hours to install all 10 windows.
+<|end_of_text|>
+prediction: 10.0
+label: 20.0
+---------------
+test:10/600 | accuracy 2  0.2
+  2%|███                                                                                                                                                                 | 11/600 [06:42<6:08:06, 37.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There are 17 students trying out for the school's trivia teams. If 5 of them didn't get picked for the team and the rest were put into 3 groups, how many students would be in each group?
+                 There are 17 students trying out for the school's trivia teams. If 5 of them didn't get picked for the team and the rest were put into 3 groups, how many students would be in each group?
+                 There are 17 students trying out for the school's trivia teams. If 5 of them didn't get picked for the team and the rest were put into 3 groups, how many students would be in each group?
+                 There are 17 students trying out for the school's trivia teams. If 5 of them didn't get picked for the team and the rest were put into 3 groups, how many students would be in each group?
+                 There are 17 students trying out for the school's trivia teams. If 5 of them didn't get picked for the team and the rest were put into 3 groups, how many students would be in each group?
+                 There are 17 students trying out for the school's trivia teams. If 5 of them didn't
+prediction: 5.0
+label: 4.0
+---------------
+test:11/600 | accuracy 2  0.18181818181818182
+  2%|███▎                                                                                                                                                                | 12/600 [07:36<6:57:03, 42.56s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+It will take 6 hours to install the rest of the windows. The builder has already installed 6 of the 12 windows and it takes 4 hours to install each window. Therefore, it will take 6 hours to install the rest of the windows.
+prediction: 6.0
+label: 24.0
+---------------
+test:12/600 | accuracy 2  0.16666666666666666
+  2%|███▌                                                                                                                                                                | 13/600 [08:30<7:28:10, 45.81s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+It would take 8 days for all of the puppies to be adopted. This is because 8 puppies are adopted every day, and there are 17 puppies at the shelter to begin with. Therefore, 17 puppies will be adopted in 8 days, and then 17 more puppies will be adopted in the next 8 days, and so on. After 8 days, all of the puppies will have been adopted.
+prediction: 8.0
+label: 9.0
+---------------
+test:13/600 | accuracy 2  0.15384615384615385
+  2%|███▊                                                                                                                                                                | 14/600 [09:26<7:56:46, 48.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Luke made 9 dollars mowing lawns and 18 dollars weed eating. If he only spent 3 dollar a week, how long would the money last him?
+prediction: 3.0
+label: 9.0
+---------------
+test:14/600 | accuracy 2  0.14285714285714285
+  2%|████                                                                                                                                                                | 15/600 [10:21<8:15:31, 50.82s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There will be 2 groups with 5 players in each group.
+                ### Explanation:
+                 The number of groups can be found by dividing the total number of players by the number of players in each group. Since there are 4 new players and 6 returning players, the total number of players is 10. Since there are 5 players in each group, the number of groups can be found by dividing 10 by 5. 10 divided by 5 is 2, so there will be 2 groups with 5 players in each group.
+                ### Explanation:
+                 The number of groups can be found by dividing the total number of players by the number of players in each group. Since there are 4 new players and 6 returning players, the total number of players is 10. Since there are 5 players in each group, the number of groups can be found by dividing 10 by 5. 10 divided by 5 is 2, so there will be 2 groups with 5 players in each group.
+                ### Explanation:
+                 The number of groups can be found by dividing the total number of players by the number of players in each group. Since there are 4 new players and 6 returning
+prediction: 6.0
+label: 2.0
+---------------
+test:15/600 | accuracy 2  0.13333333333333333
+  3%|████▎                                                                                                                                                               | 16/600 [11:22<8:44:07, 53.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Vanessa had 16 music files and 48 video files on her flash drive. If she deleted 30 of the files, how many files were still on her flash drive?
+                 Vanessa had 16 music files and 48 video files on her flash drive. If she deleted 30 of the files, how many files were still on her flash drive?
+                 Vanessa had 16 music files and 48 video files on her flash drive. If she deleted 30 of the files, how many files were still on her flash drive?
+                 Vanessa had 16 music files and 48 video files on her flash drive. If she deleted 30 of the files, how many files were still on her flash drive?
+                 Vanessa had 16 music files and 48 video files on her flash drive. If she deleted 30 of the files, how many files were still on her flash drive?
+                 Vanessa had 16 music files and 48 video files on her flash drive. If she deleted 30 of the files, how many files were still on her flash drive?
+                 Vanessa had 16 music files and 48 video files on her flash drive. If she deleted 30 of the files, how many files were still on her flash drive
+prediction: 30.0
+label: 34.0
+---------------
+test:16/600 | accuracy 2  0.125
+  3%|████▋                                                                                                                                                               | 17/600 [12:26<9:14:01, 57.02s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a tip?
+                 The waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a tip?
+                 The waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a tip?
+                 The waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a tip?
+                 The waiter at 'The Greasy Spoon' restaurant had 26 customers to wait on. During the lunch rush he added another 27 customers. If 27 of the customers didn't leave him a tip, how many customers did leave a
+prediction: 27.0
+label: 26.0
+---------------
+test:17/600 | accuracy 2  0.11764705882352941
+  3%|████▉                                                                                                                                                               | 18/600 [13:38<9:56:31, 61.50s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+For the school bake sale Chloe made 28 cupcakes. If she sold 25 of them and then made 8 more, how many cupcakes would she have?
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them and then made 8 more.
+                 Chloe made 28 cupcakes. She sold 25 of them
+prediction: 25.0
+label: 11.0
+---------------
+test:18/600 | accuracy 2  0.1111111111111111
+  3%|█████▏                                                                                                                                                             | 19/600 [15:01<10:57:53, 67.94s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Isabel baked 3 brownies, but needed 5 total for her party. If she used 5 cups of flour on each one, how much cups of flour does she still need?
+                 Isabel baked 3 brownies, but needed 5 total for her party. If she used 5 cups of flour on each one, how much cups of flour does she still need?
+                 Isabel baked 3 brownies, but needed 5 total for her party. If she used 5 cups of flour on each one, how much cups of flour does she still need?
+                 Isabel baked 3 brownies, but needed 5 total for her party. If she used 5 cups of flour on each one, how much cups of flour does she still need?
+                 Isabel baked 3 brownies, but needed 5 total for her party. If she used 5 cups of flour on each one, how much cups of flour does she still need?
+                 Isabel baked 3 brownies, but needed 5 total for her party. If she used 5 cups of flour on each one, how much cups of flour does she still need?
+                 Isabel baked 3 brownies, but needed 5 total for her party.
+prediction: 5.0
+label: 10.0
+---------------
+test:19/600 | accuracy 2  0.10526315789473684
+  3%|█████▍                                                                                                                                                             | 20/600 [16:27<11:50:03, 73.45s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+There were 2 friends playing a video game online when 2 more players joined the game. If each player had 3 lives, how many lives did they have total?
+                 There were 2 friends playing a video game online when 2 more players joined the game. If each player had 3 lives, how many lives did they have total?
+                 There were 2 friends playing a video game online when 2 more players joined the game. If each player had 3 lives, how many lives did they have total?
+                 There were 2 friends playing a video game online when 2 more players joined the game. If each player had 3 lives, how many lives did they have total?
+                 There were 2 friends playing a video game online when 2 more players joined the game. If each player had 3 lives, how many lives did they have total?
+                 There were 2 friends playing a video game online when 2 more players joined the game. If each player had 3 lives, how many lives did they have total?
+                 There were 2 friends playing a video game online when 2 more players joined the game. If each player had 3 lives, how many lives did they have total
+prediction: 3.0
+label: 12.0
+---------------
+test:20/600 | accuracy 2  0.1
+  4%|█████▋                                                                                                                                                             | 21/600 [17:48<12:10:34, 75.71s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+At Billy's Restaurant a group with 2 adults and 5 children came in to eat. If each meal cost 3 dollars, how much was the bill?
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+                 The total cost of the meal is 15 dollars.
+prediction: 15.0
+label: 21.0
+---------------
+test:21/600 | accuracy 2  0.09523809523809523
+  4%|█████▉                                                                                                                                                             | 22/600 [19:15<12:41:32, 79.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?
+                 Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?
+                 Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?
+                 Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?
+                 Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?
+                 Rachel bought two coloring books. One had 23 pictures and the other had 32. After one week she had already colored 44 of the pictures. How many pictures does she still have to color?
+prediction: 44.0
+label: 11.0
+---------------
+test:22/600 | accuracy 2  0.09090909090909091
+---------------
+Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total?
+                 Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total?
+                 Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total?
+                 Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total?
+                 Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total?
+                 Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total?
+                 Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how many would she have total?
+                 Faye had 34 coloring books. If she gave away 3 of them, but then bought 48 more, how
+prediction: 48.0
+label: 79.0
+---------------
+test:23/600 | accuracy 2  0.08695652173913043
+  4%|██████▏                                                                                                                                                            | 23/600 [20:38<12:50:26, 80.11s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+  4%|██████▌                                                                                                                                                            | 24/600 [22:01<12:56:33, 80.89s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The chef needs to cook 15 potatoes. He has already cooked 8. If each potato takes 9 minutes to cook, how long will it take him to cook the rest?
+                 The chef needs to cook 15 potatoes. He has already cooked 8. If each potato takes 9 minutes to cook, how long will it take him to cook the rest?
+                 The chef needs to cook 15 potatoes. He has already cooked 8. If each potato takes 9 minutes to cook, how long will it take him to cook the rest?
+                 The chef needs to cook 15 potatoes. He has already cooked 8. If each potato takes 9 minutes to cook, how long will it take him to cook the rest?
+                 The chef needs to cook 15 potatoes. He has already cooked 8. If each potato takes 9 minutes to cook, how long will it take him to cook the rest?
+                 The chef needs to cook 15 potatoes. He has already cooked 8. If each potato takes 9 minutes to cook, how long will it take him to cook the rest?
+                 The chef needs to cook 15 potatoes. He has already cooked 8. If each potato takes 9
+prediction: 9.0
+label: 63.0
+---------------
+test:24/600 | accuracy 2  0.08333333333333333
+  4%|██████▊                                                                                                                                                            | 25/600 [23:22<12:56:10, 80.99s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Tom had 5 books. If he sold 4 of them and used the money he earned to buy 38 new books, how many books would Tom have?
+                 Tom had 5 books. If he sold 4 of them and used the money he earned to buy 38 new books, how many books would Tom have?
+                 Tom had 5 books. If he sold 4 of them and used the money he earned to buy 38 new books, how many books would Tom have?
+                 Tom had 5 books. If he sold 4 of them and used the money he earned to buy 38 new books, how many books would Tom have?
+                 Tom had 5 books. If he sold 4 of them and used the money he earned to buy 38 new books, how many books would Tom have?
+                 Tom had 5 books. If he sold 4 of them and used the money he earned to buy 38 new books, how many books would Tom have?
+                 Tom had 5 books. If he sold 4 of them and used the money he earned to buy 38 new books, how many books would Tom have?
+                 Tom had 5 books. If he sold 4
+prediction: 4.0
+label: 39.0
+---------------
+test:25/600 | accuracy 2  0.08
+  4%|███████                                                                                                                                                            | 26/600 [24:50<13:15:58, 83.20s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?
+                 Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?
+                 Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?
+                 Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?
+                 Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?
+                 Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?
+                 Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?
+                 Jerry won 4 tickets. If he spent 2 tickets on a beanie and later won 47 more tickets, how many would he have?
+prediction: 47.0
+label: 49.0
+---------------
+test:26/600 | accuracy 2  0.07692307692307693
+  4%|███████▎                                                                                                                                                           | 27/600 [26:29<13:58:06, 87.76s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+While playing a trivia game, Frank answered 3 questions correct in the first half and 2 questions correct in the second half. If each question was worth 3 points, what was his final score?
+                 Frank's final score was 9 points.
+                 Frank answered 3 questions correct in the first half and 2 questions correct in the second half. Each question was worth 3 points.
+                 3 x 3 + 2 x 3 = 9.
+                 Frank's final score was 9 points.
+                 Frank answered 3 questions correct in the first half and 2 questions correct in the second half. Each question was worth 3 points.
+                 3 x 3 + 2 x 3 = 9.
+                 Frank's final score was 9 points.
+                 Frank answered 3 questions correct in the first half and 2 questions correct in the second half. Each question was worth 3 points.
+                 3 x 3 + 2 x 3 = 9.
+                 Frank's final score was 9 points.
+                 Frank answered 3 questions correct in the first half and 2 questions correct in the second half. Each question was worth 3 points.
+prediction: 3.0
+label: 15.0
+---------------
+test:27/600 | accuracy 2  0.07407407407407407
+  5%|███████▌                                                                                                                                                           | 28/600 [27:47<13:30:03, 84.97s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+A vase can hold 5 flowers. If you had 6 carnations and 19 roses, how many vases would you need to hold the flowers?
+                 The number of vases needed to hold 6 carnations and 19 roses is 6 + 19 = 25 vases.
+                 The number of vases needed to hold 6 carnations and 19 roses is 6 + 19 = 25 vases.
+                 The number of vases needed to hold 6 carnations and 19 roses is 6 + 19 = 25 vases.
+                 The number of vases needed to hold 6 carnations and 19 roses is 6 + 19 = 25 vases.
+                 The number of vases needed to hold 6 carnations and 19 roses is 6 + 19 = 25 vases.
+                 The number of vases needed to hold 6 carnations and 19 roses is 6 + 19 = 25 vases.
+                 The number of vases needed to hold 6 carnations and 19 roses is 6 + 19 = 25 vases.
+                 The number of vases needed to hold 6 carnations
+prediction: 6.0
+label: 5.0
+---------------
+test:28/600 | accuracy 2  0.07142857142857142
+  5%|███████▉                                                                                                                                                           | 29/600 [29:11<13:25:37, 84.65s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+While playing at the arcade, Frank won 33 tickets playing 'whack a mole' and 9 tickets playing'skee ball'. If he was trying to buy candy that cost 6 tickets a piece, how many could he buy?
+                 Frank could buy 5 candies.
+                 Frank could buy 6 candies.
+                 Frank could buy 7 candies.
+                 Frank could buy 8 candies.
+                 Frank could buy 9 candies.
+                 Frank could buy 10 candies.
+                 Frank could buy 11 candies.
+                 Frank could buy 12 candies.
+                 Frank could buy 13 candies.
+                 Frank could buy 14 candies.
+                 Frank could buy 15 candies.
+                 Frank could buy 16 candies.
+                 Frank could buy 17 candies.
+                 Frank could buy 18 candies.
+                 Frank could buy 19 candies.
+                 Frank could buy 20 candies.
+                 Frank could buy 21 candies.
+                 Frank could buy 22 candies.
+                 Frank could buy 23 candies.
+                 Frank could buy 24 candies.
+                 Frank could buy 25 candies.
+                 Frank could buy 26 candies.
+                 Frank could buy 27 candies.
+prediction: 27.0
+label: 7.0
+---------------
+test:29/600 | accuracy 2  0.06896551724137931
+  5%|████████▏                                                                                                                                                          | 30/600 [30:31<13:10:34, 83.22s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+If 3 puppies a day are adopted, it would take 4 days for all of them to be adopted. This is because there are 6 puppies in total and 3 puppies a day are adopted. Therefore, it would take 4 days for all of them to be adopted.
+prediction: 4.0
+label: 2.0
+---------------
+test:30/600 | accuracy 2  0.06666666666666667
+  5%|████████▍                                                                                                                                                          | 31/600 [32:03<13:35:52, 86.03s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Roger will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves to put away the 14 books. He can fit 3 books on a shelf, so he will need 5 shelves
+prediction: 5.0
+label: 4.0
+---------------
+test:31/600 | accuracy 2  0.06451612903225806
+  5%|████████▋                                                                                                                                                          | 32/600 [33:37<13:56:19, 88.34s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Bianca picked 39 tulips and 49 roses to make flower bouquets. If she only used 81 of the flowers though, how many extra flowers did Bianca pick?
+                 Bianca picked 39 tulips and 49 roses to make flower bouquets. If she only used 81 of the flowers though, how many extra flowers did Bianca pick?
+                 Bianca picked 39 tulips and 49 roses to make flower bouquets. If she only used 81 of the flowers though, how many extra flowers did Bianca pick?
+                 Bianca picked 39 tulips and 49 roses to make flower bouquets. If she only used 81 of the flowers though, how many extra flowers did Bianca pick?
+                 Bianca picked 39 tulips and 49 roses to make flower bouquets. If she only used 81 of the flowers though, how many extra flowers did Bianca pick?
+                 Bianca picked 39 tulips and 49 roses to make flower bouquets. If she only used 81 of the flowers though, how many extra flowers did Bianca pick?
+                 Bianca picked 39 tulips and 49 roses to make flower bouquets. If she only used
+prediction: 49.0
+label: 7.0
+---------------
+test:32/600 | accuracy 2  0.0625
+  6%|████████▉                                                                                                                                                          | 33/600 [35:02<13:46:27, 87.46s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Jerry had 60 pieces of clothing to wash. He put 40 of them in one load, but decided to split the rest into 5 equal loads. How many pieces of clothing could go in each of the small loads?
+                 The total number of pieces of clothing that Jerry had to wash was 60. He put 40 of them in one load, but decided to split the rest into 5 equal loads. This means that the number of pieces of clothing that could go in each of the small loads would be 60 divided by 5, which is 12. Therefore, the number of pieces of clothing that could go in each of the small loads is 12.
+                 Jerry had 60 pieces of clothing to wash. He put 40 of them in one load, but decided to split the rest into 5 equal loads. How many pieces of clothing could go in each of the small loads?
+                 The total number of pieces of clothing that Jerry had to wash was 60. He put 40 of them in one load, but decided to split the rest into 5 equal loads. This means that the number of pieces of clothing that could go in each of the small loads would be 60 divided by 5, which is
+prediction: 5.0
+label: 4.0
+---------------
+test:33/600 | accuracy 2  0.06060606060606061
+  6%|█████████▏                                                                                                                                                         | 34/600 [36:30<13:44:38, 87.42s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+The store had 27 coloring books in stock. They ended up putting them on sale and getting rid of 6 of them. The put the ones they still had onto shelves with 7 on each shelf. How many shelves did they use?
+                 The store had 27 coloring books in stock. They ended up putting them on sale and getting rid of 6 of them. The put the ones they still had onto shelves with 7 on each shelf. How many shelves did they use?
+                 The store had 27 coloring books in stock. They ended up putting them on sale and getting rid of 6 of them. The put the ones they still had onto shelves with 7 on each shelf. How many shelves did they use?
+                 The store had 27 coloring books in stock. They ended up putting them on sale and getting rid of 6 of them. The put the ones they still had onto shelves with 7 on each shelf. How many shelves did they use?
+                 The store had 27 coloring books in stock. They ended up putting them on sale and getting rid of 6 of them. The put the ones they still had onto shelves with 7 on each shelf. How many shelves did they use?
+                 The
+prediction: 7.0
+label: 3.0
+---------------
+test:34/600 | accuracy 2  0.058823529411764705
+  6%|█████████▌                                                                                                                                                         | 35/600 [37:50<13:22:07, 85.18s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started, how many did he not wash?
+                 The number of short sleeve shirts that Dave did not wash is 29 - 35 = -6.
+                 The number of long sleeve shirts that Dave did not wash is 11 - 35 = -24.
+                 The total number of shirts that Dave did not wash is -6 + -24 = -30.
+                 Therefore, Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started, how many did he not wash?
+                 The number of short sleeve shirts that Dave did not wash is 29 - 35 = -6.
+                 The number of long sleeve shirts that Dave did not wash is 11 - 35 = -24.
+                 The total number of shirts that Dave did not wash is -6 + -24 = -30.
+                 Therefore, Dave had to wash 29 short sleeve shirts and 11 long sleeve shirts before school. If he had only washed 35 of them by the time school started
+prediction: 35.0
+label: 5.0
+---------------
+test:35/600 | accuracy 2  0.05714285714285714
+  6%|█████████▊                                                                                                                                                         | 36/600 [38:57<12:30:37, 79.85s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Sam invited 9 friends to a birthday party, but 6 couldn't come. If he wanted to buy enough cupcakes so each person could have exactly 2, how many should he buy?
+                 To solve this problem, we need to find the number of cupcakes that Sam needs to buy so that each person can have exactly 2 cupcakes.
+                 We know that Sam invited 9 friends to the party, but 6 of them couldn't come. This means that there are 3 friends who will attend the party.
+                 We also know that each person should have exactly 2 cupcakes.
+                 To find the number of cupcakes that Sam needs to buy, we need to multiply the number of friends who will attend the party (3) by the number of cupcakes that each person should have (2).
+                 3 x 2 = 6
+                 Therefore, Sam needs to buy 6 cupcakes so that each person can have exactly 2 cupcakes.
+                 I hope this helps! Let me know if you have any other questions.
+<|end_of_text|>
+prediction: 2.0
+label: 6.0
+---------------
+test:36/600 | accuracy 2  0.05555555555555555
+  6%|██████████                                                                                                                                                         | 37/600 [40:20<12:36:58, 80.67s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+If a teacher had 14 worksheets to grade and had already graded 7 of them, how many more problems does she have to grade?
+                 The teacher has 14 worksheets to grade and has already graded 7 of them. This means that the teacher has 7 worksheets left to grade.
+                 To find out how many more problems the teacher has to grade, we need to subtract the number of problems the teacher has already graded from the total number of problems on the worksheets.
+                 14 - 7 = 7
+                 The teacher has 7 worksheets left to grade, and each worksheet has 2 problems. This means that the teacher has 14 problems left to grade.
+                 Therefore, the teacher has 7 worksheets left to grade, and each worksheet has 2 problems. This means that the teacher has 14 problems left to grade.
+                 The teacher has 14 worksheets to grade and has already graded 7 of them. This means that the teacher has 7 worksheets left to grade.
+                 To find out how many more problems the teacher has to grade, we need to subtract the number of problems the teacher has already graded from the total number of problems on the worksheets.
+                 14 - 7 = 7
+prediction: 7.0
+label: 14.0
+---------------
+test:37/600 | accuracy 2  0.05405405405405406
+  6%|██████████▎                                                                                                                                                        | 38/600 [41:38<12:29:50, 80.05s/it]The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The following generation flags are not valid and may be ignored: ['temperature', 'top_p', 'top_k']. Set `TRANSFORMERS_VERBOSITY=info` for more details.
+The attention mask and the pad token id were not set. As a consequence, you may observe unexpected behavior. Please pass your input's `attention_mask` to obtain reliable results.
+Setting `pad_token_id` to `eos_token_id`:128001 for open-end generation.
+---------------
+Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player?
+                 Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player?
+                 Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player?
+                 Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player?
+                 Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player?
+                 Katie had 11 songs on her mp3 player. If she deleted 7 old songs from it and then added 24 new songs, how many songs does she have on her mp3 player?
+                 Katie had 11
+prediction: 11.0
+label: 28.0
+---------------
+test:38/600 | accuracy 2  0.05263157894736842
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 111, in main
+    outputs = evaluate(instruction)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 69, in evaluate
+    generation_output = model.generate(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2651, in generate
+    result = self._beam_search(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 4098, in _beam_search
+    model_outputs = self(**model_inputs, return_dict=True)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/utils/generic.py", line 962, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 495, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/utils/generic.py", line 1061, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 408, in forward
+    hidden_states = decoder_layer(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/modeling_layers.py", line 83, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 285, in forward
+    hidden_states = self.input_layernorm(hidden_states)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 63, in forward
+    hidden_states = hidden_states * torch.rsqrt(variance + self.variance_epsilon)
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 111, in main
+    outputs = evaluate(instruction)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 69, in evaluate
+    generation_output = model.generate(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1875, in generate
+    outputs = self.base_model.generate(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 2651, in generate
+    result = self._beam_search(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/generation/utils.py", line 4098, in _beam_search
+    model_outputs = self(**model_inputs, return_dict=True)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/utils/generic.py", line 962, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 495, in forward
+    outputs: BaseModelOutputWithPast = self.model(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/utils/generic.py", line 1061, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 408, in forward
+    hidden_states = decoder_layer(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/modeling_layers.py", line 83, in __call__
+    return super().__call__(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 285, in forward
+    hidden_states = self.input_layernorm(hidden_states)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1751, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1762, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/accelerate/hooks.py", line 176, in new_forward
+    output = module._old_forward(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/models/llama/modeling_llama.py", line 63, in forward
+    hidden_states = hidden_states * torch.rsqrt(variance + self.variance_epsilon)
+KeyboardInterrupt

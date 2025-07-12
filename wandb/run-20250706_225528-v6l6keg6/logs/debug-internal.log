@@ -1,0 +1,35 @@
+{"time":"2025-07-06T22:55:28.297367057+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250706_225528-v6l6keg6/logs/debug-core.log"}
+{"time":"2025-07-06T22:55:28.835363638+05:30","level":"INFO","msg":"created new stream","id":"v6l6keg6"}
+{"time":"2025-07-06T22:55:28.835660618+05:30","level":"INFO","msg":"stream: started","id":"v6l6keg6"}
+{"time":"2025-07-06T22:55:28.835709458+05:30","level":"INFO","msg":"handler: started","stream_id":"v6l6keg6"}
+{"time":"2025-07-06T22:55:28.835727707+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"v6l6keg6"}
+{"time":"2025-07-06T22:55:28.83578736+05:30","level":"INFO","msg":"sender: started","stream_id":"v6l6keg6"}
+{"time":"2025-07-06T22:55:29.280837132+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-06T23:41:29.792715824+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T23:42:01.842046307+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T23:42:36.740729813+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T23:43:15.523975052+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T23:43:23.25591506+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/v6l6keg6/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection timed out"}
+{"time":"2025-07-06T23:44:04.086008844+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T23:49:29.799492824+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T23:50:01.87276126+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T23:50:36.672955306+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-06T23:51:16.341046737+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T23:51:22.487861617+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/v6l6keg6/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection timed out"}
+{"time":"2025-07-06T23:51:54.233008136+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/v6l6keg6/file_stream\": Forbidden"}
+{"time":"2025-07-06T23:52:02.757661992+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-06T23:58:29.810928043+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-07T00:05:29.819812154+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-07T00:06:01.946470794+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-07T00:06:36.545975404+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-07T00:07:15.277608971+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-07T00:07:25.054709701+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/v6l6keg6/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection timed out"}
+{"time":"2025-07-07T00:08:04.657073397+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": context deadline exceeded"}
+{"time":"2025-07-07T00:32:36.236534059+05:30","level":"INFO","msg":"stream: closing","id":"v6l6keg6"}
+{"time":"2025-07-07T00:32:36.236636937+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-07T00:32:36.236716179+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-07T00:32:38.783867963+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-07T00:32:39.200891173+05:30","level":"INFO","msg":"handler: closed","stream_id":"v6l6keg6"}
+{"time":"2025-07-07T00:32:39.200952843+05:30","level":"INFO","msg":"sender: closed","stream_id":"v6l6keg6"}
+{"time":"2025-07-07T00:32:39.200943783+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"v6l6keg6"}
+{"time":"2025-07-07T00:32:39.201063377+05:30","level":"INFO","msg":"stream: closed","id":"v6l6keg6"}

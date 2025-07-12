@@ -8,6 +8,8 @@ import argparse
 import fire
 
 import torch
+import datetime
+import wandb
 
 sys.path.append(os.path.join(os.getcwd(), "peft/src/"))
 from peft import PeftModel
@@ -34,6 +36,15 @@ def main(
 ):
     args = parse_args()
 
+    # ── Weights & Biases setup ────────────────────────────────────────────────
+    run_name = f"{args.model}-{args.adapter}-{args.dataset}-{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    wandb.init(
+        project="commonsense_eval",
+        name=run_name,
+        config=vars(args),
+        reinit=True
+    )
+
     def evaluate(
             instructions,
             input=None,
@@ -41,7 +52,7 @@ def main(
             top_p=0.75,
             top_k=40,
             num_beams=4,
-            max_new_tokens=32,
+            max_new_tokens=256,
             **kwargs,
     ):
         prompts = [generate_prompt(instruction, input) for instruction in instructions]
@@ -104,11 +115,19 @@ def main(
         print('---------------')
         print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / current}')
         print('---------------')
+        wandb.log({
+            "batch": idx + 1,
+            "running_accuracy": correct / current,
+            "samples_seen": current
+        }, step=current)
         with open(save_file, 'w+') as f:
             json.dump(output_data, f, indent=4)
         pbar.update(1)
     pbar.close()
     print('\n')
+    final_acc = correct / current if current else 0.0
+    wandb.log({"final_accuracy": final_acc})
+    wandb.finish()
     print('test finished')
 
 
@@ -168,7 +187,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--dataset', choices=["boolq", "piqa", "social_i_qa", "hellaswag", "winogrande", "ARC-Challenge", "ARC-Easy", "openbookqa"],
                         required=True)
-    parser.add_argument('--model', choices=['LLaMA-7B', "LLaMA-13B",'BLOOM-7B', 'GPT-j-6B'], required=True)
+    parser.add_argument('--model', choices=['LLaMA-7B', "LLaMA-13B",'BLOOM-7B', 'GPT-j-6B','Llama-3.2-1B','Llama-3.2-3B'], required=True)
     parser.add_argument('--adapter', choices=['LoRA', 'AdapterP', 'AdapterH', 'Parallel'],
                         required=True)
     parser.add_argument('--base_model', required=True)

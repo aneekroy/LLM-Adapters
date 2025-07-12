@@ -1,0 +1,7 @@
+{"time":"2025-07-03T16:11:30.379813593+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250703_161130-laku4vra/logs/debug-core.log"}
+{"time":"2025-07-03T16:11:30.88454863+05:30","level":"INFO","msg":"created new stream","id":"laku4vra"}
+{"time":"2025-07-03T16:11:30.884652999+05:30","level":"INFO","msg":"stream: started","id":"laku4vra"}
+{"time":"2025-07-03T16:11:30.884690454+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"laku4vra"}
+{"time":"2025-07-03T16:11:30.884713057+05:30","level":"INFO","msg":"handler: started","stream_id":"laku4vra"}
+{"time":"2025-07-03T16:11:30.884807945+05:30","level":"INFO","msg":"sender: started","stream_id":"laku4vra"}
+{"time":"2025-07-03T16:11:31.350164844+05:30","level":"INFO","msg":"Starting system monitor"}

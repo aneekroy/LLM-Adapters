@@ -1,0 +1,18 @@
+{"time":"2025-07-08T14:56:38.60405958+05:30","level":"INFO","msg":"stream: starting","core version":"0.19.11","symlink path":"/home/aneek/LLM-Adapters/wandb/run-20250708_145638-zopof2wa/logs/debug-core.log"}
+{"time":"2025-07-08T14:56:39.175606643+05:30","level":"INFO","msg":"created new stream","id":"zopof2wa"}
+{"time":"2025-07-08T14:56:39.175687751+05:30","level":"INFO","msg":"stream: started","id":"zopof2wa"}
+{"time":"2025-07-08T14:56:39.175736773+05:30","level":"INFO","msg":"handler: started","stream_id":"zopof2wa"}
+{"time":"2025-07-08T14:56:39.175748306+05:30","level":"INFO","msg":"writer: Do: started","stream_id":"zopof2wa"}
+{"time":"2025-07-08T14:56:39.175792535+05:30","level":"INFO","msg":"sender: started","stream_id":"zopof2wa"}
+{"time":"2025-07-08T14:56:39.694030743+05:30","level":"INFO","msg":"Starting system monitor"}
+{"time":"2025-07-08T14:57:25.638161571+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/zopof2wa/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection refused"}
+{"time":"2025-07-08T14:57:28.086666832+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/files/ar8002-new-york-university/huggingface/zopof2wa/file_stream\": proxyconnect tcp: dial tcp 10.10.88.6:3128: connect: connection refused"}
+{"time":"2025-07-08T16:01:54.983071414+05:30","level":"INFO","msg":"api: retrying error","error":"Post \"https://api.wandb.ai/graphql\": net/http: request canceled (Client.Timeout exceeded while awaiting headers)"}
+{"time":"2025-07-08T20:50:55.54567355+05:30","level":"INFO","msg":"stream: closing","id":"zopof2wa"}
+{"time":"2025-07-08T20:50:55.545716265+05:30","level":"INFO","msg":"Stopping system monitor"}
+{"time":"2025-07-08T20:50:55.54575594+05:30","level":"INFO","msg":"Stopped system monitor"}
+{"time":"2025-07-08T20:50:57.737477581+05:30","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-07-08T20:50:58.529410443+05:30","level":"INFO","msg":"handler: closed","stream_id":"zopof2wa"}
+{"time":"2025-07-08T20:50:58.529499033+05:30","level":"INFO","msg":"writer: Close: closed","stream_id":"zopof2wa"}
+{"time":"2025-07-08T20:50:58.529515547+05:30","level":"INFO","msg":"sender: closed","stream_id":"zopof2wa"}
+{"time":"2025-07-08T20:50:58.529606235+05:30","level":"INFO","msg":"stream: closed","id":"zopof2wa"}

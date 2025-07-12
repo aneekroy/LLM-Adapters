@@ -8,21 +8,48 @@ import transformers
 from datasets import load_dataset
 from typing import List, Optional, Union
 
+os.environ["TOKENIZERS_PARALLELISM"] = "false"
 """
 Unused imports:
 import torch.nn as nn
 import bitsandbytes as bnb
 """
 sys.path.append(os.path.join(os.getcwd(), "peft/src/"))
-from peft import (  # noqa: E402
+# finetune.py – replace the whole block
+from peft import (   # noqa: E402
     LoraConfig,
-    BottleneckConfig,
     PrefixTuningConfig,
     get_peft_model,
     get_peft_model_state_dict,
-    prepare_model_for_int8_training,
     set_peft_model_state_dict,
 )
+# Optional adapters – only available in PEFT ≥ 0.11
+try:
+    from peft import BottleneckConfig        # only needed if --adapter_name bottleneck
+except ImportError:
+    BottleneckConfig = None
+
+ # Helper for quantised LoRA prep – PEFT keeps renaming/moving it.
+# We attempt several locations and fall back to a no‑op.
+try:
+    # PEFT ≤ 0.10
+    from peft import prepare_model_for_int8_training as prepare_model_for_int8_training
+except ImportError:
+    try:
+        # PEFT ≥ 0.11 (sometimes lives under tuners.lora)
+        from peft.tuners.lora import (
+            prepare_model_for_kbit_training as prepare_model_for_int8_training
+        )
+    except ImportError:
+        try:
+            # PEFT dev branch (utils)
+            from peft.utils.other import (
+                prepare_model_for_kbit_training as prepare_model_for_int8_training
+            )
+        except ImportError:
+            def prepare_model_for_int8_training(model, *args, **kwargs):  # type: ignore
+                """Fallback that does nothing; model remains unchanged."""
+                return model
 from transformers import AutoModelForCausalLM, AutoTokenizer, LlamaTokenizer, AutoModel  # noqa: F402
 
 
@@ -141,11 +168,26 @@ def train(
             trust_remote_code=True,
         )
 
+    # ─── Load tokenizer ────────────────────────────────────────────────
+    # Some local checkpoints ship only a fast tokenizer or have an
+    # incomplete `tokenizer.model`, which breaks the classic
+    # `LlamaTokenizer`.  We try the slow tokenizer first (to keep the
+    # same BOS/EOS ids as upstream) and fall back to AutoTokenizer.
     if model.config.model_type == "llama":
-        # Due to the name of transformers' LlamaTokenizer, we have to do this
-        tokenizer = LlamaTokenizer.from_pretrained(base_model)
+        try:
+            tokenizer = LlamaTokenizer.from_pretrained(base_model, legacy=True)
+        except Exception as err:
+            print(f"[warn] LlamaTokenizer failed: {err}\n"
+                  "       Falling back to AutoTokenizer (fast). "
+                  "If you observe mis‑tokenisation, make sure your "
+                  "`tokenizer.model`/`tokenizer.json` files are present.")
+            tokenizer = AutoTokenizer.from_pretrained(
+                base_model, use_fast=True, trust_remote_code=True
+            )
     else:
-        tokenizer = AutoTokenizer.from_pretrained(base_model, trust_remote_code=True)
+        tokenizer = AutoTokenizer.from_pretrained(
+            base_model, use_fast=True, trust_remote_code=True
+        )
 
     tokenizer.pad_token_id = (
         0  # unk. we want this to be different from the eos token
@@ -270,31 +312,43 @@ def train(
         model.is_parallelizable = True
         model.model_parallel = True
 
+    # ---- Build TrainingArguments safely (handle old transformers) ----
+    _args_dict = dict(
+        per_device_train_batch_size=micro_batch_size,
+        gradient_accumulation_steps=gradient_accumulation_steps,
+        warmup_steps=100,
+        num_train_epochs=num_epochs,
+        learning_rate=learning_rate,
+        fp16=True,
+        logging_steps=10,
+        optim="adamw_torch",
+        save_strategy="steps",
+        save_steps=save_step,
+        output_dir=output_dir,
+        save_total_limit=3,
+        ddp_find_unused_parameters=False if ddp else None,
+        group_by_length=group_by_length,
+        report_to="wandb" if use_wandb else None,
+        run_name=wandb_run_name if use_wandb else None,
+    )
+
+    # optional args only if supported
+    import inspect
+    _sig = inspect.signature(transformers.TrainingArguments.__init__)
+    if "evaluation_strategy" in _sig.parameters and val_set_size > 0:
+        _args_dict["evaluation_strategy"] = "steps"
+        _args_dict["eval_steps"] = eval_step
+        _args_dict["load_best_model_at_end"] = True
+    if "ddp_find_unused_parameters" not in _sig.parameters:
+        _args_dict.pop("ddp_find_unused_parameters", None)
+
+    training_args = transformers.TrainingArguments(**_args_dict)
+
     trainer = transformers.Trainer(
         model=model,
         train_dataset=train_data,
         eval_dataset=val_data,
-        args=transformers.TrainingArguments(
-            per_device_train_batch_size=micro_batch_size,
-            gradient_accumulation_steps=gradient_accumulation_steps,
-            warmup_steps=100,
-            num_train_epochs=num_epochs,
-            learning_rate=learning_rate,
-            fp16=True,
-            logging_steps=10,
-            optim="adamw_torch",
-            evaluation_strategy="steps" if val_set_size > 0 else "no",
-            save_strategy="steps",
-            eval_steps=eval_step if val_set_size > 0 else None,
-            save_steps=save_step,
-            output_dir=output_dir,
-            save_total_limit=3,
-            load_best_model_at_end=True if val_set_size > 0 else False,
-            ddp_find_unused_parameters=False if ddp else None,
-            group_by_length=group_by_length,
-            report_to="wandb" if use_wandb else None,
-            run_name=wandb_run_name if use_wandb else None,
-        ),
+        args=training_args,
         data_collator=transformers.DataCollatorForSeq2Seq(
             tokenizer, pad_to_multiple_of=8, return_tensors="pt", padding=True
         ),
@@ -321,26 +375,64 @@ def train(
 
 
 def generate_prompt(data_point):
-    # sorry about the formatting disaster gotta move fast
-    if data_point["input"]:
-        return f"""Below is an instruction that describes a task, paired with an input that provides further context. Write a response that appropriately completes the request. 
+    """
+    Build a textual prompt from a single dataset record.
 
-                ### Instruction:
-                {data_point["instruction"]}
-                
-                ### Input:
-                {data_point["input"]}
-                
-                ### Response:
-                {data_point["output"]}""" # noqa: E501
+    Supported schemas
+    -----------------
+    1) Alpaca-style:
+       {"instruction": str, "input": str or "", "output": str}
+
+    2) BoolQ-style QA:
+       {"question": str, "passage": str, "answer": bool}
+
+    The function never assumes the presence of an "input" key and will
+    synthesise fields that are missing, preventing KeyError.
+    """
+    # Default instruction if none provided
+    instruction = data_point.get(
+        "instruction",
+        "Answer the question based on the passage."
+    )
+
+    # Grab user input if present
+    user_input = data_point.get("input")
+
+    # Fallback to BoolQ keys
+    if user_input is None and "question" in data_point:
+        user_input = data_point["question"]
+        if "passage" in data_point:
+            user_input = (
+                f"Passage:\n{data_point['passage']}\n\nQuestion:\n{user_input}"
+            )
+
+    # Determine reference answer / expected output
+    output = data_point.get("output")
+    if output is None and "answer" in data_point:
+        output = "yes" if data_point["answer"] else "no"
+
+    # Compose final prompt
+    if user_input:
+        return (
+            "Below is an instruction that describes a task, paired with an "
+            "input that provides further context. Write a response that "
+            "appropriately completes the request.\n\n"
+            "### Instruction:\n"
+            f"{instruction}\n\n"
+            "### Input:\n"
+            f"{user_input}\n\n"
+            "### Response:\n"
+            f"{output}"
+        )
     else:
-        return f"""Below is an instruction that describes a task. Write a response that appropriately completes the request.  
-
-                ### Instruction:
-                {data_point["instruction"]}
-                
-                ### Response:
-                {data_point["output"]}""" # noqa: E501
+        return (
+            "Below is an instruction that describes a task. "
+            "Write a response that appropriately completes the request.\n\n"
+            "### Instruction:\n"
+            f"{instruction}\n\n"
+            "### Response:\n"
+            f"{output}"
+        )
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1505 @@
+2025-07-11 18:02:16,372 INFO    StreamThr :3665007 [internal.py:wandb_internal():85] W&B internal server running at pid: 3665007, started at: 2025-07-11 18:02:16.371548
+2025-07-11 18:02:16,374 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status
+2025-07-11 18:02:16,375 INFO    WriterThread:3665007 [datastore.py:open_for_write():87] open: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/run-85vmo5nb.wandb
+2025-07-11 18:02:16,376 DEBUG   SenderThread:3665007 [sender.py:send():379] send: header
+2025-07-11 18:02:16,379 DEBUG   SenderThread:3665007 [sender.py:send():379] send: run
+2025-07-11 18:02:17,224 INFO    SenderThread:3665007 [dir_watcher.py:__init__():211] watching files in: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files
+2025-07-11 18:02:17,224 INFO    SenderThread:3665007 [sender.py:_start_run_threads():1188] run started: 85vmo5nb with start time 1752237136.371281
+2025-07-11 18:02:17,227 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: check_version
+2025-07-11 18:02:17,227 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: check_version
+2025-07-11 18:02:17,313 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: run_start
+2025-07-11 18:02:17,348 DEBUG   HandlerThread:3665007 [system_info.py:__init__():26] System info init
+2025-07-11 18:02:17,348 DEBUG   HandlerThread:3665007 [system_info.py:__init__():41] System info init done
+2025-07-11 18:02:17,348 INFO    HandlerThread:3665007 [system_monitor.py:start():194] Starting system monitor
+2025-07-11 18:02:17,349 INFO    SystemMonitor:3665007 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-07-11 18:02:17,349 INFO    HandlerThread:3665007 [system_monitor.py:probe():214] Collecting system info
+2025-07-11 18:02:17,350 INFO    SystemMonitor:3665007 [interfaces.py:start():188] Started cpu monitoring
+2025-07-11 18:02:17,350 INFO    SystemMonitor:3665007 [interfaces.py:start():188] Started disk monitoring
+2025-07-11 18:02:17,351 INFO    SystemMonitor:3665007 [interfaces.py:start():188] Started gpu monitoring
+2025-07-11 18:02:17,353 INFO    SystemMonitor:3665007 [interfaces.py:start():188] Started memory monitoring
+2025-07-11 18:02:17,355 INFO    SystemMonitor:3665007 [interfaces.py:start():188] Started network monitoring
+2025-07-11 18:02:17,395 DEBUG   HandlerThread:3665007 [system_info.py:probe():152] Probing system
+2025-07-11 18:02:17,399 DEBUG   HandlerThread:3665007 [system_info.py:_probe_git():137] Probing git
+2025-07-11 18:02:17,407 DEBUG   HandlerThread:3665007 [system_info.py:_probe_git():145] Probing git done
+2025-07-11 18:02:17,408 DEBUG   HandlerThread:3665007 [system_info.py:probe():200] Probing system done
+2025-07-11 18:02:17,408 DEBUG   HandlerThread:3665007 [system_monitor.py:probe():223] {'os': 'Linux-6.11.0-26-generic-x86_64-with-glibc2.39', 'python': '3.10.16', 'heartbeatAt': '2025-07-11T12:32:17.395910', 'startedAt': '2025-07-11T12:32:16.364261', 'docker': None, 'cuda': None, 'args': ('--model', 'Llama-3.2-3B', '--adapter', 'LoRA', '--dataset', 'openbookqa', '--base_model', '/home/models/Llama-3.2-3B-Instruct/', '--lora_weights', '/home/aneek/LLM-Adapters/trained_models/instruction/llama-3B-combined-lora', '--batch_size', '16'), 'state': 'running', 'program': '/home/aneek/LLM-Adapters/commonsense_evaluate.py', 'codePathLocal': 'commonsense_evaluate.py', 'codePath': 'commonsense_evaluate.py', 'git': {'remote': 'https://github.com/AGI-Edgerunners/LLM-Adapters.git', 'commit': '816657208af4db747803f87ba40a4c71383fed7a'}, 'email': 'aneek@LCS2-IITD.(none)', 'root': '/home/aneek/LLM-Adapters', 'host': 'LCS2-IITD', 'username': 'aneek', 'executable': '/home/aneek/miniconda3/envs/llama4env/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 1783.791515625, 'min': 1500.0, 'max': 2800.0}, 'cpu_freq_per_core': [{'current': 3668.198, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2800.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2584.873, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2100.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2094.562, 'min': 1500.0, 'max': 2800.0}, {'current': 1496.044, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2934.307, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3661.18, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3667.826, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2093.202, 'min': 1500.0, 'max': 2800.0}, {'current': 2100.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2093.786, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}], 'disk': {'/': {'total': 914.7823104858398, 'used': 43.10591125488281}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 314.54892349243164}}
+2025-07-11 18:02:17,408 INFO    HandlerThread:3665007 [system_monitor.py:probe():224] Finished collecting system info
+2025-07-11 18:02:17,408 INFO    HandlerThread:3665007 [system_monitor.py:probe():227] Publishing system info
+2025-07-11 18:02:17,408 DEBUG   HandlerThread:3665007 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2025-07-11 18:02:18,227 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/conda-environment.yaml
+2025-07-11 18:02:21,225 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/conda-environment.yaml
+2025-07-11 18:02:21,280 DEBUG   HandlerThread:3665007 [system_info.py:_save_conda():224] Saving conda packages done
+2025-07-11 18:02:21,281 INFO    HandlerThread:3665007 [system_monitor.py:probe():229] Finished publishing system info
+2025-07-11 18:02:21,286 DEBUG   SenderThread:3665007 [sender.py:send():379] send: files
+2025-07-11 18:02:21,286 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2025-07-11 18:02:21,416 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: python_packages
+2025-07-11 18:02:21,416 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: python_packages
+2025-07-11 18:02:21,416 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:02:21,417 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:02:21,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:02:21,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:21,998 DEBUG   SenderThread:3665007 [sender.py:send():379] send: telemetry
+2025-07-11 18:02:22,226 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:02:22,226 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-metadata.json
+2025-07-11 18:02:22,227 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/requirements.txt
+2025-07-11 18:02:22,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:22,433 INFO    wandb-upload_0:3665007 [upload_job.py:push():130] Uploaded file /tmp/tmpmbm2xu5cwandb/m3daznyg-wandb-metadata.json
+2025-07-11 18:02:23,430 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:24,227 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:02:24,430 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:25,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:26,227 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:02:26,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:02:26,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:27,430 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:28,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:29,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:30,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:31,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:32,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:02:32,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:33,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:34,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:35,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:36,416 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:02:36,417 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:02:36,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:37,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:37,782 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:02:38,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:39,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:40,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:41,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:42,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:43,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:02:43,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:44,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:45,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:46,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:47,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:48,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:02:48,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:49,234 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/config.yaml
+2025-07-11 18:02:49,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:49,990 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:02:50,070 DEBUG   SenderThread:3665007 [sender.py:send():379] send: telemetry
+2025-07-11 18:02:50,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:51,417 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:02:51,417 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:02:51,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:52,235 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:02:52,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:53,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:53,797 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:02:54,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:55,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:56,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:57,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:58,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:02:59,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:02:59,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:00,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:01,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:02,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:03,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:04,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:04,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:05,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:06,417 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:03:06,417 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:03:06,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:07,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:08,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:09,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:09,846 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:10,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:11,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:12,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:13,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:14,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:15,317 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:15,361 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:03:15,406 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:03:15,406 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:03:15,408 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:03:15,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:16,243 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:03:16,243 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:03:16,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:17,355 DEBUG   SystemMonitor:3665007 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-07-11 18:03:17,358 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:03:17,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:18,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:19,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:20,364 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:20,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:21,245 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/config.yaml
+2025-07-11 18:03:21,417 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:03:21,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:03:21,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:22,438 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:23,438 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:24,438 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:25,438 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:25,849 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:26,438 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:27,438 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:28,438 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:29,438 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:30,439 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:31,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:31,439 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:32,439 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:33,439 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:34,440 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:35,440 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:36,417 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:03:36,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:03:36,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:36,769 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:37,440 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:38,440 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:39,440 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:40,440 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:41,440 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:41,871 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:41,884 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:03:41,915 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:03:41,915 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:03:41,916 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:03:42,253 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:03:42,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:43,440 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:44,254 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:03:44,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:45,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:46,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:47,360 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:03:47,361 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:47,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:48,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:49,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:50,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:51,417 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:03:51,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:03:51,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:52,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:52,788 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:53,442 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:54,442 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:55,442 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:56,442 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:57,442 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:58,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:03:58,442 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:03:59,442 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:00,442 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:01,443 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:02,443 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:03,443 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:04,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:04,443 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:05,443 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:06,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:04:06,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:04:06,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:07,443 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:08,443 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:09,443 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:09,857 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:10,444 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:10,508 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:04:10,539 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:04:10,539 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:04:10,541 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:04:11,262 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:04:11,444 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:12,294 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:04:12,444 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:13,444 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:14,444 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:15,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:15,444 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:16,444 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:17,361 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:04:17,444 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:18,445 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:19,445 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:20,445 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:21,363 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:21,417 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:04:21,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:04:21,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:22,445 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:23,445 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:24,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:25,445 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:26,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:26,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:27,445 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:28,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:29,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:30,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:31,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:31,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:32,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:33,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:34,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:35,446 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:35,647 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:04:35,679 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:04:35,679 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:04:35,680 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:04:36,303 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:04:36,303 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:04:36,417 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:04:36,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:04:36,447 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:36,815 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:37,303 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:04:37,447 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:38,447 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:39,447 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:40,448 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:41,448 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:42,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:42,448 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:43,448 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:44,448 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:45,448 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:46,448 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:47,362 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:04:47,449 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:48,363 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:48,449 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:49,449 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:50,449 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:51,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:04:51,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:04:51,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:52,449 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:53,449 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:53,805 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:54,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:55,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:56,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:57,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:58,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:04:59,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:04:59,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:00,011 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:05:00,054 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:05:00,054 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:05:00,054 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:05:00,310 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:05:00,310 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:05:00,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:01,310 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:05:01,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:02,450 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:03,451 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:04,451 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:05,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:05,451 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:06,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:05:06,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:05:06,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:07,451 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:08,451 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:09,452 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:10,452 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:10,822 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:11,452 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:12,452 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:13,452 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:14,452 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:15,452 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:16,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:16,452 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:17,363 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:05:17,453 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:18,453 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:19,453 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:20,453 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:21,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:05:21,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:05:21,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:21,855 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:22,453 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:23,453 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:24,453 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:25,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:26,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:27,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:27,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:27,921 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:05:27,996 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:05:27,996 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:05:27,997 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:05:28,392 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:05:28,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:29,392 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:05:29,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:30,393 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:05:30,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:31,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:32,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:32,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:33,454 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:34,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:35,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:36,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:05:36,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:05:36,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:37,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:37,796 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:38,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:39,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:40,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:41,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:42,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:43,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:43,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:44,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:45,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:46,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:47,365 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:05:47,455 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:48,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:49,367 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:49,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:50,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:51,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:05:51,418 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:05:51,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:52,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:53,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:53,820 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:05:53,878 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:05:53,878 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:05:53,879 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:05:54,400 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:05:54,400 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:05:54,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:54,880 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:05:55,400 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:05:55,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:56,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:57,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:58,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:05:59,456 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:00,423 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:00,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:01,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:02,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:03,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:04,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:05,423 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:05,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:06,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:06:06,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:06:06,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:07,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:08,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:09,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:10,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:10,770 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:11,457 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:12,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:13,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:14,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:15,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:16,423 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:16,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:17,367 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:06:17,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:18,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:19,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:20,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:20,915 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:06:20,978 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:06:20,978 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:06:20,979 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:06:21,407 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:06:21,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:06:21,420 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:06:21,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:21,799 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:22,458 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:23,407 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:06:23,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:24,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:25,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:26,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:27,423 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:27,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:28,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:29,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:30,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:31,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:32,423 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:32,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:33,459 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:34,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:35,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:36,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:06:36,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:06:36,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:37,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:37,742 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:38,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:39,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:40,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:41,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:42,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:43,424 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:43,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:44,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:45,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:46,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:06:46,460 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:46,477 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:06:46,477 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:06:46,479 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:06:47,369 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:06:47,414 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:06:47,415 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:06:47,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:48,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:49,370 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:49,415 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:06:49,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:50,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:51,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:06:51,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:06:51,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:52,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:53,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:54,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:54,778 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:06:55,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:56,461 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:57,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:58,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:06:59,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:00,424 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:00,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:01,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:02,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:03,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:04,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:05,425 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:05,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:06,418 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:07:06,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:07:06,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:07,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:08,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:09,462 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:10,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:10,809 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:11,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:12,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:12,914 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:07:12,952 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:07:12,952 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:07:12,954 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:07:13,423 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:07:13,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:14,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:15,423 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:07:15,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:15,955 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:16,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:17,371 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:07:17,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:18,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:19,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:20,463 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:21,373 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:21,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:07:21,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:07:21,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:22,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:23,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:24,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:25,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:26,425 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:26,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:27,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:28,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:29,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:30,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:31,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:32,425 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:32,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:33,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:34,464 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:35,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:36,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:07:36,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:07:36,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:37,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:37,789 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:37,804 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:07:37,844 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:07:37,845 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:07:37,845 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:07:38,430 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:07:38,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:39,430 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:07:39,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:40,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:41,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:42,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:43,425 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:43,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:44,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:45,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:46,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:47,373 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:07:47,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:48,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:49,375 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:49,465 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:50,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:51,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:07:51,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:07:51,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:52,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:53,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:54,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:54,841 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:07:55,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:56,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:57,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:58,466 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:07:59,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:00,426 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:00,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:01,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:02,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:03,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:04,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:04,830 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:08:04,850 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:08:04,851 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:08:04,851 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:08:05,438 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:08:05,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:05,851 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:06,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:08:06,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:08:06,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:07,439 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:08:07,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:08,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:09,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:10,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:10,862 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:11,467 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:12,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:13,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:14,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:15,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:16,426 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:16,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:17,374 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:08:17,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:18,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:19,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:20,468 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:21,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:08:21,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:08:21,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:21,760 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:22,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:23,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:24,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:25,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:26,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:27,426 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:27,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:28,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:29,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:29,709 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:08:29,727 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:08:29,727 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:08:29,728 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:08:30,445 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:08:30,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:31,445 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:08:31,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:32,427 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:32,469 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:33,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:34,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:35,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:36,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:08:36,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:08:36,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:37,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:37,827 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:38,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:39,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:40,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:41,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:42,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:43,427 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:43,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:44,470 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:45,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:46,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:47,375 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:08:47,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:48,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:49,376 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:49,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:50,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:51,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:08:51,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:08:51,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:52,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:53,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:54,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:54,781 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:08:55,471 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:56,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:56,708 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:08:56,748 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:08:56,749 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:08:56,749 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:08:57,452 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:08:57,453 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:08:57,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:58,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:59,453 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:08:59,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:08:59,792 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:00,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:01,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:02,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:03,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:04,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:05,427 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:05,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:06,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:09:06,419 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:09:06,472 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:07,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:08,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:09,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:10,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:10,784 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:11,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:12,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:13,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:14,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:15,473 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:16,427 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:16,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:17,376 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:09:17,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:18,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:19,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:20,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:21,346 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:09:21,386 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:09:21,387 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:09:21,387 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:09:21,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:09:21,420 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:09:21,459 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:09:21,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:21,800 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:22,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:23,460 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:09:23,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:24,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:25,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:26,474 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:27,427 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:27,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:28,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:29,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:30,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:31,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:32,428 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:32,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:33,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:34,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:35,475 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:36,419 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:09:36,420 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:09:36,476 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:37,476 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:37,777 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:38,476 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:39,476 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:40,476 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:41,476 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:42,476 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:43,428 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:43,476 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:44,477 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:45,477 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:46,347 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:09:46,402 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:09:46,403 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:09:46,403 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:09:46,465 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:09:46,477 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:47,396 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:09:47,466 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:09:47,477 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:48,477 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:49,398 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:49,466 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:09:49,478 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:50,477 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:51,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:09:51,420 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:09:51,477 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:52,477 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:53,478 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:54,478 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:54,850 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:09:55,478 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:56,478 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:57,478 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:58,478 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:09:59,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:00,429 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:00,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:01,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:02,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:03,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:04,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:05,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:06,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:10:06,420 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:10:06,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:06,807 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:07,479 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:08,480 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:09,480 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:10,480 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:11,480 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:12,086 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:12,095 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:10:12,123 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:10:12,124 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:10:12,124 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:10:12,475 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:10:12,480 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:13,482 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:13,483 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:10:14,480 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:15,480 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:16,480 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:17,397 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:10:17,398 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:17,481 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:18,481 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:19,481 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:20,481 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:21,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:10:21,420 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:10:21,481 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:22,481 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:22,825 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:23,481 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:24,482 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:25,482 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:26,482 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:27,482 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:28,430 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:28,482 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:29,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:30,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:31,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:32,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:33,430 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:33,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:34,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:35,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:36,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:10:36,421 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:10:36,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:36,570 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:10:36,806 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:10:36,807 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:10:36,807 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:10:37,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:37,490 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:10:38,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:38,491 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:10:38,808 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:39,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:39,491 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:10:40,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:41,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:42,483 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:43,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:44,430 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:44,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:45,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:46,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:47,399 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:10:47,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:48,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:49,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:50,401 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:50,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:51,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:10:51,421 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:10:51,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:52,484 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:53,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:54,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:55,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:55,853 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:10:56,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:57,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:58,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:10:59,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:00,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:01,430 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:01,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:11:01,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:01,541 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:11:01,541 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:11:01,542 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:11:02,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:02,499 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:11:03,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:03,499 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:11:04,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:04,499 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:11:05,485 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:06,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:11:06,420 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:11:06,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:06,782 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:07,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:08,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:09,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:10,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:11,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:12,430 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:12,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:13,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:14,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:15,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:16,486 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:17,400 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:11:17,487 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:18,402 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:18,487 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:19,487 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:20,487 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:21,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:11:21,421 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:11:21,487 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:22,487 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:23,487 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:23,790 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:24,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:25,487 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:26,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:27,307 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:11:27,392 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:11:27,392 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:11:27,393 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:11:27,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:27,505 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:11:28,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:28,505 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:11:29,393 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:29,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:29,506 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:11:30,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:30,506 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:11:31,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:32,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:33,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:34,431 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:34,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:35,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:36,420 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:11:36,421 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:11:36,488 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:37,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:38,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:39,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:39,786 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:40,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:41,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:42,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:43,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:44,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:45,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:45,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:46,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:47,402 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:11:47,489 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:48,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:49,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:50,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:51,403 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:51,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:11:51,421 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:11:51,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:52,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:52,658 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:11:52,697 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:11:52,697 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:11:52,698 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:11:53,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:53,511 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:11:54,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:54,511 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:11:55,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:55,512 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:11:56,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:11:56,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:57,490 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:58,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:11:59,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:00,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:01,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:02,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:02,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:03,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:04,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:05,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:06,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:12:06,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:12:06,492 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:07,491 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:07,809 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:08,492 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:09,492 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:10,492 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:11,492 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:12,492 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:13,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:13,492 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:14,493 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:15,493 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:16,493 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:17,404 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:12:17,493 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:18,493 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:19,233 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:19,278 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:12:19,314 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:12:19,314 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:12:19,314 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:12:19,493 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:19,519 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:12:20,493 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:20,519 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:12:21,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:12:21,421 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:12:21,493 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:21,520 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:12:22,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:23,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:24,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:24,834 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:25,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:26,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:27,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:28,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:29,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:30,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:30,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:31,494 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:32,495 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:33,495 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:34,495 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:35,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:35,495 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:36,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:12:36,421 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:12:36,495 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:37,495 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:38,496 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:39,496 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:40,496 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:40,791 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:41,496 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:42,496 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:43,496 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:44,496 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:44,717 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:12:44,764 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:12:44,765 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:12:44,765 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:12:45,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:45,527 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:12:46,432 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:46,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:46,527 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:12:47,406 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:12:47,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:47,528 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:12:48,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:49,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:50,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:51,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:12:51,421 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:12:51,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:51,841 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:52,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:53,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:54,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:55,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:56,497 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:57,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:12:57,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:58,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:12:59,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:00,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:01,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:02,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:02,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:03,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:04,498 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:05,499 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:06,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:13:06,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:13:06,499 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:07,499 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:07,747 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:08,499 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:09,499 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:10,371 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:13:10,406 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:13:10,406 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:13:10,407 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:13:10,499 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:10,534 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:13:11,499 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:11,534 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:13:12,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:12,534 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:13:13,433 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:13,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:14,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:15,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:16,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:17,408 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:13:17,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:18,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:19,409 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:19,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:20,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:21,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:13:21,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:13:21,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:22,500 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:23,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:24,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:24,769 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:25,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:26,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:27,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:28,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:29,502 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:30,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:30,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:31,501 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:32,502 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:33,502 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:34,502 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:35,429 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:13:35,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:35,503 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:13:35,508 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:13:35,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:35,521 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:13:35,591 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:13:36,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:13:36,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:13:36,502 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:36,591 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:13:37,502 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:37,592 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:13:38,503 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:39,503 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:40,503 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:40,826 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:41,503 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:42,503 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:43,504 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:44,503 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:45,504 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:46,434 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:46,504 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:47,410 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:13:47,504 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:48,504 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:49,504 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:50,504 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:51,421 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:13:51,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:13:51,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:51,774 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:52,504 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:53,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:54,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:55,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:56,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:57,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:13:57,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:58,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:13:59,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:00,505 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:01,506 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:01,571 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:14:01,607 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:14:01,607 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:14:01,607 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:14:02,506 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:02,598 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:14:02,599 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:14:02,608 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:03,506 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:03,599 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:14:04,506 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:05,506 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:06,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:14:06,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:14:06,506 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:07,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:07,829 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:08,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:09,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:10,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:11,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:12,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:13,435 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:13,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:14,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:15,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:16,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:17,412 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:14:17,507 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:18,508 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:19,413 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:19,508 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:20,508 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:21,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:14:21,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:14:21,508 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:22,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:23,508 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:24,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:24,819 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:25,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:26,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:27,020 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:14:27,084 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:14:27,085 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:14:27,085 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:14:27,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:27,604 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:14:28,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:28,604 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:14:29,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:29,605 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:14:30,086 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:30,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:31,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:32,509 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:33,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:34,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:35,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:35,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:36,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:14:36,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:14:36,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:37,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:38,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:39,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:40,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:40,818 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:41,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:42,510 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:43,511 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:44,511 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:45,511 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:46,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:46,511 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:47,413 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:14:47,511 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:48,511 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:49,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:50,511 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:51,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:14:51,423 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:14:51,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:51,799 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:14:51,847 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:51,883 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:14:51,884 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:14:51,884 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:14:52,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:52,610 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:14:52,610 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:14:53,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:53,610 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:14:54,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:55,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:56,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:57,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:14:57,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:58,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:14:59,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:00,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:01,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:02,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:02,512 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:03,513 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:04,513 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:05,513 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:06,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:15:06,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:15:06,513 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:07,514 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:07,831 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:08,513 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:09,513 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:10,513 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:11,514 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:12,514 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:13,436 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:13,514 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:14,514 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:15,514 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:16,514 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:16,655 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:15:16,804 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:15:16,809 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:15:16,810 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:15:17,415 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:15:17,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:17,666 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:15:18,441 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:18,514 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:18,666 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:15:19,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:19,666 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:15:20,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:21,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:15:21,422 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:15:21,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:22,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:23,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:23,780 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:24,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:25,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:26,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:27,515 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:28,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:29,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:29,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:30,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:31,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:32,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:33,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:34,437 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:34,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:35,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:36,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:15:36,423 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:15:36,516 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:37,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:38,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:39,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:39,800 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:40,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:41,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:42,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:43,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:44,120 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:15:44,163 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:15:44,163 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:15:44,163 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:15:44,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:44,673 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:15:44,673 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:15:45,164 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:45,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:45,673 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:15:46,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:47,416 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:15:47,517 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:48,518 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:49,518 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:50,417 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:50,518 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:51,422 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-11 18:15:51,423 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: stop_status
+2025-07-11 18:15:51,518 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:52,518 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:53,518 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:54,519 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:55,519 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:15:55,724 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:55,766 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:15:55,767 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: partial_history
+2025-07-11 18:15:55,768 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: server_info
+2025-07-11 18:15:55,791 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:15:55,792 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:15:55,792 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:15:55,792 DEBUG   SenderThread:3665007 [sender.py:send():379] send: history
+2025-07-11 18:15:55,793 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: summary_record
+2025-07-11 18:15:55,793 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:15:55,793 DEBUG   SenderThread:3665007 [sender.py:send():379] send: telemetry
+2025-07-11 18:15:55,793 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: server_info
+2025-07-11 18:15:56,119 DEBUG   SenderThread:3665007 [sender.py:send():379] send: exit
+2025-07-11 18:15:56,120 INFO    SenderThread:3665007 [sender.py:send_exit():586] handling exit code: 0
+2025-07-11 18:15:56,120 INFO    SenderThread:3665007 [sender.py:send_exit():588] handling runtime: 818
+2025-07-11 18:15:56,120 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:15:56,121 INFO    SenderThread:3665007 [sender.py:send_exit():594] send defer
+2025-07-11 18:15:56,121 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:56,121 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 0
+2025-07-11 18:15:56,121 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:56,121 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 0
+2025-07-11 18:15:56,121 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 1
+2025-07-11 18:15:56,122 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:56,122 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 1
+2025-07-11 18:15:56,122 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:56,122 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 1
+2025-07-11 18:15:56,122 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 2
+2025-07-11 18:15:56,123 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:56,123 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 2
+2025-07-11 18:15:56,123 INFO    HandlerThread:3665007 [system_monitor.py:finish():203] Stopping system monitor
+2025-07-11 18:15:56,123 DEBUG   SystemMonitor:3665007 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-07-11 18:15:56,124 DEBUG   SystemMonitor:3665007 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-07-11 18:15:56,125 INFO    HandlerThread:3665007 [interfaces.py:finish():200] Joined cpu monitor
+2025-07-11 18:15:56,125 INFO    HandlerThread:3665007 [interfaces.py:finish():200] Joined disk monitor
+2025-07-11 18:15:56,622 INFO    HandlerThread:3665007 [interfaces.py:finish():200] Joined gpu monitor
+2025-07-11 18:15:56,623 INFO    HandlerThread:3665007 [interfaces.py:finish():200] Joined memory monitor
+2025-07-11 18:15:56,623 INFO    HandlerThread:3665007 [interfaces.py:finish():200] Joined network monitor
+2025-07-11 18:15:56,623 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:56,623 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 2
+2025-07-11 18:15:56,623 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 3
+2025-07-11 18:15:56,623 DEBUG   SenderThread:3665007 [sender.py:send():379] send: stats
+2025-07-11 18:15:56,624 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:56,624 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 3
+2025-07-11 18:15:56,624 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:56,624 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 3
+2025-07-11 18:15:56,624 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 4
+2025-07-11 18:15:56,624 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:56,624 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 4
+2025-07-11 18:15:56,624 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:56,625 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 4
+2025-07-11 18:15:56,625 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 5
+2025-07-11 18:15:56,625 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:56,625 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 5
+2025-07-11 18:15:56,625 DEBUG   SenderThread:3665007 [sender.py:send():379] send: summary
+2025-07-11 18:15:56,626 INFO    SenderThread:3665007 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-11 18:15:56,626 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:56,626 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 5
+2025-07-11 18:15:56,626 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 6
+2025-07-11 18:15:56,626 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:56,626 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 6
+2025-07-11 18:15:56,626 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:56,627 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 6
+2025-07-11 18:15:56,630 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: status_report
+2025-07-11 18:15:56,676 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:15:56,676 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:15:57,010 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 7
+2025-07-11 18:15:57,010 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:57,010 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 7
+2025-07-11 18:15:57,011 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:57,011 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 7
+2025-07-11 18:15:57,119 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-11 18:15:57,676 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/config.yaml
+2025-07-11 18:15:57,677 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:15:58,552 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 8
+2025-07-11 18:15:58,552 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: poll_exit
+2025-07-11 18:15:58,553 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:58,553 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 8
+2025-07-11 18:15:58,553 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:15:58,554 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 8
+2025-07-11 18:15:58,554 INFO    SenderThread:3665007 [job_builder.py:build():440] Attempting to build job artifact
+2025-07-11 18:15:58,554 INFO    SenderThread:3665007 [job_builder.py:_get_source_type():569] is repo sourced job
+2025-07-11 18:15:58,580 INFO    SenderThread:3665007 [job_builder.py:build():545] adding wandb-job metadata file
+2025-07-11 18:15:58,595 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 9
+2025-07-11 18:15:58,595 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:15:58,595 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 9
+2025-07-11 18:15:58,596 DEBUG   SenderThread:3665007 [sender.py:send():379] send: artifact
+2025-07-11 18:15:58,676 INFO    Thread-12 :3665007 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:15:59,120 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-11 18:16:00,283 INFO    SenderThread:3665007 [sender.py:send_artifact():1530] sent artifact job-https___github.com_AGI-Edgerunners_LLM-Adapters.git_commonsense_evaluate.py - {'id': 'QXJ0aWZhY3Q6MTg2MTQ1MzI1NQ==', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjY4MDU2ODI5Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTg3MjE3NTE0Mg==', 'versionIndex': 3}}}
+2025-07-11 18:16:00,284 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:16:00,284 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 9
+2025-07-11 18:16:00,284 INFO    SenderThread:3665007 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-07-11 18:16:00,678 INFO    SenderThread:3665007 [dir_watcher.py:finish():388] scan: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files
+2025-07-11 18:16:00,678 INFO    SenderThread:3665007 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/config.yaml config.yaml
+2025-07-11 18:16:00,678 INFO    SenderThread:3665007 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/conda-environment.yaml conda-environment.yaml
+2025-07-11 18:16:00,678 INFO    SenderThread:3665007 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/requirements.txt requirements.txt
+2025-07-11 18:16:00,678 INFO    SenderThread:3665007 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log output.log
+2025-07-11 18:16:00,679 INFO    SenderThread:3665007 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-metadata.json wandb-metadata.json
+2025-07-11 18:16:00,679 INFO    SenderThread:3665007 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json wandb-summary.json
+2025-07-11 18:16:00,679 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 10
+2025-07-11 18:16:00,679 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: poll_exit
+2025-07-11 18:16:00,684 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:16:00,684 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 10
+2025-07-11 18:16:00,686 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:16:00,687 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 10
+2025-07-11 18:16:00,687 INFO    SenderThread:3665007 [file_pusher.py:finish():169] shutting down file pusher
+2025-07-11 18:16:01,121 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-11 18:16:01,122 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: poll_exit
+2025-07-11 18:16:01,443 INFO    wandb-upload_0:3665007 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/config.yaml
+2025-07-11 18:16:01,582 INFO    wandb-upload_2:3665007 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/requirements.txt
+2025-07-11 18:16:01,620 INFO    wandb-upload_1:3665007 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/conda-environment.yaml
+2025-07-11 18:16:01,634 INFO    wandb-upload_4:3665007 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/wandb-summary.json
+2025-07-11 18:16:02,121 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-11 18:16:02,122 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: poll_exit
+2025-07-11 18:16:03,122 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-11 18:16:03,122 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: poll_exit
+2025-07-11 18:16:03,519 INFO    wandb-upload_3:3665007 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/files/output.log
+2025-07-11 18:16:03,720 INFO    Thread-11 (_thread_body):3665007 [sender.py:transition_state():614] send defer: 11
+2025-07-11 18:16:03,720 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:16:03,720 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 11
+2025-07-11 18:16:03,720 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:16:03,720 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 11
+2025-07-11 18:16:03,720 INFO    SenderThread:3665007 [file_pusher.py:join():175] waiting for file pusher
+2025-07-11 18:16:03,729 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 12
+2025-07-11 18:16:03,729 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:16:03,729 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 12
+2025-07-11 18:16:03,729 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:16:03,729 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 12
+2025-07-11 18:16:03,729 INFO    SenderThread:3665007 [file_stream.py:finish():601] file stream finish called
+2025-07-11 18:16:04,122 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-11 18:16:04,787 INFO    SenderThread:3665007 [file_stream.py:finish():605] file stream finish is done
+2025-07-11 18:16:04,787 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 13
+2025-07-11 18:16:04,787 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: poll_exit
+2025-07-11 18:16:04,788 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:16:04,788 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 13
+2025-07-11 18:16:04,788 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:16:04,788 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 13
+2025-07-11 18:16:04,788 INFO    SenderThread:3665007 [sender.py:transition_state():614] send defer: 14
+2025-07-11 18:16:04,788 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: defer
+2025-07-11 18:16:04,788 INFO    HandlerThread:3665007 [handler.py:handle_request_defer():184] handle defer: 14
+2025-07-11 18:16:04,789 DEBUG   SenderThread:3665007 [sender.py:send():379] send: final
+2025-07-11 18:16:04,789 DEBUG   SenderThread:3665007 [sender.py:send():379] send: footer
+2025-07-11 18:16:04,789 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: defer
+2025-07-11 18:16:04,789 INFO    SenderThread:3665007 [sender.py:send_request_defer():610] handle sender defer: 14
+2025-07-11 18:16:04,790 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-11 18:16:04,790 DEBUG   SenderThread:3665007 [sender.py:send_request():406] send_request: poll_exit
+2025-07-11 18:16:04,790 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-11 18:16:04,791 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: get_summary
+2025-07-11 18:16:04,791 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: sampled_history
+2025-07-11 18:16:04,792 DEBUG   HandlerThread:3665007 [handler.py:handle_request():158] handle_request: shutdown
+2025-07-11 18:16:04,793 INFO    HandlerThread:3665007 [handler.py:finish():882] shutting down handler
+2025-07-11 18:16:05,790 INFO    WriterThread:3665007 [datastore.py:close():296] close: /home/aneek/LLM-Adapters/wandb/run-20250711_180216-85vmo5nb/run-85vmo5nb.wandb
+2025-07-11 18:16:05,790 INFO    SenderThread:3665007 [sender.py:finish():1608] shutting down sender
+2025-07-11 18:16:05,790 INFO    SenderThread:3665007 [file_pusher.py:finish():169] shutting down file pusher
+2025-07-11 18:16:05,790 INFO    SenderThread:3665007 [file_pusher.py:join():175] waiting for file pusher

@@ -1,0 +1,54 @@
+Traceback (most recent call last):
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/config.py", line 260, in _get_peft_type
+    config_file = hf_hub_download(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/home/aneek/LLM-Adapters/trained_models/llama-1B-aqua-lora'. Use `repo_type` argument if needed.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 102, in main
+    tokenizer, model = load_model(args)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 244, in load_model
+    model = PeftModel.from_pretrained(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 439, in from_pretrained
+    PeftConfig._get_peft_type(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/config.py", line 266, in _get_peft_type
+    raise ValueError(f"Can't find '{CONFIG_NAME}' at '{model_id}'")
+ValueError: Can't find 'adapter_config.json' at '/home/aneek/LLM-Adapters/trained_models/llama-1B-aqua-lora'
+Traceback (most recent call last):
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/config.py", line 260, in _get_peft_type
+    config_file = hf_hub_download(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 154, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '/home/aneek/LLM-Adapters/trained_models/llama-1B-aqua-lora'. Use `repo_type` argument if needed.
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 324, in <module>
+    fire.Fire(main)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 102, in main
+    tokenizer, model = load_model(args)
+  File "/home/aneek/LLM-Adapters/evaluate.py", line 244, in load_model
+    model = PeftModel.from_pretrained(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 439, in from_pretrained
+    PeftConfig._get_peft_type(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/config.py", line 266, in _get_peft_type
+    raise ValueError(f"Can't find '{CONFIG_NAME}' at '{model_id}'")
+ValueError: Can't find 'adapter_config.json' at '/home/aneek/LLM-Adapters/trained_models/llama-1B-aqua-lora'
