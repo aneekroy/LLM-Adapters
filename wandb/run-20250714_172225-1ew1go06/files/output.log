@@ -1,0 +1,55 @@
+
+
+
+  0%|                                                                                                  | 9/11250 [00:05<1:45:12,  1.78it/s]
+
+
+  0%|▏                                                                                                | 16/11250 [00:09<1:45:20,  1.78it/s]
+
+
+
+  0%|▏                                                                                                | 27/11250 [00:15<1:45:20,  1.78it/s]
+
+
+
+  0%|▎                                                                                                | 38/11250 [00:21<1:34:39,  1.97it/s]
+
+
+  0%|▍                                                                                                | 45/11250 [00:25<1:39:11,  1.88it/s]
+
+
+
+  1%|▍                                                                                                | 57/11250 [00:31<1:43:44,  1.80it/s]
+
+  1%|▌                                                                                                | 63/11250 [00:35<1:43:40,  1.80it/s]Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/finetune.py", line 439, in <module>
+    fire.Fire(train)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+    component_trace = _Fire(component, args, parsed_flag_args, context, name)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+    component, remaining_args = _CallAndUpdateTrace(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+    component = fn(*varargs, **kwargs)
+  File "/home/aneek/LLM-Adapters/finetune.py", line 368, in train
+    trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in train
+    return inner_training_loop(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/trainer.py", line 2550, in _inner_training_loop
+    if (
+KeyboardInterrupt
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/home/aneek/LLM-Adapters/finetune.py", line 439, in <module>
+[rank0]:     fire.Fire(train)
+[rank0]:   File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 135, in Fire
+[rank0]:     component_trace = _Fire(component, args, parsed_flag_args, context, name)
+[rank0]:   File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 468, in _Fire
+[rank0]:     component, remaining_args = _CallAndUpdateTrace(
+[rank0]:   File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/fire/core.py", line 684, in _CallAndUpdateTrace
+[rank0]:     component = fn(*varargs, **kwargs)
+[rank0]:   File "/home/aneek/LLM-Adapters/finetune.py", line 368, in train
+[rank0]:     trainer.train(resume_from_checkpoint=resume_from_checkpoint)
+[rank0]:   File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/trainer.py", line 2206, in train
+[rank0]:     return inner_training_loop(
+[rank0]:   File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/transformers/trainer.py", line 2550, in _inner_training_loop
+[rank0]:     if (
+[rank0]: KeyboardInterrupt

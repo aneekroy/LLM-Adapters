@@ -96,22 +96,40 @@ def main(
 
         outputs = evaluate(instructions)
 
+        # for data, output in zip(batch, outputs):
+        #     label = data.get('answer')
+        #     flag = False
+        #     predict = extract_answer(args, output)
+        #     if label == predict:
+        #         correct += 1
+        #         flag = True
+        #     new_data = copy.deepcopy(data)
+        #     new_data['output_pred'] = output
+        #     new_data['pred'] = predict
+        #     new_data['flag'] = flag
+        #     output_data.append(new_data)
+        #     print(data["instruction"])
+        #     print(output)
+        #     print('prediction:', predict)
+        #     print('label:', label)
+
         for data, output in zip(batch, outputs):
-            label = data.get('answer')
-            flag = False
-            predict = extract_answer(args, output)
-            if label == predict:
+            gold_text = get_gold_answer_text(args.dataset, data)
+            pred_text = extract_answer(args, output, data)
+
+            flag = gold_text and (normalize(pred_text) == normalize(gold_text))
+            if flag:
                 correct += 1
-                flag = True
+
             new_data = copy.deepcopy(data)
-            new_data['output_pred'] = output
-            new_data['pred'] = predict
-            new_data['flag'] = flag
+            new_data.update({
+                "output_pred": output,
+                "pred": pred_text,
+                "gold_text": gold_text,
+                "flag": flag,
+            })
             output_data.append(new_data)
-            print(data["instruction"])
-            print(output)
-            print('prediction:', predict)
-            print('label:', label)
+
         print('---------------')
         print(f'\rtest:{idx + 1}/{total} | accuracy {correct}  {correct / current}')
         print('---------------')
@@ -227,27 +245,27 @@ def load_model(args) -> tuple:
         model = AutoModelForCausalLM.from_pretrained(
             base_model,
             load_in_8bit=load_8bit,
-            torch_dtype=torch.float16,
+            torch_dtype=torch.float32,
             device_map="auto",
             trust_remote_code=True,
         ) # fix zwq
         model = PeftModel.from_pretrained(
             model,
             lora_weights,
-            torch_dtype=torch.float16,
+            torch_dtype=torch.float32,
             device_map={"":0}
         )
     elif device == "mps":
         model = AutoModelForCausalLM.from_pretrained(
             base_model,
             device_map={"": device},
-            torch_dtype=torch.float16,
+            torch_dtype=torch.float32,
         )
         model = PeftModel.from_pretrained(
             model,
             lora_weights,
             device_map={"": device},
-            torch_dtype=torch.float16,
+            torch_dtype=torch.float32,
         )
     else:
         model = AutoModelForCausalLM.from_pretrained(
@@ -314,6 +332,76 @@ def extract_answer(args, sentence: str) -> float:
             return ""
         return pred_answers[0]
 
+########################################################################################
 
+def normalize(txt: str) -> str:
+    return re.sub(r'\W+', '', txt.lower())
+
+
+# Helper: list of (tag, actual_text) for each dataset
+def get_options(data: dict, dataset: str):
+    if dataset == "boolq":
+        return [("true", "true"), ("false", "false")]
+    if dataset == "piqa":
+        return [("solution1", data.get("solution1", data.get("sol1", ""))),
+                ("solution2", data.get("solution2", data.get("sol2", "")))]
+    if dataset == "social_i_qa":
+        return [(f"answer{i}", data.get(f"answer{i}", "")) for i in range(1, 4)]
+    if dataset in ("ARC-Challenge", "ARC-Easy", "openbookqa"):
+        return [(f"answer{i}", data.get(f"answer{i}", ""))
+                for i in range(1, 6)]
+    if dataset == "hellaswag":
+        return [(f"ending{i}", data.get(f"ending{i}", ""))
+                for i in range(1, 5)]
+    if dataset == "winogrande":
+        return [("option1", data.get("option1", "")),
+                ("option2", data.get("option2", ""))]
+    return []
+
+
+# Resolve ground-truth tag → its real answer text
+def get_gold_answer_text(dataset: str, data: dict) -> str:
+    gold_tag = data.get("answer", "")
+    for tag, txt in get_options(data, dataset):
+        if tag == gold_tag:
+            return txt.strip()
+    # boolq already stores "true"/"false" directly
+    return gold_tag.strip()
+
+
+# Extract model prediction as real answer text
+def extract_answer(args, sentence: str, example: dict) -> str:
+    dataset = args.dataset
+    sent_norm = normalize(sentence)
+
+    # 1) Try placeholder regex (keeps old behaviour)
+    tag_patterns = {
+        "boolq": r"\b(?:true|false)\b",
+        "piqa": r"\bsolution[12]\b",
+        "social_i_qa": r"\banswer[123]\b",
+        "ARC-Challenge": r"\banswer[1-5]\b",
+        "ARC-Easy": r"\banswer[1-5]\b",
+        "openbookqa": r"\banswer[1-5]\b",
+        "hellaswag": r"\bending[1-4]\b",
+        "winogrande": r"\boption[12]\b",
+    }
+    pat = tag_patterns.get(dataset)
+    if pat:
+        m = re.search(pat, sentence, flags=re.IGNORECASE)
+        if m:
+            tag = m.group(0).lower()
+            for t, txt in get_options(example, dataset):
+                if t == tag:
+                    return txt.strip()
+
+    # 2) Fallback: scan actual option texts
+    for tag, txt in get_options(example, dataset):
+        if txt and normalize(txt) in sent_norm:
+            return txt.strip()
+
+    return ""  # no match
+
+
+########################################################################################
 if __name__ == "__main__":
     main()

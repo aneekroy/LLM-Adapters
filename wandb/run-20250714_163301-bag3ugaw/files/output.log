@@ -1,0 +1,32 @@
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/commonsense_evaluate.py", line 319, in <module>
+    main()
+  File "/home/aneek/LLM-Adapters/commonsense_evaluate.py", line 87, in main
+    tokenizer, model = load_model(args)
+  File "/home/aneek/LLM-Adapters/commonsense_evaluate.py", line 234, in load_model
+    model = PeftModel.from_pretrained(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 541, in from_pretrained
+    load_result = model.load_adapter(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1272, in load_adapter
+    adapters_weights = load_peft_weights(model_id, device=torch_device, **hf_hub_download_kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/utils/save_and_load.py", line 567, in load_peft_weights
+    adapters_weights = safe_load_file(filename, device=device)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/safetensors/torch.py", line 311, in load_file
+    with safe_open(filename, framework="pt", device=device) as f:
+safetensors_rust.SafetensorError: Error while deserializing header: InvalidHeaderDeserialization
+Traceback (most recent call last):
+  File "/home/aneek/LLM-Adapters/commonsense_evaluate.py", line 319, in <module>
+    main()
+  File "/home/aneek/LLM-Adapters/commonsense_evaluate.py", line 87, in main
+    tokenizer, model = load_model(args)
+  File "/home/aneek/LLM-Adapters/commonsense_evaluate.py", line 234, in load_model
+    model = PeftModel.from_pretrained(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 541, in from_pretrained
+    load_result = model.load_adapter(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/peft_model.py", line 1272, in load_adapter
+    adapters_weights = load_peft_weights(model_id, device=torch_device, **hf_hub_download_kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/peft/utils/save_and_load.py", line 567, in load_peft_weights
+    adapters_weights = safe_load_file(filename, device=device)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/safetensors/torch.py", line 311, in load_file
+    with safe_open(filename, framework="pt", device=device) as f:
+safetensors_rust.SafetensorError: Error while deserializing header: InvalidHeaderDeserialization

@@ -1,0 +1,187 @@
+2025-07-14 16:19:51,191 INFO    StreamThr :236771 [internal.py:wandb_internal():85] W&B internal server running at pid: 236771, started at: 2025-07-14 16:19:51.190926
+2025-07-14 16:19:51,193 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: status
+2025-07-14 16:19:51,194 INFO    WriterThread:236771 [datastore.py:open_for_write():87] open: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/run-3juw2rat.wandb
+2025-07-14 16:19:51,195 DEBUG   SenderThread:236771 [sender.py:send():379] send: header
+2025-07-14 16:19:51,196 DEBUG   SenderThread:236771 [sender.py:send():379] send: run
+2025-07-14 16:19:52,177 INFO    SenderThread:236771 [dir_watcher.py:__init__():211] watching files in: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files
+2025-07-14 16:19:52,177 INFO    SenderThread:236771 [sender.py:_start_run_threads():1188] run started: 3juw2rat with start time 1752490191.190364
+2025-07-14 16:19:52,178 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: check_version
+2025-07-14 16:19:52,179 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: check_version
+2025-07-14 16:19:52,267 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: run_start
+2025-07-14 16:19:52,286 DEBUG   HandlerThread:236771 [system_info.py:__init__():26] System info init
+2025-07-14 16:19:52,286 DEBUG   HandlerThread:236771 [system_info.py:__init__():41] System info init done
+2025-07-14 16:19:52,286 INFO    HandlerThread:236771 [system_monitor.py:start():194] Starting system monitor
+2025-07-14 16:19:52,287 INFO    SystemMonitor:236771 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2025-07-14 16:19:52,287 INFO    HandlerThread:236771 [system_monitor.py:probe():214] Collecting system info
+2025-07-14 16:19:52,287 INFO    SystemMonitor:236771 [interfaces.py:start():188] Started cpu monitoring
+2025-07-14 16:19:52,287 INFO    SystemMonitor:236771 [interfaces.py:start():188] Started disk monitoring
+2025-07-14 16:19:52,288 INFO    SystemMonitor:236771 [interfaces.py:start():188] Started gpu monitoring
+2025-07-14 16:19:52,289 INFO    SystemMonitor:236771 [interfaces.py:start():188] Started memory monitoring
+2025-07-14 16:19:52,289 INFO    SystemMonitor:236771 [interfaces.py:start():188] Started network monitoring
+2025-07-14 16:19:52,326 DEBUG   HandlerThread:236771 [system_info.py:probe():152] Probing system
+2025-07-14 16:19:52,329 DEBUG   HandlerThread:236771 [system_info.py:_probe_git():137] Probing git
+2025-07-14 16:19:52,336 DEBUG   HandlerThread:236771 [system_info.py:_probe_git():145] Probing git done
+2025-07-14 16:19:52,336 DEBUG   HandlerThread:236771 [system_info.py:probe():200] Probing system done
+2025-07-14 16:19:52,336 DEBUG   HandlerThread:236771 [system_monitor.py:probe():223] {'os': 'Linux-6.11.0-26-generic-x86_64-with-glibc2.39', 'python': '3.10.16', 'heartbeatAt': '2025-07-14T10:49:52.326463', 'startedAt': '2025-07-14T10:49:51.186389', 'docker': None, 'cuda': None, 'args': ('--dataset', 'hellaswag', '--model', 'Llama-3.2-1B-Instruct', '--base_model', '/home/aneek/models/Llama-3.2-1B-Instruct', '--lora_weights', '/home/aneek/LLM-Adapters/trained_models/llama-commonsense_170k-1B-lora,/home/aneek/LLM-Adapters/trained_models/llama-math_50k-1B-lora,/home/aneek/LLM-Adapters/trained_models/llama-alpaca_data_cleaned-1B-lora', '--batch_size', '16', '--ensemble_rule', 'vote', '--load_8bit'), 'state': 'running', 'program': '/home/aneek/LLM-Adapters/ensemble_eval_multi_lora_commonsense.py', 'codePathLocal': 'ensemble_eval_multi_lora_commonsense.py', 'codePath': 'ensemble_eval_multi_lora_commonsense.py', 'git': {'remote': None, 'commit': '9cf4a1ebf3e820ba016f57e4eb33839df4b747a2'}, 'email': 'aneek@LCS2-IITD.(none)', 'root': '/home/aneek/LLM-Adapters', 'host': 'LCS2-IITD', 'username': 'aneek', 'executable': '/home/aneek/miniconda3/envs/llama4env/bin/python', 'cpu_count': 32, 'cpu_count_logical': 64, 'cpu_freq': {'current': 2220.7541250000004, 'min': 1500.0, 'max': 2800.0}, 'cpu_freq_per_core': [{'current': 3653.474, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3642.719, 'min': 1500.0, 'max': 2800.0}, {'current': 2905.43, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3643.164, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1904.827, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2096.134, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2524.881, 'min': 1500.0, 'max': 2800.0}, {'current': 2944.033, 'min': 1500.0, 'max': 2800.0}, {'current': 3637.581, 'min': 1500.0, 'max': 2800.0}, {'current': 3703.216, 'min': 1500.0, 'max': 2800.0}, {'current': 2950.586, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3642.904, 'min': 1500.0, 'max': 2800.0}, {'current': 2914.639, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2096.135, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3643.522, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2911.742, 'min': 1500.0, 'max': 2800.0}, {'current': 2913.372, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1710.884, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2906.298, 'min': 1500.0, 'max': 2800.0}, {'current': 2935.534, 'min': 1500.0, 'max': 2800.0}, {'current': 2914.613, 'min': 1500.0, 'max': 2800.0}, {'current': 2914.449, 'min': 1500.0, 'max': 2800.0}, {'current': 3669.404, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2232.539, 'min': 1500.0, 'max': 2800.0}, {'current': 1673.43, 'min': 1500.0, 'max': 2800.0}, {'current': 2943.308, 'min': 1500.0, 'max': 2800.0}, {'current': 3679.753, 'min': 1500.0, 'max': 2800.0}, {'current': 2939.55, 'min': 1500.0, 'max': 2800.0}, {'current': 2940.462, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 3692.612, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2100.0, 'min': 1500.0, 'max': 2800.0}, {'current': 1500.0, 'min': 1500.0, 'max': 2800.0}, {'current': 2094.773, 'min': 1500.0, 'max': 2800.0}], 'disk': {'/': {'total': 914.7823104858398, 'used': 38.361209869384766}}, 'gpu': 'NVIDIA RTX A6000', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}, {'name': 'NVIDIA RTX A6000', 'memory_total': 51527024640}], 'memory': {'total': 314.54892349243164}}
+2025-07-14 16:19:52,337 INFO    HandlerThread:236771 [system_monitor.py:probe():224] Finished collecting system info
+2025-07-14 16:19:52,337 INFO    HandlerThread:236771 [system_monitor.py:probe():227] Publishing system info
+2025-07-14 16:19:52,337 DEBUG   HandlerThread:236771 [system_info.py:_save_conda():209] Saving list of conda packages installed into the current environment
+2025-07-14 16:19:53,178 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/conda-environment.yaml
+2025-07-14 16:19:56,358 DEBUG   HandlerThread:236771 [system_info.py:_save_conda():224] Saving conda packages done
+2025-07-14 16:19:56,358 INFO    HandlerThread:236771 [system_monitor.py:probe():229] Finished publishing system info
+2025-07-14 16:19:56,362 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: status_report
+2025-07-14 16:19:56,363 DEBUG   SenderThread:236771 [sender.py:send():379] send: files
+2025-07-14 16:19:56,363 INFO    SenderThread:236771 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2025-07-14 16:19:56,507 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: python_packages
+2025-07-14 16:19:56,508 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: python_packages
+2025-07-14 16:19:56,510 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: stop_status
+2025-07-14 16:19:56,510 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: stop_status
+2025-07-14 16:19:56,552 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-14 16:19:56,991 DEBUG   SenderThread:236771 [sender.py:send():379] send: telemetry
+2025-07-14 16:19:56,993 DEBUG   SenderThread:236771 [sender.py:send():379] send: exit
+2025-07-14 16:19:56,993 INFO    SenderThread:236771 [sender.py:send_exit():586] handling exit code: 1
+2025-07-14 16:19:56,993 INFO    SenderThread:236771 [sender.py:send_exit():588] handling runtime: 4
+2025-07-14 16:19:56,994 INFO    SenderThread:236771 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-14 16:19:56,995 INFO    SenderThread:236771 [sender.py:send_exit():594] send defer
+2025-07-14 16:19:56,995 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:56,995 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 0
+2025-07-14 16:19:56,995 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:56,995 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 0
+2025-07-14 16:19:56,995 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 1
+2025-07-14 16:19:56,995 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:56,995 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 1
+2025-07-14 16:19:56,996 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:56,996 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 1
+2025-07-14 16:19:56,996 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 2
+2025-07-14 16:19:56,996 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:56,996 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 2
+2025-07-14 16:19:56,996 INFO    HandlerThread:236771 [system_monitor.py:finish():203] Stopping system monitor
+2025-07-14 16:19:56,996 DEBUG   SystemMonitor:236771 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2025-07-14 16:19:56,996 DEBUG   SystemMonitor:236771 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2025-07-14 16:19:56,996 DEBUG   SystemMonitor:236771 [system_monitor.py:_start():183] Publishing last batch of metrics
+2025-07-14 16:19:56,996 INFO    HandlerThread:236771 [interfaces.py:finish():200] Joined cpu monitor
+2025-07-14 16:19:56,997 INFO    HandlerThread:236771 [interfaces.py:finish():200] Joined disk monitor
+2025-07-14 16:19:57,178 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/conda-environment.yaml
+2025-07-14 16:19:57,179 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/requirements.txt
+2025-07-14 16:19:57,179 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/wandb-summary.json
+2025-07-14 16:19:57,179 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/wandb-metadata.json
+2025-07-14 16:19:57,180 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_created():271] file/dir created: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/output.log
+2025-07-14 16:19:57,542 INFO    wandb-upload_0:236771 [upload_job.py:push():130] Uploaded file /tmp/tmpktog1eolwandb/9m1vee8r-wandb-metadata.json
+2025-07-14 16:19:57,626 INFO    HandlerThread:236771 [interfaces.py:finish():200] Joined gpu monitor
+2025-07-14 16:19:57,627 INFO    HandlerThread:236771 [interfaces.py:finish():200] Joined memory monitor
+2025-07-14 16:19:57,627 INFO    HandlerThread:236771 [interfaces.py:finish():200] Joined network monitor
+2025-07-14 16:19:57,627 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-14 16:19:57,627 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:57,627 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 2
+2025-07-14 16:19:57,627 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 3
+2025-07-14 16:19:57,628 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: poll_exit
+2025-07-14 16:19:57,628 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:57,628 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 3
+2025-07-14 16:19:57,628 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:57,628 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 3
+2025-07-14 16:19:57,628 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 4
+2025-07-14 16:19:57,628 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:57,628 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 4
+2025-07-14 16:19:57,628 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:57,628 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 4
+2025-07-14 16:19:57,628 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 5
+2025-07-14 16:19:57,629 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:57,629 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 5
+2025-07-14 16:19:57,629 DEBUG   SenderThread:236771 [sender.py:send():379] send: summary
+2025-07-14 16:19:57,629 INFO    SenderThread:236771 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2025-07-14 16:19:57,629 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:57,629 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 5
+2025-07-14 16:19:57,629 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 6
+2025-07-14 16:19:57,629 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:57,630 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 6
+2025-07-14 16:19:57,630 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:57,630 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 6
+2025-07-14 16:19:57,633 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: status_report
+2025-07-14 16:19:57,978 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 7
+2025-07-14 16:19:57,978 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:57,978 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 7
+2025-07-14 16:19:57,979 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:57,979 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 7
+2025-07-14 16:19:58,179 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/wandb-summary.json
+2025-07-14 16:19:58,179 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/config.yaml
+2025-07-14 16:19:58,557 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-14 16:19:59,010 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 8
+2025-07-14 16:19:59,010 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: poll_exit
+2025-07-14 16:19:59,010 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:59,011 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 8
+2025-07-14 16:19:59,011 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:59,011 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 8
+2025-07-14 16:19:59,011 INFO    SenderThread:236771 [job_builder.py:build():440] Attempting to build job artifact
+2025-07-14 16:19:59,011 INFO    SenderThread:236771 [job_builder.py:_get_source_type():580] no source found
+2025-07-14 16:19:59,011 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 9
+2025-07-14 16:19:59,012 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:59,012 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 9
+2025-07-14 16:19:59,012 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:59,012 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 9
+2025-07-14 16:19:59,012 INFO    SenderThread:236771 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-07-14 16:19:59,179 INFO    Thread-12 :236771 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/output.log
+2025-07-14 16:19:59,180 INFO    SenderThread:236771 [dir_watcher.py:finish():388] scan: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files
+2025-07-14 16:19:59,180 INFO    SenderThread:236771 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/config.yaml config.yaml
+2025-07-14 16:19:59,181 INFO    SenderThread:236771 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/conda-environment.yaml conda-environment.yaml
+2025-07-14 16:19:59,181 INFO    SenderThread:236771 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/requirements.txt requirements.txt
+2025-07-14 16:19:59,186 INFO    SenderThread:236771 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/output.log output.log
+2025-07-14 16:19:59,189 INFO    SenderThread:236771 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/wandb-metadata.json wandb-metadata.json
+2025-07-14 16:19:59,190 INFO    SenderThread:236771 [dir_watcher.py:finish():402] scan save: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/wandb-summary.json wandb-summary.json
+2025-07-14 16:19:59,190 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 10
+2025-07-14 16:19:59,192 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:19:59,192 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 10
+2025-07-14 16:19:59,193 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:19:59,193 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 10
+2025-07-14 16:19:59,195 INFO    SenderThread:236771 [file_pusher.py:finish():169] shutting down file pusher
+2025-07-14 16:19:59,558 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-14 16:19:59,558 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: poll_exit
+2025-07-14 16:19:59,945 INFO    wandb-upload_0:236771 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/config.yaml
+2025-07-14 16:20:00,121 INFO    wandb-upload_3:236771 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/output.log
+2025-07-14 16:20:00,127 INFO    wandb-upload_1:236771 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/conda-environment.yaml
+2025-07-14 16:20:00,136 INFO    wandb-upload_4:236771 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/wandb-summary.json
+2025-07-14 16:20:00,144 INFO    wandb-upload_2:236771 [upload_job.py:push():130] Uploaded file /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/files/requirements.txt
+2025-07-14 16:20:00,345 INFO    Thread-11 (_thread_body):236771 [sender.py:transition_state():614] send defer: 11
+2025-07-14 16:20:00,345 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:20:00,345 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 11
+2025-07-14 16:20:00,346 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:20:00,346 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 11
+2025-07-14 16:20:00,346 INFO    SenderThread:236771 [file_pusher.py:join():175] waiting for file pusher
+2025-07-14 16:20:00,347 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 12
+2025-07-14 16:20:00,347 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:20:00,347 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 12
+2025-07-14 16:20:00,348 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:20:00,348 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 12
+2025-07-14 16:20:00,348 INFO    SenderThread:236771 [file_stream.py:finish():601] file stream finish called
+2025-07-14 16:20:00,559 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-14 16:20:00,738 INFO    SenderThread:236771 [file_stream.py:finish():605] file stream finish is done
+2025-07-14 16:20:00,738 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 13
+2025-07-14 16:20:00,738 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: poll_exit
+2025-07-14 16:20:00,739 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:20:00,739 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 13
+2025-07-14 16:20:00,739 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:20:00,739 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 13
+2025-07-14 16:20:00,740 INFO    SenderThread:236771 [sender.py:transition_state():614] send defer: 14
+2025-07-14 16:20:00,740 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: defer
+2025-07-14 16:20:00,740 INFO    HandlerThread:236771 [handler.py:handle_request_defer():184] handle defer: 14
+2025-07-14 16:20:00,741 DEBUG   SenderThread:236771 [sender.py:send():379] send: final
+2025-07-14 16:20:00,741 DEBUG   SenderThread:236771 [sender.py:send():379] send: footer
+2025-07-14 16:20:00,741 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: defer
+2025-07-14 16:20:00,741 INFO    SenderThread:236771 [sender.py:send_request_defer():610] handle sender defer: 14
+2025-07-14 16:20:00,742 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-14 16:20:00,742 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: poll_exit
+2025-07-14 16:20:00,743 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: server_info
+2025-07-14 16:20:00,743 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: poll_exit
+2025-07-14 16:20:00,744 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: server_info
+2025-07-14 16:20:00,747 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: get_summary
+2025-07-14 16:20:00,747 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: sampled_history
+2025-07-14 16:20:00,748 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: internal_messages
+2025-07-14 16:20:01,082 DEBUG   SenderThread:236771 [sender.py:send_request():406] send_request: poll_exit
+2025-07-14 16:20:01,083 INFO    MainThread:236771 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2025-07-14 16:20:01,083 INFO    MainThread:236771 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2025-07-14 16:20:01,083 INFO    MainThread:236771 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2025-07-14 16:20:01,083 DEBUG   HandlerThread:236771 [handler.py:handle_request():158] handle_request: shutdown
+2025-07-14 16:20:01,083 INFO    HandlerThread:236771 [handler.py:finish():882] shutting down handler
+2025-07-14 16:20:01,744 INFO    WriterThread:236771 [datastore.py:close():296] close: /home/aneek/LLM-Adapters/wandb/run-20250714_161951-3juw2rat/run-3juw2rat.wandb
+2025-07-14 16:20:02,083 INFO    SenderThread:236771 [sender.py:finish():1608] shutting down sender
+2025-07-14 16:20:02,083 INFO    SenderThread:236771 [file_pusher.py:finish():169] shutting down file pusher
+2025-07-14 16:20:02,083 INFO    SenderThread:236771 [file_pusher.py:join():175] waiting for file pusher

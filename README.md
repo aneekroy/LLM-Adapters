@@ -207,6 +207,22 @@ WORLD_SIZE=1 CUDA_VISIBLE_DEVICES=1 torchrun --nproc_per_node=1 --master_port=30
 WORLD_SIZE=1 CUDA_VISIBLE_DEVICES=2 torchrun --nproc_per_node=1 --master_port=3208 finetune.py   --base_model /home/models/Llama-3.2-1B-Instruct   --data_path /home/aneek/LLM-Adapters/ft-training_set/alpaca_data_cleaned.json  --output_dir ./trained_models/llama-alpaca_data_cleaned-1B-lora  --batch_size 4   --micro_batch_size 1   --num_epochs 3   --learning_rate 3e-5   --cutoff_len 256   --val_set_size 120 
 
 
+----------------------------------------------------------------------------------------------------------------------
+
+WORLD_SIZE=1 CUDA_VISIBLE_DEVICES=2 torchrun --nproc_per_node=1 --master_port=3208 finetune.py   --base_model /home/models/Llama-3.2-1B-Instruct   --data_path /home/aneek/LLM-Adapters/ft-training_set/commonsense_15k.json --output_dir ./trained_models/llama-commonsense_15k-1B-lora  --batch_size 4   --micro_batch_size 1   --num_epochs 3   --learning_rate 3e-5   --cutoff_len 256   --val_set_size 120 
+
+
+math_reasoning ----- 
+
+WORLD_SIZE=1 CUDA_VISIBLE_DEVICES=3 torchrun --nproc_per_node=1 --master_port=3210 finetune.py   --base_model /home/models/Llama-3.2-1B-Instruct   --data_path /home/aneek/LLM-Adapters/ft-training_set/math_14k.json --output_dir ./trained_models/instruct/llama-math_14k-1B-lora  --batch_size 4   --micro_batch_size 1   --num_epochs 3   --learning_rate 3e-5   --cutoff_len 256   --val_set_size 120 
+
+alapaca_1b-------------------
+
+WORLD_SIZE=1 CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 --master_port=3211 finetune.py   --base_model /home/models/Llama-3.2-1B-Instruct   --data_path /home/aneek/LLM-Adapters/ft-training_set/alpaca_data_cleaned.json --output_dir ./trained_models/instruct/llama-alpaca_data_cleaned-1B-lora  --batch_size 4   --micro_batch_size 1   --num_epochs 3   --learning_rate 3e-5   --cutoff_len 256   --val_set_size 120 
+
+/home/aneek/LLM-Adapters/ft-training_set/commonsense_15k.json
+
+
 /home/aneek/LLM-Adapters/ft-training_set/commonsense_170k.json
 
 
@@ -296,6 +312,7 @@ CUDA_VISIBLE_DEVICES=2 python evaluate.py  --model 'Llama-3.2-3B' --adapter LoRA
 Commonsense Evaluate :
 
 
+
 CUDA_VISIBLE_DEVICES=0 python commonsense_evaluate.py  --model 'Llama-3.2-3B' --adapter LoRA --dataset boolq --base_model '/home/models/Llama-3.2-3B-Instruct/' --lora_weights '/home/aneek/LLM-Adapters/trained_models/instruction/llama-3B-combined-lora' --batch_size 16
 
 
@@ -316,6 +333,24 @@ CUDA_VISIBLE_DEVICES=1 python commonsense_evaluate.py  --model 'Llama-3.2-3B' --
 CUDA_VISIBLE_DEVICES=2 python commonsense_evaluate.py  --model 'Llama-3.2-3B' --adapter LoRA --dataset hellaswag --base_model '/home/models/Llama-3.2-3B-Instruct/' --lora_weights '/home/aneek/LLM-Adapters/trained_models/instruction/llama-3B-combined-lora' --batch_size 16
 
 CUDA_VISIBLE_DEVICES=3 python commonsense_evaluate.py  --model 'Llama-3.2-3B' --adapter LoRA --dataset winogrande --base_model '/home/models/Llama-3.2-3B-Instruct/' --lora_weights '/home/aneek/LLM-Adapters/trained_models/instruction/llama-3B-combined-lora' --batch_size 16
+
+
+
+
+------------------------------------------------------------------------------------------------------------------
+
+
+
+
+CUDA_VISIBLE_DEVICES=1 python commonsense_evaluate.py  --model 'Llama-3.2-3B' --adapter LoRA --dataset boolq --base_model '/home/models/Llama-3.2-1B-Instruct/' --lora_weights /home/aneek/LLM-Adapters/trained_models/llama-alpaca_data_cleaned-1B --batch_size 16
+
+
+
+CUDA_VISIBLE_DEVICES=0 python commonsense_evaluate.py  --model 'Llama-3.2-3B' --adapter LoRA --dataset boolq --base_model '/home/models/Llama-3.2-1B-Instruct/' --lora_weights '/home/aneek/LLM-Adapters/trained_models/instruction/llama-3B-combined-lora' --batch_size 16
+
+
+
+CUDA_VISIBLE_DEVICES=0 python commonsense_evaluate.py  --model 'Llama-3.2-3B' --adapter LoRA --dataset boolq --base_model '/home/models/Llama-3.2-1B-Instruct/' --lora_weights '/home/aneek/LLM-Adapters/trained_models/instruction/llama-3B-combined-lora' --batch_size 16
 
 ```
 

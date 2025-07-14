@@ -1,0 +1,79 @@
+2025-07-14 17:11:58,134 INFO    StreamThr :276354 [internal.py:wandb_internal():85] W&B internal server running at pid: 276354, started at: 2025-07-14 17:11:58.133592
+2025-07-14 17:11:58,135 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: status
+2025-07-14 17:11:58,137 INFO    WriterThread:276354 [datastore.py:open_for_write():87] open: /home/aneek/LLM-Adapters/wandb/run-20250714_171158-ggipykfe/run-ggipykfe.wandb
+2025-07-14 17:11:58,138 DEBUG   SenderThread:276354 [sender.py:send():379] send: header
+2025-07-14 17:11:58,139 DEBUG   SenderThread:276354 [sender.py:send():379] send: run
+2025-07-14 17:12:01,526 INFO    SenderThread:276354 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 775, in urlopen
+    self._prepare_proxy(conn)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1044, in _prepare_proxy
+    conn.connect()
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/urllib3/connection.py", line 632, in connect
+    self._tunnel()  # type: ignore[attr-defined]
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/http/client.py", line 925, in _tunnel
+    raise OSError(f"Tunnel connection failed: {code} {message.strip()}")
+OSError: Tunnel connection failed: 302 Moved Temporarily
+
+The above exception was the direct cause of the following exception:
+
+urllib3.exceptions.ProxyError: ('Unable to connect to proxy', OSError('Tunnel connection failed: 302 Moved Temporarily'))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/urllib3/connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/urllib3/util/retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 302 Moved Temporarily')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/wandb/sdk/internal/internal_api.py", line 345, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/requests/sessions.py", line 637, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/aneek/miniconda3/envs/llama4env/lib/python3.10/site-packages/requests/adapters.py", line 694, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Unable to connect to proxy', OSError('Tunnel connection failed: 302 Moved Temporarily')))
+2025-07-14 17:12:03,140 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:08,142 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:13,143 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:18,144 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:23,145 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:28,146 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:33,147 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:38,147 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:43,148 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:48,150 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:53,150 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:12:58,151 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:13:03,152 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:13:08,154 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:13:13,155 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:13:18,156 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:13:23,157 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: keepalive
+2025-07-14 17:13:28,158 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: cancel
+2025-07-14 17:13:28,158 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: cancel
+2025-07-14 17:13:28,158 DEBUG   SenderThread:276354 [sender.py:send():388] Record cancelled: run
+2025-07-14 17:13:28,158 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: status_report
+2025-07-14 17:13:28,224 DEBUG   HandlerThread:276354 [handler.py:handle_request():158] handle_request: shutdown
+2025-07-14 17:13:28,224 INFO    HandlerThread:276354 [handler.py:finish():882] shutting down handler
+2025-07-14 17:13:29,158 INFO    SenderThread:276354 [sender.py:finish():1608] shutting down sender
+2025-07-14 17:13:29,159 INFO    WriterThread:276354 [datastore.py:close():296] close: /home/aneek/LLM-Adapters/wandb/run-20250714_171158-ggipykfe/run-ggipykfe.wandb
